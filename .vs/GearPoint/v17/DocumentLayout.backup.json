@@ -1,7 +1,44 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\karls\\source\\repos\\GearPoint\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\Charlie\\PROPOSAL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|D:\\Charlie\\PROPOSAL\\gearpoint\\femaleshsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\femaleshsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|d:\\charlie\\proposal\\gearpoint\\femalehmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\femalehmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|d:\\charlie\\proposal\\gearpoint\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|D:\\Charlie\\PROPOSAL\\gearpoint\\maleshsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\maleshsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|D:\\Charlie\\PROPOSAL\\gearpoint\\malehmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\malehmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|D:\\Charlie\\PROPOSAL\\gearpoint\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|d:\\charlie\\proposal\\gearpoint\\gradientroundpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\gradientroundpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|d:\\charlie\\proposal\\gearpoint\\gradientpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\gradientpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|d:\\charlie\\proposal\\gearpoint\\gendercheckpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{640CE8B0-2B57-4993-A585-B4568C7938D9}|GearPoint\\GearPoint.csproj|solutionrelative:gearpoint\\gendercheckpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +46,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -20,8 +61,112 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cart.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\Cart.cs",
+              "RelativeDocumentMoniker": "GearPoint\\Cart.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\Cart.cs [Design]",
+              "RelativeToolTip": "GearPoint\\Cart.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:04:44.112Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GradientRoundPanel.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\GradientRoundPanel.cs",
+              "RelativeDocumentMoniker": "GearPoint\\GradientRoundPanel.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\GradientRoundPanel.cs [Design]",
+              "RelativeToolTip": "GearPoint\\GradientRoundPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:04:33.706Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GradientPanel.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\GradientPanel.cs",
+              "RelativeDocumentMoniker": "GearPoint\\GradientPanel.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\GradientPanel.cs [Design]",
+              "RelativeToolTip": "GearPoint\\GradientPanel.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:04:33.021Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GenderCheckpoint.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\GenderCheckpoint.cs",
+              "RelativeDocumentMoniker": "GearPoint\\GenderCheckpoint.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\GenderCheckpoint.cs [Design]",
+              "RelativeToolTip": "GearPoint\\GenderCheckpoint.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T16:04:31.855Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FemaleHMForm.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\FemaleHMForm.cs",
+              "RelativeDocumentMoniker": "GearPoint\\FemaleHMForm.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\FemaleHMForm.cs [Design]",
+              "RelativeToolTip": "GearPoint\\FemaleHMForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:19:38.509Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MaleShsForm.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\MaleShsForm.cs",
+              "RelativeDocumentMoniker": "GearPoint\\MaleShsForm.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\MaleShsForm.cs [Design]",
+              "RelativeToolTip": "GearPoint\\MaleShsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:09:42.245Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MaleHMForm.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\MaleHMForm.cs",
+              "RelativeDocumentMoniker": "GearPoint\\MaleHMForm.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\MaleHMForm.cs [Design]",
+              "RelativeToolTip": "GearPoint\\MaleHMForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:59:09.979Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FemaleShsForm.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\FemaleShsForm.cs",
+              "RelativeDocumentMoniker": "GearPoint\\FemaleShsForm.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\FemaleShsForm.cs [Design]",
+              "RelativeToolTip": "GearPoint\\FemaleShsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:41:12.158Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "D:\\Charlie\\PROPOSAL\\GearPoint\\MainMenu.cs",
+              "RelativeDocumentMoniker": "GearPoint\\MainMenu.cs",
+              "ToolTip": "D:\\Charlie\\PROPOSAL\\GearPoint\\MainMenu.cs [Design]*",
+              "RelativeToolTip": "GearPoint\\MainMenu.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:31:14.668Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

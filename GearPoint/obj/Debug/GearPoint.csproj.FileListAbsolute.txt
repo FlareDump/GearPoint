@@ -53,3 +53,5 @@ D:\Charlie\PROPOSAL\GearPoint\obj\Debug\GearPoint.csproj.GenerateResource.cache
 D:\Charlie\PROPOSAL\GearPoint\obj\Debug\GearPoint.csproj.CoreCompileInputs.cache
 D:\Charlie\PROPOSAL\GearPoint\obj\Debug\GearPoint.exe
 D:\Charlie\PROPOSAL\GearPoint\obj\Debug\GearPoint.pdb
+D:\Charlie\PROPOSAL\GearPoint\obj\Debug\GearPoint.FemaleHMForm.resources
+D:\Charlie\PROPOSAL\GearPoint\obj\Debug\GearPoint.MaleHMForm.resources

@@ -83,6 +83,86 @@ namespace GearPoint.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap SHS_NECKTIE {
+            get {
+                object obj = ResourceManager.GetObject("SHS-NECKTIE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_NECKTIE1 {
+            get {
+                object obj = ResourceManager.GetObject("SHS-NECKTIE1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_WOMENPOLOTOP {
+            get {
+                object obj = ResourceManager.GetObject("SHS-WOMENPOLOTOP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_WOMENPOLOTOP1 {
+            get {
+                object obj = ResourceManager.GetObject("SHS-WOMENPOLOTOP1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_WOMENSKIRT {
+            get {
+                object obj = ResourceManager.GetObject("SHS-WOMENSKIRT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_WOMENSKIRT1 {
+            get {
+                object obj = ResourceManager.GetObject("SHS-WOMENSKIRT1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_WOMENUNISET {
+            get {
+                object obj = ResourceManager.GetObject("SHS-WOMENUNISET", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SHS_WOMENUNISET1 {
+            get {
+                object obj = ResourceManager.GetObject("SHS-WOMENUNISET1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Simulation_HRM {
             get {
                 object obj = ResourceManager.GetObject("Simulation_HRM", resourceCulture);

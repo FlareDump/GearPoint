@@ -194,5 +194,29 @@
   <ItemGroup>
     <None Include="Resources\placeholder.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-WOMENPOLOTOP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-WOMENSKIRT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-NECKTIE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-WOMENUNISET.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-NECKTIE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-WOMENSKIRT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-WOMENPOLOTOP1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SHS-WOMENUNISET1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

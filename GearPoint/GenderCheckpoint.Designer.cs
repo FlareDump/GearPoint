@@ -43,7 +43,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-3, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(585, 80);
@@ -96,7 +96,7 @@
             this.BACKButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BACKButton4.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BACKButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(188)))));
-            this.BACKButton4.Location = new System.Drawing.Point(221, 775);
+            this.BACKButton4.Location = new System.Drawing.Point(221, 755);
             this.BACKButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BACKButton4.Name = "BACKButton4";
             this.BACKButton4.Size = new System.Drawing.Size(101, 49);

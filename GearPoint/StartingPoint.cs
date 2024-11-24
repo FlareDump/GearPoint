@@ -19,10 +19,14 @@ namespace GearPoint
 
         private void start_btn_Click(object sender, EventArgs e)
         {
-            Main_Menu form2 = new Main_Menu();
-            form2.Show();
+            Main_Menu mainMenu = new Main_Menu();
+            mainMenu.Show();
             this.Hide();
         }
 
+        private void StartingPoint_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

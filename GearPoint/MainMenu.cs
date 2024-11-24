@@ -13,10 +13,11 @@ namespace GearPoint
 {
     public partial class Main_Menu : Form
     {
-        GenderCheckpoint GenderCheckpoint = new GenderCheckpoint();
-        public Main_Menu()
-        {
+        GenderCheckpoint genderCheckpoint;
+        string category;
 
+        public Main_Menu()
+        { 
             InitializeComponent();
         }
 
@@ -27,19 +28,23 @@ namespace GearPoint
         //Shs Card button
         private void ShsImageCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            category = "SHS";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void ShsLabelCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            category = "SHS";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void ShsBackCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
         // End of Shs Card button
@@ -47,19 +52,19 @@ namespace GearPoint
         // ICT Card Button
         private void ICTImageCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void ICTLabelCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void ICTBackCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
         // End of ICT Card Button
@@ -68,19 +73,19 @@ namespace GearPoint
 
         private void TMLabelCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void TMImageCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void TMBackCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
         // End of TM Card Button
@@ -88,19 +93,19 @@ namespace GearPoint
         // HM Card Button
         private void HMLabelCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void HMImageCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void HMBackCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
 
         }
@@ -109,19 +114,19 @@ namespace GearPoint
         // Proware Card Button
         private void ProwareLabelCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void ProwareImageCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 
         private void ProwareBackCard_Click(object sender, EventArgs e)
         {
-            GenderCheckpoint.Show();
+            genderCheckpoint.Show();
             this.Close();
         }
 

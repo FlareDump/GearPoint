@@ -14,12 +14,15 @@ namespace GearPoint
 
     {
         private MaleShsForm maleShsForm;
-        MainMenu mainMenu = new MainMenu();
-        FemaleShsForm femaleShsForm = new FemaleShsForm();  
+        Main_Menu mainMenu = new Main_Menu();
+        FemaleShsForm femaleShsForm = new FemaleShsForm();
 
-        public GenderCheckpoint()
+        public string category;
+        public char gender;
 
+        public GenderCheckpoint(string category)
         {
+            this.category = category;
             InitializeComponent();
 
         }
@@ -31,7 +34,7 @@ namespace GearPoint
 
         private void BACKButton4_Click(object sender, EventArgs e)
         {
-
+            mainMenu.Show();
         }
 
         private void FEMALEButton2_Click(object sender, EventArgs e)
@@ -43,9 +46,20 @@ namespace GearPoint
 
         private void MALEButton1_Click(object sender, EventArgs e)
         {
-            maleShsForm.Show();
-            this.Hide();
-            this.Close();
+            gender = 'M';
+
+            if (gender == 'M' && category == "SHS")
+            {
+                maleShsForm = new MaleShsForm(category, gender); 
+                maleShsForm.Show();
+                this.Hide();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Invalid Choices");
+            }
+            
         }
     }
  }

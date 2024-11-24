@@ -30,23 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddOrder));
             this.roundedPanel1 = new GearPoint.RoundedPanel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.GenderLbl = new System.Windows.Forms.Label();
+            this.ItemNameLbl = new System.Windows.Forms.Label();
+            this.SizesComboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.roundedPictureBox2 = new GearPoint.RoundedPictureBox();
+            this.OrderImageBox = new GearPoint.RoundedPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.roundButton2 = new RoundButton();
             this.roundButton1 = new RoundButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.roundedPictureBox1 = new GearPoint.RoundedPictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.roundedPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderImageBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,15 +57,15 @@
             // 
             this.roundedPanel1.BackColor = System.Drawing.Color.PowderBlue;
             this.roundedPanel1.BorderRadius = 20;
-            this.roundedPanel1.Controls.Add(this.label8);
-            this.roundedPanel1.Controls.Add(this.label7);
-            this.roundedPanel1.Controls.Add(this.comboBox2);
-            this.roundedPanel1.Controls.Add(this.comboBox1);
+            this.roundedPanel1.Controls.Add(this.numericUpDown1);
+            this.roundedPanel1.Controls.Add(this.GenderLbl);
+            this.roundedPanel1.Controls.Add(this.ItemNameLbl);
+            this.roundedPanel1.Controls.Add(this.SizesComboBox);
             this.roundedPanel1.Controls.Add(this.label6);
             this.roundedPanel1.Controls.Add(this.label5);
             this.roundedPanel1.Controls.Add(this.label4);
             this.roundedPanel1.Controls.Add(this.label3);
-            this.roundedPanel1.Controls.Add(this.roundedPictureBox2);
+            this.roundedPanel1.Controls.Add(this.OrderImageBox);
             this.roundedPanel1.Controls.Add(this.label2);
             this.roundedPanel1.Controls.Add(this.label1);
             this.roundedPanel1.Controls.Add(this.roundButton2);
@@ -73,34 +75,44 @@
             this.roundedPanel1.Size = new System.Drawing.Size(480, 675);
             this.roundedPanel1.TabIndex = 9;
             // 
-            // label7
+            // numericUpDown1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.label7.Font = new System.Drawing.Font("Helvetica", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(226, 343);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 20);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "N/A";
+            this.numericUpDown1.Font = new System.Drawing.Font("Helvetica Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown1.Location = new System.Drawing.Point(229, 457);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(121, 30);
+            this.numericUpDown1.TabIndex = 16;
             // 
-            // comboBox2
+            // GenderLbl
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(230, 460);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 29);
-            this.comboBox2.TabIndex = 13;
+            this.GenderLbl.AutoSize = true;
+            this.GenderLbl.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.GenderLbl.Font = new System.Drawing.Font("Helvetica", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderLbl.Location = new System.Drawing.Point(226, 379);
+            this.GenderLbl.Name = "GenderLbl";
+            this.GenderLbl.Size = new System.Drawing.Size(37, 20);
+            this.GenderLbl.TabIndex = 15;
+            this.GenderLbl.Text = "N/A";
             // 
-            // comboBox1
+            // ItemNameLbl
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(229, 413);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 29);
-            this.comboBox1.TabIndex = 12;
+            this.ItemNameLbl.AutoSize = true;
+            this.ItemNameLbl.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.ItemNameLbl.Font = new System.Drawing.Font("Helvetica", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemNameLbl.Location = new System.Drawing.Point(226, 343);
+            this.ItemNameLbl.Name = "ItemNameLbl";
+            this.ItemNameLbl.Size = new System.Drawing.Size(37, 20);
+            this.ItemNameLbl.TabIndex = 14;
+            this.ItemNameLbl.Text = "N/A";
+            // 
+            // SizesComboBox
+            // 
+            this.SizesComboBox.Font = new System.Drawing.Font("Helvetica", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SizesComboBox.FormattingEnabled = true;
+            this.SizesComboBox.Location = new System.Drawing.Point(229, 413);
+            this.SizesComboBox.Name = "SizesComboBox";
+            this.SizesComboBox.Size = new System.Drawing.Size(121, 29);
+            this.SizesComboBox.TabIndex = 12;
             // 
             // label6
             // 
@@ -146,16 +158,17 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Item: ";
             // 
-            // roundedPictureBox2
+            // OrderImageBox
             // 
-            this.roundedPictureBox2.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
-            this.roundedPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.roundedPictureBox2.CornerRadius = 20;
-            this.roundedPictureBox2.Location = new System.Drawing.Point(119, 52);
-            this.roundedPictureBox2.Name = "roundedPictureBox2";
-            this.roundedPictureBox2.Size = new System.Drawing.Size(250, 250);
-            this.roundedPictureBox2.TabIndex = 7;
-            this.roundedPictureBox2.TabStop = false;
+            this.OrderImageBox.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
+            this.OrderImageBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.OrderImageBox.CornerRadius = 20;
+            this.OrderImageBox.Location = new System.Drawing.Point(119, 52);
+            this.OrderImageBox.Name = "OrderImageBox";
+            this.OrderImageBox.Size = new System.Drawing.Size(250, 250);
+            this.OrderImageBox.TabIndex = 7;
+            this.OrderImageBox.TabStop = false;
+            this.OrderImageBox.Click += new System.EventHandler(this.OrderImageBox_Click);
             // 
             // label2
             // 
@@ -228,32 +241,29 @@
             this.roundedPictureBox1.TabIndex = 8;
             this.roundedPictureBox1.TabStop = false;
             // 
-            // label8
+            // openFileDialog1
             // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.label8.Font = new System.Drawing.Font("Helvetica", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(226, 379);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(37, 20);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "N/A";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // AddOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(575, 905);
+            this.ClientSize = new System.Drawing.Size(575, 926);
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "AddOrder";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddOrder";
+            this.Load += new System.EventHandler(this.AddOrder_Load);
             this.roundedPanel1.ResumeLayout(false);
             this.roundedPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderImageBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -269,14 +279,15 @@
         private RoundButton roundButton1;
         private RoundedPictureBox roundedPictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private RoundedPictureBox roundedPictureBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private RoundedPictureBox OrderImageBox;
+        private System.Windows.Forms.ComboBox SizesComboBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label ItemNameLbl;
+        private System.Windows.Forms.Label GenderLbl;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

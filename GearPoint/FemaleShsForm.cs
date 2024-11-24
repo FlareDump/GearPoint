@@ -17,17 +17,7 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedPictureBox10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedPictureBox9_Click(object sender, EventArgs e)
+        private void SHSMenPantsImage_Click(object sender, EventArgs e)
         {
 
         }

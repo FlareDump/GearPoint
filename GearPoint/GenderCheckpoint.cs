@@ -29,14 +29,6 @@ namespace GearPoint
             
         }
 
-        private void roundButton1_Click(object sender, EventArgs e)
-        {
-            
-            maleShsForm.Show();
-            this.Hide();
-            this.Close();
-        }
-
         private void BACKButton4_Click(object sender, EventArgs e)
         {
 
@@ -45,6 +37,13 @@ namespace GearPoint
         private void FEMALEButton2_Click(object sender, EventArgs e)
         {
             femaleShsForm.Show();
+            this.Hide();
+            this.Close();
+        }
+
+        private void MALEButton1_Click(object sender, EventArgs e)
+        {
+            maleShsForm.Show();
             this.Hide();
             this.Close();
         }

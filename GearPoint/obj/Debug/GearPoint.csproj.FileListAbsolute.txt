@@ -113,3 +113,23 @@ C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.csproj.Generate
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.csproj.CoreCompileInputs.cache
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.exe
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.pdb
+C:\Users\Lomotos\Desktop\New folder\GearPoint\bin\Debug\GearPoint.exe.config
+C:\Users\Lomotos\Desktop\New folder\GearPoint\bin\Debug\GearPoint.exe
+C:\Users\Lomotos\Desktop\New folder\GearPoint\bin\Debug\GearPoint.pdb
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.csproj.AssemblyReference.cache
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.AddOrder.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.Cart.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.FemaleHMForm.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.FemaleShsForm.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.FemaleTMForm.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.ITuniformFORM.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.MaleHMForm.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.StartingPoint.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.Main_Menu.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.GenderCheckpoint.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.MaleShsForm.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.Properties.Resources.resources
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.csproj.GenerateResource.cache
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.csproj.CoreCompileInputs.cache
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.exe
+C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.pdb

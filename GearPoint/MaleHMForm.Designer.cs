@@ -183,7 +183,7 @@
             this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.roundButton1.Location = new System.Drawing.Point(73, 11);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(2);
             this.roundButton1.Name = "roundButton1";
             this.roundButton1.Size = new System.Drawing.Size(200, 64);
             this.roundButton1.TabIndex = 2;
@@ -208,7 +208,7 @@
             this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
             this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CartIcon.Location = new System.Drawing.Point(15, 23);
-            this.CartIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(2);
             this.CartIcon.Name = "CartIcon";
             this.CartIcon.Size = new System.Drawing.Size(35, 40);
             this.CartIcon.TabIndex = 0;
@@ -311,7 +311,7 @@
             this.roundedPictureBox16.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox16.CornerRadius = 40;
             this.roundedPictureBox16.Location = new System.Drawing.Point(9, 950);
-            this.roundedPictureBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox16.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox16.Name = "roundedPictureBox16";
             this.roundedPictureBox16.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox16.TabIndex = 62;
@@ -332,7 +332,7 @@
             this.roundedPictureBox14.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox14.CornerRadius = 40;
             this.roundedPictureBox14.Location = new System.Drawing.Point(227, 722);
-            this.roundedPictureBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox14.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox14.Name = "roundedPictureBox14";
             this.roundedPictureBox14.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox14.TabIndex = 59;
@@ -353,7 +353,7 @@
             this.roundedPictureBox8.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox8.CornerRadius = 40;
             this.roundedPictureBox8.Location = new System.Drawing.Point(8, 722);
-            this.roundedPictureBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox8.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox8.Name = "roundedPictureBox8";
             this.roundedPictureBox8.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox8.TabIndex = 56;
@@ -374,7 +374,7 @@
             this.roundedPictureBox10.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox10.CornerRadius = 40;
             this.roundedPictureBox10.Location = new System.Drawing.Point(227, 496);
-            this.roundedPictureBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox10.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox10.Name = "roundedPictureBox10";
             this.roundedPictureBox10.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox10.TabIndex = 52;
@@ -405,7 +405,7 @@
             this.roundedPictureBox12.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox12.CornerRadius = 40;
             this.roundedPictureBox12.Location = new System.Drawing.Point(9, 496);
-            this.roundedPictureBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox12.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox12.Name = "roundedPictureBox12";
             this.roundedPictureBox12.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox12.TabIndex = 49;
@@ -416,7 +416,7 @@
             this.SHSMenPantsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenPantsBackCard.CornerRadius = 40;
             this.SHSMenPantsBackCard.Location = new System.Drawing.Point(226, 282);
-            this.SHSMenPantsBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SHSMenPantsBackCard.Margin = new System.Windows.Forms.Padding(2);
             this.SHSMenPantsBackCard.Name = "SHSMenPantsBackCard";
             this.SHSMenPantsBackCard.Size = new System.Drawing.Size(198, 210);
             this.SHSMenPantsBackCard.TabIndex = 46;
@@ -431,13 +431,14 @@
             this.HMMenLongSleevePoloImage.Size = new System.Drawing.Size(198, 174);
             this.HMMenLongSleevePoloImage.TabIndex = 42;
             this.HMMenLongSleevePoloImage.TabStop = false;
+            this.HMMenLongSleevePoloImage.Click += new System.EventHandler(this.HMMenLongSleevePoloImage_Click);
             // 
             // roundedPictureBox6
             // 
             this.roundedPictureBox6.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox6.CornerRadius = 40;
             this.roundedPictureBox6.Location = new System.Drawing.Point(8, 282);
-            this.roundedPictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox6.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox6.Name = "roundedPictureBox6";
             this.roundedPictureBox6.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox6.TabIndex = 43;
@@ -449,7 +450,7 @@
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
             this.roundedPictureBox1.Location = new System.Drawing.Point(9, 12);
-            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
             this.roundedPictureBox1.Size = new System.Drawing.Size(83, 43);
             this.roundedPictureBox1.TabIndex = 37;
@@ -463,7 +464,7 @@
             this.HMBackCard.GradientEndColor = System.Drawing.Color.DarkRed;
             this.HMBackCard.GradientRatio = 0.4F;
             this.HMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.HMBackCard.Location = new System.Drawing.Point(228, 175);
+            this.HMBackCard.Location = new System.Drawing.Point(223, 175);
             this.HMBackCard.Margin = new System.Windows.Forms.Padding(2);
             this.HMBackCard.Name = "HMBackCard";
             this.HMBackCard.Size = new System.Drawing.Size(200, 101);
@@ -503,7 +504,7 @@
             this.TMBackCard.GradientEndColor = System.Drawing.Color.Gold;
             this.TMBackCard.GradientRatio = 0.4F;
             this.TMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.TMBackCard.Location = new System.Drawing.Point(8, 69);
+            this.TMBackCard.Location = new System.Drawing.Point(9, 69);
             this.TMBackCard.Margin = new System.Windows.Forms.Padding(2);
             this.TMBackCard.Name = "TMBackCard";
             this.TMBackCard.Size = new System.Drawing.Size(198, 100);
@@ -544,7 +545,7 @@
             this.ICTBackCard.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ICTBackCard.GradientRatio = 0.4F;
             this.ICTBackCard.GradientStartColor = System.Drawing.Color.Silver;
-            this.ICTBackCard.Location = new System.Drawing.Point(224, 69);
+            this.ICTBackCard.Location = new System.Drawing.Point(225, 69);
             this.ICTBackCard.Margin = new System.Windows.Forms.Padding(2);
             this.ICTBackCard.Name = "ICTBackCard";
             this.ICTBackCard.Size = new System.Drawing.Size(198, 100);
@@ -584,7 +585,7 @@
             this.ProwareCardBack.GradientEndColor = System.Drawing.Color.CornflowerBlue;
             this.ProwareCardBack.GradientRatio = 0.5F;
             this.ProwareCardBack.GradientStartColor = System.Drawing.Color.White;
-            this.ProwareCardBack.Location = new System.Drawing.Point(11, 173);
+            this.ProwareCardBack.Location = new System.Drawing.Point(10, 173);
             this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(2);
             this.ProwareCardBack.Name = "ProwareCardBack";
             this.ProwareCardBack.Size = new System.Drawing.Size(198, 100);
@@ -623,7 +624,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(448, 716);
+            this.ClientSize = new System.Drawing.Size(444, 733);
             this.Controls.Add(this.HMBackCard);
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.ICTBackCard);

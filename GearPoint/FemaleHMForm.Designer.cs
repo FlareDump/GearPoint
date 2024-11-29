@@ -39,7 +39,7 @@
             this.RoundedFooter = new GearPoint.RoundedPanel();
             this.CartItemNumLbl = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.roundButton1 = new RoundButton();
+            this.PaymentButton = new RoundButton();
             this.CartItemLbl = new GearPoint.RoundedBackLabel();
             this.CartIcon = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -202,7 +202,7 @@
             this.RoundedFooter.Controls.Add(this.TotalLbl);
             this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
             this.RoundedFooter.Controls.Add(this.label8);
-            this.RoundedFooter.Controls.Add(this.roundButton1);
+            this.RoundedFooter.Controls.Add(this.PaymentButton);
             this.RoundedFooter.Controls.Add(this.CartItemLbl);
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -234,19 +234,20 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Total:";
             // 
-            // roundButton1
+            // PaymentButton
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.roundButton1.BorderRadius = 30;
-            this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.roundButton1.Location = new System.Drawing.Point(69, 11);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(200, 64);
-            this.roundButton1.TabIndex = 2;
-            this.roundButton1.Text = "Proceed to Payment";
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.PaymentButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.PaymentButton.BorderRadius = 30;
+            this.PaymentButton.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
+            this.PaymentButton.Location = new System.Drawing.Point(69, 11);
+            this.PaymentButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PaymentButton.Name = "PaymentButton";
+            this.PaymentButton.Size = new System.Drawing.Size(200, 64);
+            this.PaymentButton.TabIndex = 2;
+            this.PaymentButton.Text = "Proceed to Payment";
+            this.PaymentButton.UseVisualStyleBackColor = false;
+            this.PaymentButton.Click += new System.EventHandler(this.PaymentButton_Click);
             // 
             // CartItemLbl
             // 
@@ -271,6 +272,7 @@
             this.CartIcon.Size = new System.Drawing.Size(35, 40);
             this.CartIcon.TabIndex = 0;
             this.CartIcon.TabStop = false;
+            this.CartIcon.Click += new System.EventHandler(this.CartIcon_Click);
             // 
             // label7
             // 
@@ -304,7 +306,7 @@
             this.TMBackCard.GradientEndColor = System.Drawing.Color.Gold;
             this.TMBackCard.GradientRatio = 0.4F;
             this.TMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.TMBackCard.Location = new System.Drawing.Point(12, 70);
+            this.TMBackCard.Location = new System.Drawing.Point(8, 70);
             this.TMBackCard.Margin = new System.Windows.Forms.Padding(2);
             this.TMBackCard.Name = "TMBackCard";
             this.TMBackCard.Size = new System.Drawing.Size(200, 101);
@@ -343,7 +345,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(-63, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(517, 65);
+            this.dataGridView1.Size = new System.Drawing.Size(538, 65);
             this.dataGridView1.TabIndex = 64;
             // 
             // label11
@@ -391,6 +393,7 @@
             this.HMKitchenUniformSetImage.Size = new System.Drawing.Size(198, 174);
             this.HMKitchenUniformSetImage.TabIndex = 95;
             this.HMKitchenUniformSetImage.TabStop = false;
+            this.HMKitchenUniformSetImage.Click += new System.EventHandler(this.HMKitchenUniformSetImage_Click);
             // 
             // roundedPictureBox20
             // 
@@ -412,6 +415,7 @@
             this.HMChefsPantsImage.Size = new System.Drawing.Size(198, 174);
             this.HMChefsPantsImage.TabIndex = 92;
             this.HMChefsPantsImage.TabStop = false;
+            this.HMChefsPantsImage.Click += new System.EventHandler(this.HMChefsPantsImage_Click);
             // 
             // roundedPictureBox18
             // 
@@ -433,6 +437,7 @@
             this.HMGrayChefsPoloImage.Size = new System.Drawing.Size(198, 174);
             this.HMGrayChefsPoloImage.TabIndex = 89;
             this.HMGrayChefsPoloImage.TabStop = false;
+            this.HMGrayChefsPoloImage.Click += new System.EventHandler(this.HMGrayChefsPoloImage_Click);
             // 
             // roundedPictureBox16
             // 
@@ -454,6 +459,7 @@
             this.HMGraySkullCapImage.Size = new System.Drawing.Size(198, 174);
             this.HMGraySkullCapImage.TabIndex = 86;
             this.HMGraySkullCapImage.TabStop = false;
+            this.HMGraySkullCapImage.Click += new System.EventHandler(this.HMGraySkullCapImage_Click);
             // 
             // roundedPictureBox14
             // 
@@ -475,6 +481,7 @@
             this.HMFemaleUniformSetImage.Size = new System.Drawing.Size(198, 174);
             this.HMFemaleUniformSetImage.TabIndex = 83;
             this.HMFemaleUniformSetImage.TabStop = false;
+            this.HMFemaleUniformSetImage.Click += new System.EventHandler(this.HMFemaleUniformSetImage_Click);
             // 
             // roundedPictureBox8
             // 
@@ -496,6 +503,7 @@
             this.HMSkirtImage.Size = new System.Drawing.Size(198, 174);
             this.HMSkirtImage.TabIndex = 79;
             this.HMSkirtImage.TabStop = false;
+            this.HMSkirtImage.Click += new System.EventHandler(this.HMSkirtImage_Click);
             // 
             // roundedPictureBox10
             // 
@@ -517,6 +525,7 @@
             this.HMBlazerImage.Size = new System.Drawing.Size(198, 174);
             this.HMBlazerImage.TabIndex = 73;
             this.HMBlazerImage.TabStop = false;
+            this.HMBlazerImage.Click += new System.EventHandler(this.HMBlazerImage_Click);
             // 
             // HMPantsImage
             // 
@@ -527,6 +536,7 @@
             this.HMPantsImage.Size = new System.Drawing.Size(198, 174);
             this.HMPantsImage.TabIndex = 76;
             this.HMPantsImage.TabStop = false;
+            this.HMPantsImage.Click += new System.EventHandler(this.HMPantsImage_Click);
             // 
             // roundedPictureBox12
             // 
@@ -559,6 +569,7 @@
             this.HMlongsleevePoloImage.Size = new System.Drawing.Size(198, 174);
             this.HMlongsleevePoloImage.TabIndex = 70;
             this.HMlongsleevePoloImage.TabStop = false;
+            this.HMlongsleevePoloImage.Click += new System.EventHandler(this.HMlongsleevePoloImage_Click);
             // 
             // roundedPictureBox6
             // 
@@ -579,7 +590,7 @@
             this.ProwareCardBack.GradientEndColor = System.Drawing.Color.CornflowerBlue;
             this.ProwareCardBack.GradientRatio = 0.5F;
             this.ProwareCardBack.GradientStartColor = System.Drawing.Color.White;
-            this.ProwareCardBack.Location = new System.Drawing.Point(12, 177);
+            this.ProwareCardBack.Location = new System.Drawing.Point(8, 177);
             this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(2);
             this.ProwareCardBack.Name = "ProwareCardBack";
             this.ProwareCardBack.Size = new System.Drawing.Size(198, 100);
@@ -621,7 +632,7 @@
             this.ICTBackCard.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ICTBackCard.GradientRatio = 0.4F;
             this.ICTBackCard.GradientStartColor = System.Drawing.Color.Silver;
-            this.ICTBackCard.Location = new System.Drawing.Point(230, 72);
+            this.ICTBackCard.Location = new System.Drawing.Point(226, 72);
             this.ICTBackCard.Margin = new System.Windows.Forms.Padding(2);
             this.ICTBackCard.Name = "ICTBackCard";
             this.ICTBackCard.Size = new System.Drawing.Size(198, 100);
@@ -661,7 +672,7 @@
             this.gradientRoundPanel1.GradientEndColor = System.Drawing.Color.MediumVioletRed;
             this.gradientRoundPanel1.GradientRatio = 0.4F;
             this.gradientRoundPanel1.GradientStartColor = System.Drawing.Color.White;
-            this.gradientRoundPanel1.Location = new System.Drawing.Point(228, 176);
+            this.gradientRoundPanel1.Location = new System.Drawing.Point(224, 176);
             this.gradientRoundPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.gradientRoundPanel1.Name = "gradientRoundPanel1";
             this.gradientRoundPanel1.Size = new System.Drawing.Size(200, 102);
@@ -698,7 +709,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(448, 724);
+            this.ClientSize = new System.Drawing.Size(447, 741);
             this.Controls.Add(this.gradientRoundPanel1);
             this.Controls.Add(this.ICTBackCard);
             this.Controls.Add(this.ProwareCardBack);
@@ -792,7 +803,7 @@
         private RoundedPanel RoundedFooter;
         private System.Windows.Forms.Label CartItemNumLbl;
         private System.Windows.Forms.Label label8;
-        private RoundButton roundButton1;
+        private RoundButton PaymentButton;
         private RoundedBackLabel CartItemLbl;
         private RoundedPictureBox roundedPictureBox10;
         private RoundedPictureBox HMBlazerImage;

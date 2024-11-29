@@ -12,13 +12,26 @@ namespace GearPoint
 {
     public partial class ITuniformFORM : Form
     {
-        public ITuniformFORM()
+        string category;
+        char gender;
+        double price;
+        Cart cart;
+
+        AddOrder addOrder;
+        public ITuniformFORM(string category, char gender)
         {
+            this.category = category;
+            this.gender = gender;
             InitializeComponent();
         }
 
         private void ITuniformFORM_Load(object sender, EventArgs e)
         {
+        }
+
+        private void ITMenTopImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

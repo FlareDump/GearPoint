@@ -313,6 +313,7 @@
             this.ITMenTopImage.Size = new System.Drawing.Size(198, 174);
             this.ITMenTopImage.TabIndex = 40;
             this.ITMenTopImage.TabStop = false;
+            this.ITMenTopImage.Click += new System.EventHandler(this.ITMenTopImage_Click);
             // 
             // SHSMentopCard
             // 

@@ -72,7 +72,6 @@ namespace GearPoint
 
         private void AddToCartBtn_Click(object sender, EventArgs e)
         {
-
             string Item = item_name;
             string Gender = gender.ToString();
             string Size = size;
@@ -83,13 +82,7 @@ namespace GearPoint
             MessageBox.Show("Item Added to cart");
             cart.Show();
             this.Close();
-
-            
-        }
-
-        private void roundButton2_Click(object sender, EventArgs e)
-        {
-
+   
         }
 
         private void BackButton_Click(object sender, EventArgs e)

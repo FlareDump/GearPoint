@@ -12,17 +12,26 @@ namespace GearPoint
 {
     public partial class FemaleTMForm : Form
     {
-        public FemaleTMForm()
+        string category;
+        char gender;
+        double price;
+        Cart cart;
+        public FemaleTMForm(string category, char gender)
         {
+            this.category = category;
+            this.gender = gender;
             InitializeComponent();
         }
 
         private void FemaleTMForm_Load(object sender, EventArgs e)
         {
-                this.Size = new Size(1024, 768); // Extend to 1024x768
-                this.MinimumSize = new Size(800, 600); // Set a minimum size
-                this.MaximumSize = new Size(1920, 1080); // Set a maximum size
+ 
            
+        }
+
+        private void TMBlouseImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

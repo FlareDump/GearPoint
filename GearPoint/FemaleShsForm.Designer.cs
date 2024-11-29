@@ -39,7 +39,7 @@
             this.TotalLbl = new System.Windows.Forms.Label();
             this.TotalOutputLbl = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.roundButton1 = new RoundButton();
+            this.PaymentButton = new RoundButton();
             this.CartItemLbl = new GearPoint.RoundedBackLabel();
             this.CartIcon = new System.Windows.Forms.PictureBox();
             this.TMBackCard = new GradientRoundPanel();
@@ -151,7 +151,7 @@
             this.RoundedFooter.Controls.Add(this.TotalLbl);
             this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
             this.RoundedFooter.Controls.Add(this.label8);
-            this.RoundedFooter.Controls.Add(this.roundButton1);
+            this.RoundedFooter.Controls.Add(this.PaymentButton);
             this.RoundedFooter.Controls.Add(this.CartItemLbl);
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -207,19 +207,19 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Total:";
             // 
-            // roundButton1
+            // PaymentButton
             // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.roundButton1.BorderRadius = 30;
-            this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.roundButton1.Location = new System.Drawing.Point(69, 11);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(200, 64);
-            this.roundButton1.TabIndex = 2;
-            this.roundButton1.Text = "Proceed to Payment";
-            this.roundButton1.UseVisualStyleBackColor = false;
+            this.PaymentButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.PaymentButton.BorderRadius = 30;
+            this.PaymentButton.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
+            this.PaymentButton.Location = new System.Drawing.Point(69, 11);
+            this.PaymentButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PaymentButton.Name = "PaymentButton";
+            this.PaymentButton.Size = new System.Drawing.Size(200, 64);
+            this.PaymentButton.TabIndex = 2;
+            this.PaymentButton.Text = "Proceed to Payment";
+            this.PaymentButton.UseVisualStyleBackColor = false;
             // 
             // CartItemLbl
             // 
@@ -588,7 +588,7 @@
         private RoundedPanel RoundedFooter;
         private System.Windows.Forms.Label CartItemNumLbl;
         private System.Windows.Forms.Label label8;
-        private RoundButton roundButton1;
+        private RoundButton PaymentButton;
         private RoundedBackLabel CartItemLbl;
         private System.Windows.Forms.PictureBox CartIcon;
         private RoundedPictureBox roundedPictureBox10;

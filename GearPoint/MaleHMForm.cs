@@ -12,9 +12,21 @@ namespace GearPoint
 {
     public partial class MaleHMForm : Form
     {
-        public MaleHMForm()
+        string category;
+        char gender;
+        double price;
+        Cart cart;
+
+        public MaleHMForm(string category, char gender)
         {
+            this.category = category;
+            this.gender = gender;
             InitializeComponent();
+        }
+
+        private void HMMenLongSleevePoloImage_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

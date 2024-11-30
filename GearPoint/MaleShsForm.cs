@@ -18,6 +18,7 @@ namespace GearPoint
         Cart cart;
 
         GenderCheckpoint genderCheckpoint;
+        ProwareForm prowareForm;
 
         public MaleShsForm(char gender)
         {
@@ -128,6 +129,59 @@ namespace GearPoint
             this.Close();
         }
 
+        private void CartIcon_Click(object sender, EventArgs e)
+        {
+            cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
+            cart.Show();
+            this.Close();
+        }
+
+        private void ProwareLabelCard_Click(object sender, EventArgs e)
+        {
+            prowareForm = new ProwareForm(category);
+            prowareForm.Show();
+            this.Close();
+        }
+
+        private void ProwareImageCard_Click(object sender, EventArgs e)
+        { 
+            prowareForm = new ProwareForm(category);
+            prowareForm.Show();
+            this.Close();
+        }
+
+        private void ICTHeaderLabel_Click(object sender, EventArgs e)
+        {
+            category = "IT";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
+        private void ICTHeaderImage_Click(object sender, EventArgs e)
+        {
+            category = "IT";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
+        private void TMHeaderLabel_Click(object sender, EventArgs e)
+        {
+            category = "TM";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
+        private void TMHeaderImage_Click(object sender, EventArgs e)
+        {
+            category = "TM";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
         private void HMLabelCard_Click(object sender, EventArgs e)
         {
             category = "HM";
@@ -136,12 +190,12 @@ namespace GearPoint
             this.Close();
         }
 
-        private void CartIcon_Click(object sender, EventArgs e)
+        private void HMHeaderImage_Click(object sender, EventArgs e)
         {
-            cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
-            cart.Show();
+            category = "HM";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
             this.Close();
         }
-
     }
 }

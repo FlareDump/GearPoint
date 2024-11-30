@@ -17,7 +17,9 @@ namespace GearPoint
         double price;
         Cart cart;
 
+        GenderCheckpoint genderCheckpoint;
         AddOrder addOrder;
+
         public MaleITForm(char gender)
         {
             this.gender = gender;
@@ -32,5 +34,26 @@ namespace GearPoint
         {
 
         }
+
+        //HEADERSS
+
+        private void ShsLabel_Click(object sender, EventArgs e)
+        {
+            category = "SHS";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
+        private void SHSImageCard_Click(object sender, EventArgs e)
+        {
+            category = "SHS";
+            genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
+        
+
     }
 }

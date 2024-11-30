@@ -30,13 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaleITForm));
             this.HMBackCard = new GradientRoundPanel();
+            this.roundedPictureBox3 = new GearPoint.RoundedPictureBox();
             this.HMLabelCard = new System.Windows.Forms.Label();
             this.TMBackCard = new GradientRoundPanel();
+            this.roundedPictureBox4 = new GearPoint.RoundedPictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.ProwareCardBack = new GradientRoundPanel();
+            this.ProwareImageCard = new GearPoint.RoundedPictureBox();
             this.ProwareLabelCard = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.gradientRoundPanel1 = new GradientRoundPanel();
+            this.SHSImageCard = new GearPoint.RoundedPictureBox();
             this.ShsLabel = new System.Windows.Forms.Label();
             this.RoundedFooter = new GearPoint.RoundedPanel();
             this.CartItemNumLbl = new System.Windows.Forms.Label();
@@ -46,7 +50,6 @@
             this.roundButton1 = new RoundButton();
             this.CartItemLbl = new GearPoint.RoundedBackLabel();
             this.CartIcon = new System.Windows.Forms.PictureBox();
-            this.roundedPictureBox2 = new GearPoint.RoundedPictureBox();
             this.ITmenUniformSetImage = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox10 = new GearPoint.RoundedPictureBox();
             this.ITMenPantsImage = new GearPoint.RoundedPictureBox();
@@ -55,20 +58,20 @@
             this.SHSMentopCard = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox13 = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox1 = new GearPoint.RoundedPictureBox();
-            this.roundedPictureBox3 = new GearPoint.RoundedPictureBox();
-            this.roundedPictureBox4 = new GearPoint.RoundedPictureBox();
-            this.ProwareImageCard = new GearPoint.RoundedPictureBox();
             this.ITMenUniformSetLabel = new System.Windows.Forms.Label();
             this.ITMenTopLbl = new System.Windows.Forms.Label();
             this.ITMenPantsLabel = new System.Windows.Forms.Label();
             this.HMBackCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).BeginInit();
             this.TMBackCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox4)).BeginInit();
             this.ProwareCardBack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.gradientRoundPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SHSImageCard)).BeginInit();
             this.RoundedFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ITmenUniformSetImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ITMenPantsImage)).BeginInit();
@@ -77,9 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SHSMentopCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).BeginInit();
             this.SuspendLayout();
             // 
             // HMBackCard
@@ -95,6 +95,19 @@
             this.HMBackCard.Name = "HMBackCard";
             this.HMBackCard.Size = new System.Drawing.Size(267, 126);
             this.HMBackCard.TabIndex = 10;
+            // 
+            // roundedPictureBox3
+            // 
+            this.roundedPictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.roundedPictureBox3.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_HRM;
+            this.roundedPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.roundedPictureBox3.CornerRadius = 30;
+            this.roundedPictureBox3.Location = new System.Drawing.Point(137, 2);
+            this.roundedPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPictureBox3.Name = "roundedPictureBox3";
+            this.roundedPictureBox3.Size = new System.Drawing.Size(151, 124);
+            this.roundedPictureBox3.TabIndex = 37;
+            this.roundedPictureBox3.TabStop = false;
             // 
             // HMLabelCard
             // 
@@ -122,6 +135,19 @@
             this.TMBackCard.Size = new System.Drawing.Size(267, 126);
             this.TMBackCard.TabIndex = 9;
             // 
+            // roundedPictureBox4
+            // 
+            this.roundedPictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.roundedPictureBox4.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_TOURISM1;
+            this.roundedPictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.roundedPictureBox4.CornerRadius = 30;
+            this.roundedPictureBox4.Location = new System.Drawing.Point(135, 1);
+            this.roundedPictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPictureBox4.Name = "roundedPictureBox4";
+            this.roundedPictureBox4.Size = new System.Drawing.Size(159, 124);
+            this.roundedPictureBox4.TabIndex = 37;
+            this.roundedPictureBox4.TabStop = false;
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Transparent;
@@ -148,6 +174,19 @@
             this.ProwareCardBack.Size = new System.Drawing.Size(267, 126);
             this.ProwareCardBack.TabIndex = 7;
             // 
+            // ProwareImageCard
+            // 
+            this.ProwareImageCard.BackColor = System.Drawing.Color.Transparent;
+            this.ProwareImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProwareImageCard.BackgroundImage")));
+            this.ProwareImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ProwareImageCard.CornerRadius = 30;
+            this.ProwareImageCard.Location = new System.Drawing.Point(144, 0);
+            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProwareImageCard.Name = "ProwareImageCard";
+            this.ProwareImageCard.Size = new System.Drawing.Size(151, 124);
+            this.ProwareImageCard.TabIndex = 37;
+            this.ProwareImageCard.TabStop = false;
+            // 
             // ProwareLabelCard
             // 
             this.ProwareLabelCard.BackColor = System.Drawing.Color.Transparent;
@@ -173,7 +212,7 @@
             // gradientRoundPanel1
             // 
             this.gradientRoundPanel1.BorderRadius = 30;
-            this.gradientRoundPanel1.Controls.Add(this.roundedPictureBox2);
+            this.gradientRoundPanel1.Controls.Add(this.SHSImageCard);
             this.gradientRoundPanel1.Controls.Add(this.ShsLabel);
             this.gradientRoundPanel1.GradientEndColor = System.Drawing.Color.Gold;
             this.gradientRoundPanel1.GradientRatio = 0.4F;
@@ -183,6 +222,20 @@
             this.gradientRoundPanel1.Name = "gradientRoundPanel1";
             this.gradientRoundPanel1.Size = new System.Drawing.Size(267, 126);
             this.gradientRoundPanel1.TabIndex = 53;
+            // 
+            // SHSImageCard
+            // 
+            this.SHSImageCard.BackColor = System.Drawing.Color.Transparent;
+            this.SHSImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SHSImageCard.BackgroundImage")));
+            this.SHSImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SHSImageCard.CornerRadius = 30;
+            this.SHSImageCard.Location = new System.Drawing.Point(148, 1);
+            this.SHSImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SHSImageCard.Name = "SHSImageCard";
+            this.SHSImageCard.Size = new System.Drawing.Size(151, 124);
+            this.SHSImageCard.TabIndex = 37;
+            this.SHSImageCard.TabStop = false;
+            this.SHSImageCard.Click += new System.EventHandler(this.SHSImageCard_Click);
             // 
             // ShsLabel
             // 
@@ -196,6 +249,7 @@
             this.ShsLabel.TabIndex = 12;
             this.ShsLabel.Text = "Senior High School";
             this.ShsLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.ShsLabel.Click += new System.EventHandler(this.ShsLabel_Click);
             // 
             // RoundedFooter
             // 
@@ -295,19 +349,6 @@
             this.CartIcon.TabIndex = 0;
             this.CartIcon.TabStop = false;
             // 
-            // roundedPictureBox2
-            // 
-            this.roundedPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.roundedPictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox2.BackgroundImage")));
-            this.roundedPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.roundedPictureBox2.CornerRadius = 30;
-            this.roundedPictureBox2.Location = new System.Drawing.Point(148, 1);
-            this.roundedPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedPictureBox2.Name = "roundedPictureBox2";
-            this.roundedPictureBox2.Size = new System.Drawing.Size(151, 124);
-            this.roundedPictureBox2.TabIndex = 37;
-            this.roundedPictureBox2.TabStop = false;
-            // 
             // ITmenUniformSetImage
             // 
             this.ITmenUniformSetImage.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
@@ -401,45 +442,6 @@
             this.roundedPictureBox1.TabIndex = 39;
             this.roundedPictureBox1.TabStop = false;
             // 
-            // roundedPictureBox3
-            // 
-            this.roundedPictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.roundedPictureBox3.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_HRM;
-            this.roundedPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.roundedPictureBox3.CornerRadius = 30;
-            this.roundedPictureBox3.Location = new System.Drawing.Point(137, 2);
-            this.roundedPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedPictureBox3.Name = "roundedPictureBox3";
-            this.roundedPictureBox3.Size = new System.Drawing.Size(151, 124);
-            this.roundedPictureBox3.TabIndex = 37;
-            this.roundedPictureBox3.TabStop = false;
-            // 
-            // roundedPictureBox4
-            // 
-            this.roundedPictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.roundedPictureBox4.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_TOURISM1;
-            this.roundedPictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.roundedPictureBox4.CornerRadius = 30;
-            this.roundedPictureBox4.Location = new System.Drawing.Point(135, 1);
-            this.roundedPictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedPictureBox4.Name = "roundedPictureBox4";
-            this.roundedPictureBox4.Size = new System.Drawing.Size(159, 124);
-            this.roundedPictureBox4.TabIndex = 37;
-            this.roundedPictureBox4.TabStop = false;
-            // 
-            // ProwareImageCard
-            // 
-            this.ProwareImageCard.BackColor = System.Drawing.Color.Transparent;
-            this.ProwareImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProwareImageCard.BackgroundImage")));
-            this.ProwareImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ProwareImageCard.CornerRadius = 30;
-            this.ProwareImageCard.Location = new System.Drawing.Point(144, 0);
-            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ProwareImageCard.Name = "ProwareImageCard";
-            this.ProwareImageCard.Size = new System.Drawing.Size(151, 124);
-            this.ProwareImageCard.TabIndex = 37;
-            this.ProwareImageCard.TabStop = false;
-            // 
             // ITMenUniformSetLabel
             // 
             this.ITMenUniformSetLabel.AutoSize = true;
@@ -502,14 +504,17 @@
             this.Text = "ITuniformFORM";
             this.Load += new System.EventHandler(this.ITuniformFORM_Load);
             this.HMBackCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).EndInit();
             this.TMBackCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox4)).EndInit();
             this.ProwareCardBack.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.gradientRoundPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SHSImageCard)).EndInit();
             this.RoundedFooter.ResumeLayout(false);
             this.RoundedFooter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ITmenUniformSetImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ITMenPantsImage)).EndInit();
@@ -518,9 +523,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.SHSMentopCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -547,7 +549,7 @@
         private RoundedPictureBox SHSMentopCard;
         private RoundedPictureBox roundedPictureBox13;
         private GradientRoundPanel gradientRoundPanel1;
-        private RoundedPictureBox roundedPictureBox2;
+        private RoundedPictureBox SHSImageCard;
         private System.Windows.Forms.Label ShsLabel;
         private RoundedPanel RoundedFooter;
         private System.Windows.Forms.Label CartItemNumLbl;

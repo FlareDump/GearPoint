@@ -33,5 +33,30 @@ namespace GearPoint
         {
 
         }
+
+        private void FemaleTMForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedPictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedPictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TMUniformSetImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace GearPoint
 {
-    public partial class FemaleTMForm : Form
+    public partial class MaleTMForm : Form
     {
-        string category;
-        char gender;
-        double price;
-        Cart cart;
-        public FemaleTMForm(string category, char gender)
+        public MaleTMForm()
         {
-            this.category = category;
-            this.gender = gender;
             InitializeComponent();
         }
-
-        
     }
 }

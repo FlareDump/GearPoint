@@ -19,7 +19,8 @@ namespace GearPoint
         FemaleTMForm femaleTMForm;
         FemaleHMForm femaleHMForm;
         MaleHMForm maleHMForm;
-        ITuniformFORM Ituniformform;
+        MaleITForm maleITForm;
+        FemaleITForm femaleITForm;
 
         public string category;
         public char gender;
@@ -52,14 +53,20 @@ namespace GearPoint
                 this.Close();
 
             }
-            if (gender == 'F' && category == "TM")
+            else if(gender == 'F' && category == "IT")
+            {
+                femaleITForm = new FemaleITForm(category, gender);
+                femaleITForm.Show();
+                this.Close();
+            }
+            else if (gender == 'F' && category == "TM")
             {
                 femaleTMForm = new FemaleTMForm(category, gender);
                 femaleTMForm.Show();
                 this.Close();
             }
 
-            if (gender == 'F' && category == "HM")
+            else if (gender == 'F' && category == "HM")
             {
                 femaleHMForm = new FemaleHMForm(category, gender);
                 femaleHMForm.Show();
@@ -81,14 +88,19 @@ namespace GearPoint
                 maleShsForm.Show();
                 this.Close();
             }
-
-            if (gender == 'M' && category == "TM")
+            else if (gender == 'M' && category == "IT")
+            {
+                maleITForm = new MaleITForm(category, gender);
+                maleITForm.Show();
+                this.Close();
+            }
+            else if (gender == 'M' && category == "TM")
             {
                 femaleTMForm = new FemaleTMForm(category, gender);
                 femaleTMForm.Show();
                 this.Close();
             }
-            if (gender == 'M' && category == "HM")
+            else if (gender == 'M' && category == "HM")
             {
                 maleHMForm = new MaleHMForm(category, gender);
                 maleHMForm.Show();
@@ -96,12 +108,6 @@ namespace GearPoint
 
             }
 
-            if (gender == 'M' && category == "IT")
-            {
-                Ituniformform = new ITuniformFORM(category, gender);
-                Ituniformform.Show();
-                this.Close();
-            }
         }
     }
 }

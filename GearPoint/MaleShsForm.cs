@@ -57,6 +57,78 @@ namespace GearPoint
             this.Close();
         }
 
+        private void SHSMenPantsImage_Click(object sender, EventArgs e)
+        { 
+            price = 300;
+            addOrder = new AddOrder(SHSMenPantsLabel.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSMenPantsLabel_Click(object sender, EventArgs e)
+        {
+            price = 300;
+            addOrder = new AddOrder(SHSMenPantsLabel.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSMenPantsBackCard_Click(object sender, EventArgs e)
+        {
+            price = 300;
+            addOrder = new AddOrder(SHSMenPantsLabel.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSMenNeckTieImage_Click(object sender, EventArgs e)
+        {
+            price = 85;
+            addOrder = new AddOrder(SHSNeckTieLbl.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSNeckTieLbl_Click(object sender, EventArgs e)
+        {
+            price = 85;
+            addOrder = new AddOrder(SHSNeckTieLbl.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSNeckTieBackCard_Click(object sender, EventArgs e)
+        {
+            price = 85;
+            addOrder = new AddOrder(SHSNeckTieLbl.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSMenUniformSetImage_Click(object sender, EventArgs e)
+        {
+            price = 635;
+            addOrder = new AddOrder(SHSMenUniformSetLbl.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSMenUniformSetLbl_Click(object sender, EventArgs e)
+        {
+            price = 635;
+            addOrder = new AddOrder(SHSMenUniformSetLbl.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void SHSMenUniformSetBackCard_Click(object sender, EventArgs e)
+        {
+            price = 635;
+            addOrder = new AddOrder(SHSMenUniformSetLbl.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
         private void HMLabelCard_Click(object sender, EventArgs e)
         {
             category = "HM";
@@ -72,28 +144,5 @@ namespace GearPoint
             this.Close();
         }
 
-        private void SHSMenPantsImage_Click(object sender, EventArgs e)
-        { 
-            price = 250;
-            addOrder = new AddOrder(SHSMenPantsImage.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenNeckTieImage_Click(object sender, EventArgs e)
-        {
-            price = 250;
-            addOrder = new AddOrder(SHSMenNeckTieImage.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenUniformSetImage_Click(object sender, EventArgs e)
-        {
-            price = 1000;
-            addOrder = new AddOrder(SHSMenUniformSetImage.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
     }
 }

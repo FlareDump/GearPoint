@@ -134,35 +134,20 @@ namespace GearPoint
         // Proware Card Button
         private void ProwareLabelCard_Click(object sender, EventArgs e)
         {
-            genderCheckpoint.Show();
+            //Dapat naa na ang Proware Form giatay
             this.Close();
         }
 
         private void ProwareImageCard_Click(object sender, EventArgs e)
         {
-            genderCheckpoint.Show();
+            //Dapat naa na ang Proware Form giatay
             this.Close();
         }
 
         private void ProwareBackCard_Click(object sender, EventArgs e)
         {
-            genderCheckpoint.Show();
+            //Dapat naa na ang Proware Form giatay
             this.Close();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void roundedPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void roundedPictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
         // End of Prwoware Card Button
 

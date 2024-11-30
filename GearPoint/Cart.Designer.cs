@@ -54,10 +54,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-4, -2);
+            this.dataGridView1.Location = new System.Drawing.Point(-5, -2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(439, 65);
+            this.dataGridView1.Size = new System.Drawing.Size(585, 80);
             this.dataGridView1.TabIndex = 4;
             // 
             // roundedPanel1
@@ -70,15 +71,15 @@
             this.roundedPanel1.Controls.Add(this.TotalLabel);
             this.roundedPanel1.Controls.Add(this.BackButton);
             this.roundedPanel1.Controls.Add(this.ProceedPaymentButton);
-            this.roundedPanel1.Location = new System.Drawing.Point(27, 80);
-            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPanel1.Location = new System.Drawing.Point(36, 98);
+            this.roundedPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPanel1.Name = "roundedPanel1";
-            this.roundedPanel1.Size = new System.Drawing.Size(373, 611);
+            this.roundedPanel1.Size = new System.Drawing.Size(497, 752);
             this.roundedPanel1.TabIndex = 6;
             // 
             // CartListGrid1
             // 
-            this.CartListGrid1.BackgroundColor = System.Drawing.Color.White;
+            this.CartListGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.CartListGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CartListGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Item,
@@ -86,12 +87,12 @@
             this.Size,
             this.Quantity,
             this.Total});
-            this.CartListGrid1.Location = new System.Drawing.Point(14, 20);
-            this.CartListGrid1.Margin = new System.Windows.Forms.Padding(2);
+            this.CartListGrid1.Location = new System.Drawing.Point(19, 25);
+            this.CartListGrid1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CartListGrid1.Name = "CartListGrid1";
             this.CartListGrid1.RowHeadersWidth = 51;
             this.CartListGrid1.RowTemplate.Height = 24;
-            this.CartListGrid1.Size = new System.Drawing.Size(341, 104);
+            this.CartListGrid1.Size = new System.Drawing.Size(455, 631);
             this.CartListGrid1.TabIndex = 8;
             // 
             // Item
@@ -134,12 +135,12 @@
             this.CartListGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.CartListGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CartListGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.CartListGrid.Location = new System.Drawing.Point(14, 20);
-            this.CartListGrid.Margin = new System.Windows.Forms.Padding(2);
+            this.CartListGrid.Location = new System.Drawing.Point(19, 25);
+            this.CartListGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CartListGrid.Name = "CartListGrid";
             this.CartListGrid.RowHeadersWidth = 51;
             this.CartListGrid.RowTemplate.Height = 24;
-            this.CartListGrid.Size = new System.Drawing.Size(341, 513);
+            this.CartListGrid.Size = new System.Drawing.Size(455, 631);
             this.CartListGrid.TabIndex = 7;
             // 
             // TotalResultlabel
@@ -147,10 +148,9 @@
             this.TotalResultlabel.AutoSize = true;
             this.TotalResultlabel.Cursor = System.Windows.Forms.Cursors.Cross;
             this.TotalResultlabel.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalResultlabel.Location = new System.Drawing.Point(283, 570);
-            this.TotalResultlabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalResultlabel.Location = new System.Drawing.Point(377, 702);
             this.TotalResultlabel.Name = "TotalResultlabel";
-            this.TotalResultlabel.Size = new System.Drawing.Size(59, 22);
+            this.TotalResultlabel.Size = new System.Drawing.Size(70, 27);
             this.TotalResultlabel.TabIndex = 6;
             this.TotalResultlabel.Text = "$0.00";
             // 
@@ -159,10 +159,9 @@
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.Cursor = System.Windows.Forms.Cursors.Cross;
             this.TotalLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(244, 556);
-            this.TotalLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalLabel.Location = new System.Drawing.Point(325, 684);
             this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(44, 16);
+            this.TotalLabel.Size = new System.Drawing.Size(53, 19);
             this.TotalLabel.TabIndex = 5;
             this.TotalLabel.Text = "Total:";
             // 
@@ -172,10 +171,10 @@
             this.BackButton.BorderRadius = 30;
             this.BackButton.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.BackButton.Location = new System.Drawing.Point(14, 548);
-            this.BackButton.Margin = new System.Windows.Forms.Padding(2);
+            this.BackButton.Location = new System.Drawing.Point(19, 674);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(61, 49);
+            this.BackButton.Size = new System.Drawing.Size(81, 60);
             this.BackButton.TabIndex = 4;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
@@ -186,10 +185,10 @@
             this.ProceedPaymentButton.BorderRadius = 30;
             this.ProceedPaymentButton.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProceedPaymentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.ProceedPaymentButton.Location = new System.Drawing.Point(80, 549);
-            this.ProceedPaymentButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ProceedPaymentButton.Location = new System.Drawing.Point(107, 676);
+            this.ProceedPaymentButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProceedPaymentButton.Name = "ProceedPaymentButton";
-            this.ProceedPaymentButton.Size = new System.Drawing.Size(159, 49);
+            this.ProceedPaymentButton.Size = new System.Drawing.Size(212, 60);
             this.ProceedPaymentButton.TabIndex = 3;
             this.ProceedPaymentButton.Text = "Proceed to Payment";
             this.ProceedPaymentButton.UseVisualStyleBackColor = false;
@@ -199,24 +198,24 @@
             this.roundedPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.BackgroundImage")));
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(20, 11);
-            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox1.Location = new System.Drawing.Point(27, 14);
+            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(83, 43);
+            this.roundedPictureBox1.Size = new System.Drawing.Size(111, 53);
             this.roundedPictureBox1.TabIndex = 5;
             this.roundedPictureBox1.TabStop = false;
             // 
             // Cart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(428, 730);
+            this.ClientSize = new System.Drawing.Size(571, 898);
             this.Controls.Add(this.roundedPanel1);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cart";
             this.Text = "Cart";
             this.Load += new System.EventHandler(this.Cart_Load);

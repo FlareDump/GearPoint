@@ -122,7 +122,6 @@
             this.label4.Size = new System.Drawing.Size(104, 23);
             this.label4.TabIndex = 94;
             this.label4.Text = "TM Blouse";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -265,7 +264,6 @@
             this.TMUniformSetImage.Size = new System.Drawing.Size(259, 220);
             this.TMUniformSetImage.TabIndex = 105;
             this.TMUniformSetImage.TabStop = false;
-            this.TMUniformSetImage.Click += new System.EventHandler(this.TMUniformSetImage_Click);
             // 
             // roundedPictureBox8
             // 
@@ -277,7 +275,6 @@
             this.roundedPictureBox8.Size = new System.Drawing.Size(259, 258);
             this.roundedPictureBox8.TabIndex = 106;
             this.roundedPictureBox8.TabStop = false;
-            this.roundedPictureBox8.Click += new System.EventHandler(this.roundedPictureBox8_Click);
             // 
             // HMBackCard
             // 
@@ -339,7 +336,6 @@
             this.roundedPictureBox10.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox10.TabIndex = 101;
             this.roundedPictureBox10.TabStop = false;
-            this.roundedPictureBox10.Click += new System.EventHandler(this.roundedPictureBox10_Click);
             // 
             // TMBlazerImage
             // 
@@ -395,7 +391,6 @@
             this.TMBlouseImage.Size = new System.Drawing.Size(264, 215);
             this.TMBlouseImage.TabIndex = 92;
             this.TMBlouseImage.TabStop = false;
-            this.TMBlouseImage.Click += new System.EventHandler(this.TMBlouseImage_Click);
             // 
             // roundedPictureBox6
             // 
@@ -574,7 +569,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FemaleTMForm";
             this.Text = "FemaleTMForm";
-            this.Load += new System.EventHandler(this.FemaleTMForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.RoundedFooter.ResumeLayout(false);
             this.RoundedFooter.PerformLayout();

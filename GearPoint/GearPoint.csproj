@@ -76,11 +76,23 @@
     <Compile Include="FemaleTMForm.Designer.cs">
       <DependentUpon>FemaleTMForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ITuniformFORM.cs">
+    <Compile Include="FemaleITForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ITuniformFORM.Designer.cs">
-      <DependentUpon>ITuniformFORM.cs</DependentUpon>
+    <Compile Include="FemaleITForm.Designer.cs">
+      <DependentUpon>FemaleITForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaleTMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaleTMForm.Designer.cs">
+      <DependentUpon>MaleTMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaleITForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaleITForm.Designer.cs">
+      <DependentUpon>MaleITForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MaleHMForm.cs">
       <SubType>Form</SubType>
@@ -144,17 +156,23 @@
     <EmbeddedResource Include="FemaleHMForm.resx">
       <DependentUpon>FemaleHMForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FemaleITForm.resx">
+      <DependentUpon>FemaleITForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FemaleShsForm.resx">
       <DependentUpon>FemaleShsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FemaleTMForm.resx">
       <DependentUpon>FemaleTMForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ITuniformFORM.resx">
-      <DependentUpon>ITuniformFORM.cs</DependentUpon>
+    <EmbeddedResource Include="MaleITForm.resx">
+      <DependentUpon>MaleITForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MaleHMForm.resx">
       <DependentUpon>MaleHMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaleTMForm.resx">
+      <DependentUpon>MaleTMForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartingPoint.resx">
       <DependentUpon>StartingPoint.cs</DependentUpon>

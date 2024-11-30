@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GearPoint
 {
-    public partial class ITuniformFORM : Form
+    public partial class MaleITForm : Form
     {
         string category;
         char gender;
@@ -18,7 +18,7 @@ namespace GearPoint
         Cart cart;
 
         AddOrder addOrder;
-        public ITuniformFORM(string category, char gender)
+        public MaleITForm(string category, char gender)
         {
             this.category = category;
             this.gender = gender;

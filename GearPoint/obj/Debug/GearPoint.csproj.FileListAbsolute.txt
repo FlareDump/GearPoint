@@ -133,3 +133,24 @@ C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.csproj.Generat
 C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.csproj.CoreCompileInputs.cache
 C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.exe
 C:\Users\Lomotos\Desktop\New folder\GearPoint\obj\Debug\GearPoint.pdb
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\bin\Debug\GearPoint.exe.config
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\bin\Debug\GearPoint.exe
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\bin\Debug\GearPoint.pdb
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.csproj.AssemblyReference.cache
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.AddOrder.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.Cart.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleHMForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleShsForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleTMForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleHMForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.StartingPoint.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.Main_Menu.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.GenderCheckpoint.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleShsForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.Properties.Resources.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.csproj.GenerateResource.cache
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.csproj.CoreCompileInputs.cache
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.exe
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.pdb
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleITForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleITForm.resources

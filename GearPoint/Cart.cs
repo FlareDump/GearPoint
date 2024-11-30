@@ -14,12 +14,6 @@ namespace GearPoint
     {
 
         string item, gender, size, quantity, price;
-
-        private void roundButton2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
       
 
         public Cart(string item, string gender, string size, string quantity, string price)
@@ -34,7 +28,7 @@ namespace GearPoint
 
         private void Cart_Load(object sender, EventArgs e)
         {
-
+            AddToCart(item, gender, size, quantity, price);
         }
 
         public void AddToCart(string item, string gender, string size, string quantity, string price)

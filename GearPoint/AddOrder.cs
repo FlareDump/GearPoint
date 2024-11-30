@@ -23,7 +23,7 @@ namespace GearPoint
         Main_Menu menu = new Main_Menu();
         MaleShsForm maleShsForm;
         MaleHMForm maleHMForm;
-        ITuniformFORM ituniform;
+        MaleITForm ituniform;
         FemaleTMForm femaleTMForm;
         FemaleShsForm femaleShsForm;
 
@@ -49,27 +49,6 @@ namespace GearPoint
 
         }
 
-        
-
-        private void OrderImageBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
-
-        private void OkBtn_Click(object sender, EventArgs e)
-        {
-            quantity = (double)QuantityBox.Value;
-            total = quantity * price;
-
-            PriceOutputLbl.Text = total.ToString("F2");
-
-        }
-
         private void AddToCartBtn_Click(object sender, EventArgs e)
         {
             string Item = item_name;
@@ -82,15 +61,23 @@ namespace GearPoint
             MessageBox.Show("Item Added to cart");
             cart.Show();
             this.Close();
+            menu.Show();
    
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            maleShsForm = new MaleShsForm(category, gender);
-            maleShsForm.Show();
+            menu.Show();
             this.Close();
 
+        }
+
+        private void QuantityBox_ValueChanged(object sender, EventArgs e)
+        {
+            quantity = (double)QuantityBox.Value;
+            total = quantity * price;
+
+            PriceOutputLbl.Text = total.ToString("F2");
         }
     }
 }

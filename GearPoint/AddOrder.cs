@@ -13,7 +13,6 @@ namespace GearPoint
     public partial class AddOrder : Form
     {
         string item_name;
-        string category;
         char gender;
         double quantity;
         string size;
@@ -31,6 +30,13 @@ namespace GearPoint
         {
             this.item_name = item_name;
             this.gender = gender;
+            this.price = price;
+            InitializeComponent();
+        }
+
+        public AddOrder(string item_name, double price)
+        {
+            this.item_name = item_name;
             this.price = price;
             InitializeComponent();
         }

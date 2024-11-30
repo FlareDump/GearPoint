@@ -105,10 +105,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Gainsboro;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(231, 677);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(308, 833);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 18);
+            this.label6.Size = new System.Drawing.Size(200, 23);
             this.label6.TabIndex = 53;
             this.label6.Text = "Hm Men Uniform(Set)";
             // 
@@ -117,10 +116,9 @@
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(286, 11);
-            this.TotalLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalLbl.Location = new System.Drawing.Point(381, 14);
             this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(52, 19);
+            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
             this.TotalLbl.TabIndex = 5;
             this.TotalLbl.Text = "Total:";
             // 
@@ -129,10 +127,9 @@
             this.TotalOutputLbl.AutoSize = true;
             this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(297, 35);
-            this.TotalOutputLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalOutputLbl.Location = new System.Drawing.Point(396, 43);
             this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(82, 32);
+            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
             this.TotalOutputLbl.TabIndex = 4;
             this.TotalOutputLbl.Text = "$0.00";
             // 
@@ -149,18 +146,18 @@
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.RoundedFooter.Location = new System.Drawing.Point(15, 1214);
+            this.RoundedFooter.Location = new System.Drawing.Point(20, 1494);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RoundedFooter.Name = "RoundedFooter";
-            this.RoundedFooter.Size = new System.Drawing.Size(400, 82);
+            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 54;
             // 
             // CartItemNumLbl
             // 
             this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartItemNumLbl.Location = new System.Drawing.Point(37, 14);
-            this.CartItemNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CartItemNumLbl.Location = new System.Drawing.Point(49, 17);
             this.CartItemNumLbl.Name = "CartItemNumLbl";
-            this.CartItemNumLbl.Size = new System.Drawing.Size(33, 16);
+            this.CartItemNumLbl.Size = new System.Drawing.Size(44, 20);
             this.CartItemNumLbl.TabIndex = 0;
             this.CartItemNumLbl.Text = "0";
             // 
@@ -169,10 +166,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(286, -17);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(381, -21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 19);
+            this.label8.Size = new System.Drawing.Size(64, 24);
             this.label8.TabIndex = 3;
             this.label8.Text = "Total:";
             // 
@@ -182,10 +178,10 @@
             this.roundButton1.BorderRadius = 30;
             this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.roundButton1.Location = new System.Drawing.Point(73, 11);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundButton1.Location = new System.Drawing.Point(97, 14);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(200, 64);
+            this.roundButton1.Size = new System.Drawing.Size(267, 79);
             this.roundButton1.TabIndex = 2;
             this.roundButton1.Text = "Proceed to Payment";
             this.roundButton1.UseVisualStyleBackColor = false;
@@ -194,10 +190,9 @@
             // 
             this.CartItemLbl.AutoSize = true;
             this.CartItemLbl.CornerRadius = 50;
-            this.CartItemLbl.Location = new System.Drawing.Point(39, -14);
-            this.CartItemLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CartItemLbl.Location = new System.Drawing.Point(52, -17);
             this.CartItemLbl.Name = "CartItemLbl";
-            this.CartItemLbl.Size = new System.Drawing.Size(15, 16);
+            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
             this.CartItemLbl.TabIndex = 1;
             this.CartItemLbl.Text = "0";
             this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -207,10 +202,10 @@
             // 
             this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
             this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CartIcon.Location = new System.Drawing.Point(15, 23);
-            this.CartIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.CartIcon.Location = new System.Drawing.Point(20, 28);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CartIcon.Name = "CartIcon";
-            this.CartIcon.Size = new System.Drawing.Size(35, 40);
+            this.CartIcon.Size = new System.Drawing.Size(47, 49);
             this.CartIcon.TabIndex = 0;
             this.CartIcon.TabStop = false;
             // 
@@ -219,10 +214,9 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Gainsboro;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 677);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(16, 833);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 18);
+            this.label7.Size = new System.Drawing.Size(96, 23);
             this.label7.TabIndex = 50;
             this.label7.Text = "HM Pants";
             // 
@@ -231,10 +225,9 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Gainsboro;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 462);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(19, 569);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 18);
+            this.label4.Size = new System.Drawing.Size(243, 23);
             this.label4.TabIndex = 44;
             this.label4.Text = "HM Men Long Sleeve Polo";
             // 
@@ -242,10 +235,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-68, -1);
+            this.dataGridView1.Location = new System.Drawing.Point(-91, -1);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(577, 65);
+            this.dataGridView1.Size = new System.Drawing.Size(769, 80);
             this.dataGridView1.TabIndex = 36;
             // 
             // SHSMenPantsLabel
@@ -253,10 +247,9 @@
             this.SHSMenPantsLabel.AutoSize = true;
             this.SHSMenPantsLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenPantsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SHSMenPantsLabel.Location = new System.Drawing.Point(231, 462);
-            this.SHSMenPantsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SHSMenPantsLabel.Location = new System.Drawing.Point(308, 569);
             this.SHSMenPantsLabel.Name = "SHSMenPantsLabel";
-            this.SHSMenPantsLabel.Size = new System.Drawing.Size(114, 18);
+            this.SHSMenPantsLabel.Size = new System.Drawing.Size(145, 23);
             this.SHSMenPantsLabel.TabIndex = 47;
             this.SHSMenPantsLabel.Text = "HM Men Blazer";
             // 
@@ -265,10 +258,9 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Gainsboro;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 904);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(16, 1113);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 18);
+            this.label5.Size = new System.Drawing.Size(160, 23);
             this.label5.TabIndex = 57;
             this.label5.Text = "Gray Chef\'s Polo";
             // 
@@ -277,10 +269,9 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Gainsboro;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(231, 904);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(308, 1113);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 18);
+            this.label9.Size = new System.Drawing.Size(121, 23);
             this.label9.TabIndex = 60;
             this.label9.Text = "Chef\'s Pants";
             // 
@@ -289,10 +280,9 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Gainsboro;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 1130);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(17, 1391);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(184, 18);
+            this.label10.Size = new System.Drawing.Size(233, 23);
             this.label10.TabIndex = 63;
             this.label10.Text = "HM Kitchen Uniform (Set)";
             // 
@@ -300,9 +290,10 @@
             // 
             this.HMKitchenUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMKitchenUniformSetImage.CornerRadius = 20;
-            this.HMKitchenUniformSetImage.Location = new System.Drawing.Point(9, 950);
+            this.HMKitchenUniformSetImage.Location = new System.Drawing.Point(12, 1169);
+            this.HMKitchenUniformSetImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMKitchenUniformSetImage.Name = "HMKitchenUniformSetImage";
-            this.HMKitchenUniformSetImage.Size = new System.Drawing.Size(198, 174);
+            this.HMKitchenUniformSetImage.Size = new System.Drawing.Size(264, 214);
             this.HMKitchenUniformSetImage.TabIndex = 61;
             this.HMKitchenUniformSetImage.TabStop = false;
             // 
@@ -310,10 +301,10 @@
             // 
             this.roundedPictureBox16.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox16.CornerRadius = 40;
-            this.roundedPictureBox16.Location = new System.Drawing.Point(9, 950);
-            this.roundedPictureBox16.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox16.Location = new System.Drawing.Point(12, 1169);
+            this.roundedPictureBox16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox16.Name = "roundedPictureBox16";
-            this.roundedPictureBox16.Size = new System.Drawing.Size(198, 210);
+            this.roundedPictureBox16.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox16.TabIndex = 62;
             this.roundedPictureBox16.TabStop = false;
             // 
@@ -321,9 +312,10 @@
             // 
             this.HMmenChefsPantsImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenChefsPantsImage.CornerRadius = 20;
-            this.HMmenChefsPantsImage.Location = new System.Drawing.Point(227, 722);
+            this.HMmenChefsPantsImage.Location = new System.Drawing.Point(303, 889);
+            this.HMmenChefsPantsImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMmenChefsPantsImage.Name = "HMmenChefsPantsImage";
-            this.HMmenChefsPantsImage.Size = new System.Drawing.Size(198, 174);
+            this.HMmenChefsPantsImage.Size = new System.Drawing.Size(264, 214);
             this.HMmenChefsPantsImage.TabIndex = 58;
             this.HMmenChefsPantsImage.TabStop = false;
             // 
@@ -331,10 +323,10 @@
             // 
             this.roundedPictureBox14.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox14.CornerRadius = 40;
-            this.roundedPictureBox14.Location = new System.Drawing.Point(227, 722);
-            this.roundedPictureBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox14.Location = new System.Drawing.Point(303, 889);
+            this.roundedPictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox14.Name = "roundedPictureBox14";
-            this.roundedPictureBox14.Size = new System.Drawing.Size(198, 210);
+            this.roundedPictureBox14.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox14.TabIndex = 59;
             this.roundedPictureBox14.TabStop = false;
             // 
@@ -342,9 +334,10 @@
             // 
             this.HMmenChefsPoloImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenChefsPoloImage.CornerRadius = 20;
-            this.HMmenChefsPoloImage.Location = new System.Drawing.Point(8, 722);
+            this.HMmenChefsPoloImage.Location = new System.Drawing.Point(11, 889);
+            this.HMmenChefsPoloImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMmenChefsPoloImage.Name = "HMmenChefsPoloImage";
-            this.HMmenChefsPoloImage.Size = new System.Drawing.Size(198, 174);
+            this.HMmenChefsPoloImage.Size = new System.Drawing.Size(264, 214);
             this.HMmenChefsPoloImage.TabIndex = 55;
             this.HMmenChefsPoloImage.TabStop = false;
             // 
@@ -352,10 +345,10 @@
             // 
             this.roundedPictureBox8.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox8.CornerRadius = 40;
-            this.roundedPictureBox8.Location = new System.Drawing.Point(8, 722);
-            this.roundedPictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox8.Location = new System.Drawing.Point(11, 889);
+            this.roundedPictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox8.Name = "roundedPictureBox8";
-            this.roundedPictureBox8.Size = new System.Drawing.Size(198, 210);
+            this.roundedPictureBox8.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox8.TabIndex = 56;
             this.roundedPictureBox8.TabStop = false;
             // 
@@ -363,9 +356,10 @@
             // 
             this.HMmenUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenUniformSetImage.CornerRadius = 20;
-            this.HMmenUniformSetImage.Location = new System.Drawing.Point(227, 496);
+            this.HMmenUniformSetImage.Location = new System.Drawing.Point(303, 610);
+            this.HMmenUniformSetImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMmenUniformSetImage.Name = "HMmenUniformSetImage";
-            this.HMmenUniformSetImage.Size = new System.Drawing.Size(198, 174);
+            this.HMmenUniformSetImage.Size = new System.Drawing.Size(264, 214);
             this.HMmenUniformSetImage.TabIndex = 51;
             this.HMmenUniformSetImage.TabStop = false;
             // 
@@ -373,10 +367,10 @@
             // 
             this.roundedPictureBox10.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox10.CornerRadius = 40;
-            this.roundedPictureBox10.Location = new System.Drawing.Point(227, 496);
-            this.roundedPictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox10.Location = new System.Drawing.Point(303, 610);
+            this.roundedPictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox10.Name = "roundedPictureBox10";
-            this.roundedPictureBox10.Size = new System.Drawing.Size(198, 210);
+            this.roundedPictureBox10.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox10.TabIndex = 52;
             this.roundedPictureBox10.TabStop = false;
             // 
@@ -384,9 +378,10 @@
             // 
             this.HMmenBlazer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenBlazer.CornerRadius = 20;
-            this.HMmenBlazer.Location = new System.Drawing.Point(224, 282);
+            this.HMmenBlazer.Location = new System.Drawing.Point(299, 347);
+            this.HMmenBlazer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMmenBlazer.Name = "HMmenBlazer";
-            this.HMmenBlazer.Size = new System.Drawing.Size(198, 174);
+            this.HMmenBlazer.Size = new System.Drawing.Size(264, 214);
             this.HMmenBlazer.TabIndex = 45;
             this.HMmenBlazer.TabStop = false;
             // 
@@ -394,9 +389,10 @@
             // 
             this.HMmenPants.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenPants.CornerRadius = 20;
-            this.HMmenPants.Location = new System.Drawing.Point(9, 496);
+            this.HMmenPants.Location = new System.Drawing.Point(12, 610);
+            this.HMmenPants.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMmenPants.Name = "HMmenPants";
-            this.HMmenPants.Size = new System.Drawing.Size(198, 174);
+            this.HMmenPants.Size = new System.Drawing.Size(264, 214);
             this.HMmenPants.TabIndex = 48;
             this.HMmenPants.TabStop = false;
             // 
@@ -404,10 +400,10 @@
             // 
             this.roundedPictureBox12.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox12.CornerRadius = 40;
-            this.roundedPictureBox12.Location = new System.Drawing.Point(9, 496);
-            this.roundedPictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox12.Location = new System.Drawing.Point(12, 610);
+            this.roundedPictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox12.Name = "roundedPictureBox12";
-            this.roundedPictureBox12.Size = new System.Drawing.Size(198, 210);
+            this.roundedPictureBox12.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox12.TabIndex = 49;
             this.roundedPictureBox12.TabStop = false;
             // 
@@ -415,10 +411,10 @@
             // 
             this.SHSMenPantsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenPantsBackCard.CornerRadius = 40;
-            this.SHSMenPantsBackCard.Location = new System.Drawing.Point(226, 282);
-            this.SHSMenPantsBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.SHSMenPantsBackCard.Location = new System.Drawing.Point(301, 347);
+            this.SHSMenPantsBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSMenPantsBackCard.Name = "SHSMenPantsBackCard";
-            this.SHSMenPantsBackCard.Size = new System.Drawing.Size(198, 210);
+            this.SHSMenPantsBackCard.Size = new System.Drawing.Size(264, 258);
             this.SHSMenPantsBackCard.TabIndex = 46;
             this.SHSMenPantsBackCard.TabStop = false;
             // 
@@ -426,9 +422,10 @@
             // 
             this.HMMenLongSleevePoloImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMMenLongSleevePoloImage.CornerRadius = 20;
-            this.HMMenLongSleevePoloImage.Location = new System.Drawing.Point(8, 282);
+            this.HMMenLongSleevePoloImage.Location = new System.Drawing.Point(11, 347);
+            this.HMMenLongSleevePoloImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HMMenLongSleevePoloImage.Name = "HMMenLongSleevePoloImage";
-            this.HMMenLongSleevePoloImage.Size = new System.Drawing.Size(198, 174);
+            this.HMMenLongSleevePoloImage.Size = new System.Drawing.Size(264, 214);
             this.HMMenLongSleevePoloImage.TabIndex = 42;
             this.HMMenLongSleevePoloImage.TabStop = false;
             this.HMMenLongSleevePoloImage.Click += new System.EventHandler(this.HMMenLongSleevePoloImage_Click);
@@ -437,10 +434,10 @@
             // 
             this.roundedPictureBox6.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox6.CornerRadius = 40;
-            this.roundedPictureBox6.Location = new System.Drawing.Point(8, 282);
-            this.roundedPictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox6.Location = new System.Drawing.Point(11, 347);
+            this.roundedPictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox6.Name = "roundedPictureBox6";
-            this.roundedPictureBox6.Size = new System.Drawing.Size(198, 210);
+            this.roundedPictureBox6.Size = new System.Drawing.Size(264, 258);
             this.roundedPictureBox6.TabIndex = 43;
             this.roundedPictureBox6.TabStop = false;
             // 
@@ -449,10 +446,10 @@
             this.roundedPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.BackgroundImage")));
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(9, 12);
-            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox1.Location = new System.Drawing.Point(12, 15);
+            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(83, 43);
+            this.roundedPictureBox1.Size = new System.Drawing.Size(111, 53);
             this.roundedPictureBox1.TabIndex = 37;
             this.roundedPictureBox1.TabStop = false;
             // 
@@ -464,10 +461,10 @@
             this.HMBackCard.GradientEndColor = System.Drawing.Color.DarkRed;
             this.HMBackCard.GradientRatio = 0.4F;
             this.HMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.HMBackCard.Location = new System.Drawing.Point(223, 175);
-            this.HMBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.HMBackCard.Location = new System.Drawing.Point(297, 215);
+            this.HMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMBackCard.Name = "HMBackCard";
-            this.HMBackCard.Size = new System.Drawing.Size(200, 101);
+            this.HMBackCard.Size = new System.Drawing.Size(267, 124);
             this.HMBackCard.TabIndex = 108;
             // 
             // roundedPictureBox3
@@ -476,10 +473,10 @@
             this.roundedPictureBox3.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_HRM;
             this.roundedPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox3.CornerRadius = 30;
-            this.roundedPictureBox3.Location = new System.Drawing.Point(103, 2);
-            this.roundedPictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox3.Location = new System.Drawing.Point(137, 2);
+            this.roundedPictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox3.Name = "roundedPictureBox3";
-            this.roundedPictureBox3.Size = new System.Drawing.Size(113, 101);
+            this.roundedPictureBox3.Size = new System.Drawing.Size(151, 124);
             this.roundedPictureBox3.TabIndex = 37;
             this.roundedPictureBox3.TabStop = false;
             // 
@@ -487,11 +484,10 @@
             // 
             this.HMLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.HMLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMLabelCard.Location = new System.Drawing.Point(7, 2);
-            this.HMLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.HMLabelCard.Location = new System.Drawing.Point(9, 2);
             this.HMLabelCard.Name = "HMLabelCard";
-            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 75, 0);
-            this.HMLabelCard.Size = new System.Drawing.Size(191, 99);
+            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.HMLabelCard.Size = new System.Drawing.Size(255, 122);
             this.HMLabelCard.TabIndex = 12;
             this.HMLabelCard.Text = "Hospitality Management";
             this.HMLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -504,10 +500,10 @@
             this.TMBackCard.GradientEndColor = System.Drawing.Color.Gold;
             this.TMBackCard.GradientRatio = 0.4F;
             this.TMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.TMBackCard.Location = new System.Drawing.Point(9, 69);
-            this.TMBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMBackCard.Location = new System.Drawing.Point(12, 85);
+            this.TMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMBackCard.Name = "TMBackCard";
-            this.TMBackCard.Size = new System.Drawing.Size(198, 100);
+            this.TMBackCard.Size = new System.Drawing.Size(264, 123);
             this.TMBackCard.TabIndex = 107;
             // 
             // roundedPictureBox4
@@ -516,10 +512,10 @@
             this.roundedPictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox4.BackgroundImage")));
             this.roundedPictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox4.CornerRadius = 30;
-            this.roundedPictureBox4.Location = new System.Drawing.Point(107, 1);
-            this.roundedPictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox4.Location = new System.Drawing.Point(143, 1);
+            this.roundedPictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox4.Name = "roundedPictureBox4";
-            this.roundedPictureBox4.Size = new System.Drawing.Size(113, 101);
+            this.roundedPictureBox4.Size = new System.Drawing.Size(151, 124);
             this.roundedPictureBox4.TabIndex = 37;
             this.roundedPictureBox4.TabStop = false;
             // 
@@ -528,13 +524,11 @@
             this.ShsLabel.BackColor = System.Drawing.Color.Transparent;
             this.ShsLabel.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShsLabel.Location = new System.Drawing.Point(0, 1);
-            this.ShsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ShsLabel.Name = "ShsLabel";
-            this.ShsLabel.Padding = new System.Windows.Forms.Padding(20, 30, 100, 0);
-            this.ShsLabel.Size = new System.Drawing.Size(196, 101);
+            this.ShsLabel.Padding = new System.Windows.Forms.Padding(27, 37, 133, 0);
+            this.ShsLabel.Size = new System.Drawing.Size(261, 122);
             this.ShsLabel.TabIndex = 12;
-            this.ShsLabel.Text = "Senior  High              School";
-            this.ShsLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.ShsLabel.Text = "Senior High School";
             this.ShsLabel.UseCompatibleTextRendering = true;
             // 
             // ICTBackCard
@@ -545,10 +539,10 @@
             this.ICTBackCard.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ICTBackCard.GradientRatio = 0.4F;
             this.ICTBackCard.GradientStartColor = System.Drawing.Color.Silver;
-            this.ICTBackCard.Location = new System.Drawing.Point(225, 69);
-            this.ICTBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ICTBackCard.Location = new System.Drawing.Point(300, 85);
+            this.ICTBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ICTBackCard.Name = "ICTBackCard";
-            this.ICTBackCard.Size = new System.Drawing.Size(198, 100);
+            this.ICTBackCard.Size = new System.Drawing.Size(264, 123);
             this.ICTBackCard.TabIndex = 106;
             // 
             // roundedPictureBox2
@@ -557,10 +551,10 @@
             this.roundedPictureBox2.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_IT1;
             this.roundedPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox2.CornerRadius = 30;
-            this.roundedPictureBox2.Location = new System.Drawing.Point(110, 0);
-            this.roundedPictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox2.Location = new System.Drawing.Point(147, 0);
+            this.roundedPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox2.Name = "roundedPictureBox2";
-            this.roundedPictureBox2.Size = new System.Drawing.Size(100, 101);
+            this.roundedPictureBox2.Size = new System.Drawing.Size(133, 124);
             this.roundedPictureBox2.TabIndex = 37;
             this.roundedPictureBox2.TabStop = false;
             // 
@@ -569,11 +563,10 @@
             this.ITLabel.BackColor = System.Drawing.Color.Transparent;
             this.ITLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ITLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ITLabel.Location = new System.Drawing.Point(2, 1);
-            this.ITLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ITLabel.Location = new System.Drawing.Point(3, 1);
             this.ITLabel.Name = "ITLabel";
-            this.ITLabel.Padding = new System.Windows.Forms.Padding(5, 30, 0, 0);
-            this.ITLabel.Size = new System.Drawing.Size(196, 99);
+            this.ITLabel.Padding = new System.Windows.Forms.Padding(7, 37, 0, 0);
+            this.ITLabel.Size = new System.Drawing.Size(238, 122);
             this.ITLabel.TabIndex = 12;
             this.ITLabel.Text = "Information and Communications\r\nTechnology";
             // 
@@ -585,10 +578,10 @@
             this.ProwareCardBack.GradientEndColor = System.Drawing.Color.CornflowerBlue;
             this.ProwareCardBack.GradientRatio = 0.5F;
             this.ProwareCardBack.GradientStartColor = System.Drawing.Color.White;
-            this.ProwareCardBack.Location = new System.Drawing.Point(10, 173);
-            this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(2);
+            this.ProwareCardBack.Location = new System.Drawing.Point(13, 213);
+            this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProwareCardBack.Name = "ProwareCardBack";
-            this.ProwareCardBack.Size = new System.Drawing.Size(198, 100);
+            this.ProwareCardBack.Size = new System.Drawing.Size(264, 123);
             this.ProwareCardBack.TabIndex = 105;
             // 
             // ProwareImageCard
@@ -597,10 +590,10 @@
             this.ProwareImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProwareImageCard.BackgroundImage")));
             this.ProwareImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ProwareImageCard.CornerRadius = 30;
-            this.ProwareImageCard.Location = new System.Drawing.Point(110, -1);
-            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ProwareImageCard.Location = new System.Drawing.Point(147, -1);
+            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProwareImageCard.Name = "ProwareImageCard";
-            this.ProwareImageCard.Size = new System.Drawing.Size(113, 101);
+            this.ProwareImageCard.Size = new System.Drawing.Size(151, 124);
             this.ProwareImageCard.TabIndex = 37;
             this.ProwareImageCard.TabStop = false;
             // 
@@ -610,21 +603,20 @@
             this.ProwareLabel.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProwareLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProwareLabel.Location = new System.Drawing.Point(0, 2);
-            this.ProwareLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProwareLabel.Name = "ProwareLabel";
-            this.ProwareLabel.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.ProwareLabel.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.ProwareLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ProwareLabel.Size = new System.Drawing.Size(196, 98);
+            this.ProwareLabel.Size = new System.Drawing.Size(261, 121);
             this.ProwareLabel.TabIndex = 109;
             this.ProwareLabel.Text = "Proware";
             this.ProwareLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MaleHMForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(444, 733);
+            this.ClientSize = new System.Drawing.Size(592, 902);
             this.Controls.Add(this.HMBackCard);
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.ICTBackCard);
@@ -653,7 +645,9 @@
             this.Controls.Add(this.roundedPictureBox6);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MaleHMForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STI Gearpoint";
             this.RoundedFooter.ResumeLayout(false);
             this.RoundedFooter.PerformLayout();

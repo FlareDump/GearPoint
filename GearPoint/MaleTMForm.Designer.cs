@@ -506,16 +506,16 @@
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(327, 585);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 23);
+            this.label6.Size = new System.Drawing.Size(100, 23);
             this.label6.TabIndex = 130;
-            this.label6.Text = "TM Polo";
+            this.label6.Text = "TM Blazer";
             // 
             // MaleTMForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(573, 1055);
+            this.ClientSize = new System.Drawing.Size(573, 905);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -537,6 +537,7 @@
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.ProwareCardBack);
             this.Name = "MaleTMForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox4)).EndInit();

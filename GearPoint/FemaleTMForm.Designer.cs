@@ -30,19 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FemaleTMForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.SHSMenPantsLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.RoundedFooter = new GearPoint.RoundedPanel();
-            this.CartItemNumLbl = new System.Windows.Forms.Label();
-            this.TotalLbl = new System.Windows.Forms.Label();
-            this.TotalOutputLbl = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.roundButton1 = new RoundButton();
-            this.CartItemLbl = new GearPoint.RoundedBackLabel();
-            this.CartIcon = new System.Windows.Forms.PictureBox();
             this.TMUniformSetImage = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox8 = new GearPoint.RoundedPictureBox();
             this.HMBackCard = new GradientRoundPanel();
@@ -66,9 +53,20 @@
             this.ProwareCardBack = new GradientRoundPanel();
             this.ProwareImageCard = new GearPoint.RoundedPictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.CartIcon = new System.Windows.Forms.PictureBox();
+            this.CartItemLbl = new GearPoint.RoundedBackLabel();
+            this.roundButton1 = new RoundButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TotalOutputLbl = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
+            this.CartItemNumLbl = new System.Windows.Forms.Label();
+            this.RoundedFooter = new GearPoint.RoundedPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.SHSMenPantsLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.RoundedFooter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TMUniformSetImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox8)).BeginInit();
             this.HMBackCard.SuspendLayout();
@@ -88,6 +86,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).BeginInit();
             this.ProwareCardBack.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).BeginInit();
+            this.RoundedFooter.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -95,171 +95,18 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-5, -5);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(637, 80);
             this.dataGridView1.TabIndex = 86;
-            // 
-            // SHSMenPantsLabel
-            // 
-            this.SHSMenPantsLabel.AutoSize = true;
-            this.SHSMenPantsLabel.BackColor = System.Drawing.Color.Gainsboro;
-            this.SHSMenPantsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SHSMenPantsLabel.Location = new System.Drawing.Point(323, 579);
-            this.SHSMenPantsLabel.Name = "SHSMenPantsLabel";
-            this.SHSMenPantsLabel.Size = new System.Drawing.Size(100, 23);
-            this.SHSMenPantsLabel.TabIndex = 97;
-            this.SHSMenPantsLabel.Text = "TM Blazer";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 578);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(104, 23);
-            this.label4.TabIndex = 94;
-            this.label4.Text = "TM Blouse";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Gainsboro;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(32, 850);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 23);
-            this.label5.TabIndex = 102;
-            this.label5.Text = "TM Neck Tie";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Gainsboro;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(316, 849);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 23);
-            this.label6.TabIndex = 103;
-            this.label6.Text = "TM Skirt";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Gainsboro;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 1116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 23);
-            this.label2.TabIndex = 107;
-            this.label2.Text = "TM Uniform Set";
-            // 
-            // RoundedFooter
-            // 
-            this.RoundedFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.RoundedFooter.BorderRadius = 20;
-            this.RoundedFooter.Controls.Add(this.CartItemNumLbl);
-            this.RoundedFooter.Controls.Add(this.TotalLbl);
-            this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
-            this.RoundedFooter.Controls.Add(this.label8);
-            this.RoundedFooter.Controls.Add(this.roundButton1);
-            this.RoundedFooter.Controls.Add(this.CartItemLbl);
-            this.RoundedFooter.Controls.Add(this.CartIcon);
-            this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.RoundedFooter.Location = new System.Drawing.Point(34, 1193);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.RoundedFooter.Name = "RoundedFooter";
-            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
-            this.RoundedFooter.TabIndex = 108;
-            // 
-            // CartItemNumLbl
-            // 
-            this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartItemNumLbl.Location = new System.Drawing.Point(44, 17);
-            this.CartItemNumLbl.Name = "CartItemNumLbl";
-            this.CartItemNumLbl.Size = new System.Drawing.Size(44, 20);
-            this.CartItemNumLbl.TabIndex = 0;
-            this.CartItemNumLbl.Text = "0";
-            // 
-            // TotalLbl
-            // 
-            this.TotalLbl.AutoSize = true;
-            this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(376, 14);
-            this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
-            this.TotalLbl.TabIndex = 5;
-            this.TotalLbl.Text = "Total:";
-            // 
-            // TotalOutputLbl
-            // 
-            this.TotalOutputLbl.AutoSize = true;
-            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(391, 43);
-            this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
-            this.TotalOutputLbl.TabIndex = 4;
-            this.TotalOutputLbl.Text = "$0.00";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(377, -21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 24);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Total:";
-            // 
-            // roundButton1
-            // 
-            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.roundButton1.BorderRadius = 30;
-            this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.roundButton1.Location = new System.Drawing.Point(92, 14);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(267, 79);
-            this.roundButton1.TabIndex = 2;
-            this.roundButton1.Text = "Proceed to Payment";
-            this.roundButton1.UseVisualStyleBackColor = false;
-            // 
-            // CartItemLbl
-            // 
-            this.CartItemLbl.AutoSize = true;
-            this.CartItemLbl.CornerRadius = 50;
-            this.CartItemLbl.Location = new System.Drawing.Point(47, -17);
-            this.CartItemLbl.Name = "CartItemLbl";
-            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
-            this.CartItemLbl.TabIndex = 1;
-            this.CartItemLbl.Text = "0";
-            this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CartItemLbl.TextPadding = new System.Windows.Forms.Padding(5);
-            // 
-            // CartIcon
-            // 
-            this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
-            this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CartIcon.Location = new System.Drawing.Point(15, 28);
-            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.CartIcon.Name = "CartIcon";
-            this.CartIcon.Size = new System.Drawing.Size(47, 49);
-            this.CartIcon.TabIndex = 0;
-            this.CartIcon.TabStop = false;
             // 
             // TMUniformSetImage
             // 
             this.TMUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMUniformSetImage.CornerRadius = 20;
             this.TMUniformSetImage.Location = new System.Drawing.Point(25, 892);
-            this.TMUniformSetImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMUniformSetImage.Margin = new System.Windows.Forms.Padding(4);
             this.TMUniformSetImage.Name = "TMUniformSetImage";
             this.TMUniformSetImage.Size = new System.Drawing.Size(259, 220);
             this.TMUniformSetImage.TabIndex = 105;
@@ -320,7 +167,7 @@
             this.TMSkirtImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMSkirtImage.CornerRadius = 20;
             this.TMSkirtImage.Location = new System.Drawing.Point(305, 626);
-            this.TMSkirtImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMSkirtImage.Margin = new System.Windows.Forms.Padding(4);
             this.TMSkirtImage.Name = "TMSkirtImage";
             this.TMSkirtImage.Size = new System.Drawing.Size(264, 219);
             this.TMSkirtImage.TabIndex = 100;
@@ -342,7 +189,7 @@
             this.TMBlazerImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMBlazerImage.CornerRadius = 20;
             this.TMBlazerImage.Location = new System.Drawing.Point(304, 356);
-            this.TMBlazerImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMBlazerImage.Margin = new System.Windows.Forms.Padding(4);
             this.TMBlazerImage.Name = "TMBlazerImage";
             this.TMBlazerImage.Size = new System.Drawing.Size(264, 215);
             this.TMBlazerImage.TabIndex = 95;
@@ -353,7 +200,7 @@
             this.TMNeckTieImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMNeckTieImage.CornerRadius = 20;
             this.TMNeckTieImage.Location = new System.Drawing.Point(20, 624);
-            this.TMNeckTieImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMNeckTieImage.Margin = new System.Windows.Forms.Padding(4);
             this.TMNeckTieImage.Name = "TMNeckTieImage";
             this.TMNeckTieImage.Size = new System.Drawing.Size(264, 219);
             this.TMNeckTieImage.TabIndex = 98;
@@ -386,7 +233,7 @@
             this.TMBlouseImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMBlouseImage.CornerRadius = 20;
             this.TMBlouseImage.Location = new System.Drawing.Point(16, 359);
-            this.TMBlouseImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMBlouseImage.Margin = new System.Windows.Forms.Padding(4);
             this.TMBlouseImage.Name = "TMBlouseImage";
             this.TMBlouseImage.Size = new System.Drawing.Size(264, 215);
             this.TMBlouseImage.TabIndex = 92;
@@ -535,6 +382,159 @@
             this.label3.Text = "Proware";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Gainsboro;
+            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(32, 1116);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 23);
+            this.label2.TabIndex = 107;
+            this.label2.Text = "TM Uniform Set";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Gainsboro;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(32, 850);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(121, 23);
+            this.label5.TabIndex = 102;
+            this.label5.Text = "TM Neck Tie";
+            // 
+            // CartIcon
+            // 
+            this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
+            this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CartIcon.Location = new System.Drawing.Point(15, 28);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CartIcon.Name = "CartIcon";
+            this.CartIcon.Size = new System.Drawing.Size(47, 49);
+            this.CartIcon.TabIndex = 0;
+            this.CartIcon.TabStop = false;
+            // 
+            // CartItemLbl
+            // 
+            this.CartItemLbl.AutoSize = true;
+            this.CartItemLbl.CornerRadius = 50;
+            this.CartItemLbl.Location = new System.Drawing.Point(47, -17);
+            this.CartItemLbl.Name = "CartItemLbl";
+            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
+            this.CartItemLbl.TabIndex = 1;
+            this.CartItemLbl.Text = "0";
+            this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CartItemLbl.TextPadding = new System.Windows.Forms.Padding(5);
+            // 
+            // roundButton1
+            // 
+            this.roundButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.roundButton1.BorderRadius = 30;
+            this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
+            this.roundButton1.Location = new System.Drawing.Point(92, 14);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundButton1.Name = "roundButton1";
+            this.roundButton1.Size = new System.Drawing.Size(267, 79);
+            this.roundButton1.TabIndex = 2;
+            this.roundButton1.Text = "Proceed to Payment";
+            this.roundButton1.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.label8.Location = new System.Drawing.Point(377, -21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 24);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Total:";
+            // 
+            // TotalOutputLbl
+            // 
+            this.TotalOutputLbl.AutoSize = true;
+            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.TotalOutputLbl.Location = new System.Drawing.Point(391, 43);
+            this.TotalOutputLbl.Name = "TotalOutputLbl";
+            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
+            this.TotalOutputLbl.TabIndex = 4;
+            this.TotalOutputLbl.Text = "$0.00";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.TotalLbl.Location = new System.Drawing.Point(376, 14);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
+            this.TotalLbl.TabIndex = 5;
+            this.TotalLbl.Text = "Total:";
+            // 
+            // CartItemNumLbl
+            // 
+            this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CartItemNumLbl.Location = new System.Drawing.Point(44, 17);
+            this.CartItemNumLbl.Name = "CartItemNumLbl";
+            this.CartItemNumLbl.Size = new System.Drawing.Size(44, 20);
+            this.CartItemNumLbl.TabIndex = 0;
+            this.CartItemNumLbl.Text = "0";
+            // 
+            // RoundedFooter
+            // 
+            this.RoundedFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
+            this.RoundedFooter.BorderRadius = 20;
+            this.RoundedFooter.Controls.Add(this.CartItemNumLbl);
+            this.RoundedFooter.Controls.Add(this.TotalLbl);
+            this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
+            this.RoundedFooter.Controls.Add(this.label8);
+            this.RoundedFooter.Controls.Add(this.roundButton1);
+            this.RoundedFooter.Controls.Add(this.CartItemLbl);
+            this.RoundedFooter.Controls.Add(this.CartIcon);
+            this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.RoundedFooter.Location = new System.Drawing.Point(34, 1193);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
+            this.RoundedFooter.Name = "RoundedFooter";
+            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
+            this.RoundedFooter.TabIndex = 108;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Gainsboro;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(316, 849);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 23);
+            this.label6.TabIndex = 103;
+            this.label6.Text = "TM Skirt";
+            // 
+            // SHSMenPantsLabel
+            // 
+            this.SHSMenPantsLabel.AutoSize = true;
+            this.SHSMenPantsLabel.BackColor = System.Drawing.Color.Gainsboro;
+            this.SHSMenPantsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SHSMenPantsLabel.Location = new System.Drawing.Point(323, 579);
+            this.SHSMenPantsLabel.Name = "SHSMenPantsLabel";
+            this.SHSMenPantsLabel.Size = new System.Drawing.Size(100, 23);
+            this.SHSMenPantsLabel.TabIndex = 97;
+            this.SHSMenPantsLabel.Text = "TM Blazer";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Gainsboro;
+            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(21, 578);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(104, 23);
+            this.label4.TabIndex = 94;
+            this.label4.Text = "TM Blouse";
+            // 
             // FemaleTMForm
             // 
             this.AllowDrop = true;
@@ -543,7 +543,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(576, 1055);
+            this.ClientSize = new System.Drawing.Size(573, 1055);
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TMUniformSetImage);
@@ -566,13 +566,11 @@
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.ICTBackCard);
             this.Controls.Add(this.ProwareCardBack);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FemaleTMForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FemaleTMForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.RoundedFooter.ResumeLayout(false);
-            this.RoundedFooter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TMUniformSetImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox8)).EndInit();
             this.HMBackCard.ResumeLayout(false);
@@ -592,6 +590,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
             this.ProwareCardBack.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).EndInit();
+            this.RoundedFooter.ResumeLayout(false);
+            this.RoundedFooter.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -608,32 +609,32 @@
         private System.Windows.Forms.Label ITLabel;
         private GradientRoundPanel ProwareCardBack;
         private RoundedPictureBox ProwareImageCard;
-        private System.Windows.Forms.Label SHSMenPantsLabel;
         private RoundedPictureBox TMSkirtImage;
         private RoundedPictureBox roundedPictureBox10;
         private RoundedPictureBox TMBlazerImage;
         private RoundedPictureBox TMNeckTieImage;
         private RoundedPictureBox roundedPictureBox12;
         private RoundedPictureBox SHSMenPantsBackCard;
-        private System.Windows.Forms.Label label4;
         private RoundedPictureBox TMBlouseImage;
         private RoundedPictureBox roundedPictureBox6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private GradientRoundPanel HMBackCard;
         private RoundedPictureBox roundedPictureBox3;
         private System.Windows.Forms.Label HMLabelCard;
-        private System.Windows.Forms.Label label2;
         private RoundedPictureBox TMUniformSetImage;
         private RoundedPictureBox roundedPictureBox8;
-        private RoundedPanel RoundedFooter;
-        private System.Windows.Forms.Label CartItemNumLbl;
-        private System.Windows.Forms.Label TotalLbl;
-        private System.Windows.Forms.Label TotalOutputLbl;
-        private System.Windows.Forms.Label label8;
-        private RoundButton roundButton1;
-        private RoundedBackLabel CartItemLbl;
-        private System.Windows.Forms.PictureBox CartIcon;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox CartIcon;
+        private RoundedBackLabel CartItemLbl;
+        private RoundButton roundButton1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label TotalOutputLbl;
+        private System.Windows.Forms.Label TotalLbl;
+        private System.Windows.Forms.Label CartItemNumLbl;
+        private RoundedPanel RoundedFooter;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label SHSMenPantsLabel;
+        private System.Windows.Forms.Label label4;
     }
 }

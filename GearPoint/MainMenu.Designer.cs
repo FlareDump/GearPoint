@@ -35,6 +35,14 @@
             this.ShsLabelCard = new System.Windows.Forms.Label();
             this.TMLabelCard = new System.Windows.Forms.Label();
             this.HMLabelCard = new System.Windows.Forms.Label();
+            this.RoundedFooter = new GearPoint.RoundedPanel();
+            this.CartItemNumLbl = new System.Windows.Forms.Label();
+            this.TotalLbl = new System.Windows.Forms.Label();
+            this.TotalOutputLbl = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.PaymentButton = new RoundButton();
+            this.CartItemLbl = new GearPoint.RoundedBackLabel();
+            this.CartIcon = new System.Windows.Forms.PictureBox();
             this.roundedPictureBox2 = new GearPoint.RoundedPictureBox();
             this.ProwareImageCard = new GearPoint.RoundedPictureBox();
             this.ProwareBackCard = new GearPoint.RoundedPictureBox();
@@ -48,6 +56,8 @@
             this.ICTBackCard = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox1 = new GearPoint.RoundedPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.RoundedFooter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProwareBackCard)).BeginInit();
@@ -67,7 +77,7 @@
             this.ProwareLabelCard.AutoSize = true;
             this.ProwareLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ProwareLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProwareLabelCard.Location = new System.Drawing.Point(31, 1040);
+            this.ProwareLabelCard.Location = new System.Drawing.Point(35, 1040);
             this.ProwareLabelCard.Name = "ProwareLabelCard";
             this.ProwareLabelCard.Size = new System.Drawing.Size(85, 23);
             this.ProwareLabelCard.TabIndex = 38;
@@ -90,7 +100,7 @@
             // 
             this.ICTLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ICTLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ICTLabelCard.Location = new System.Drawing.Point(317, 354);
+            this.ICTLabelCard.Location = new System.Drawing.Point(321, 360);
             this.ICTLabelCard.Name = "ICTLabelCard";
             this.ICTLabelCard.Size = new System.Drawing.Size(181, 58);
             this.ICTLabelCard.TabIndex = 8;
@@ -102,7 +112,7 @@
             this.ShsLabelCard.AutoSize = true;
             this.ShsLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShsLabelCard.Location = new System.Drawing.Point(31, 354);
+            this.ShsLabelCard.Location = new System.Drawing.Point(35, 360);
             this.ShsLabelCard.Name = "ShsLabelCard";
             this.ShsLabelCard.Size = new System.Drawing.Size(175, 23);
             this.ShsLabelCard.TabIndex = 11;
@@ -114,7 +124,7 @@
             this.TMLabelCard.AutoSize = true;
             this.TMLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMLabelCard.Location = new System.Drawing.Point(31, 702);
+            this.TMLabelCard.Location = new System.Drawing.Point(35, 701);
             this.TMLabelCard.Name = "TMLabelCard";
             this.TMLabelCard.Size = new System.Drawing.Size(198, 23);
             this.TMLabelCard.TabIndex = 14;
@@ -125,19 +135,117 @@
             // 
             this.HMLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.HMLabelCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMLabelCard.Location = new System.Drawing.Point(299, 702);
+            this.HMLabelCard.Location = new System.Drawing.Point(303, 701);
             this.HMLabelCard.Name = "HMLabelCard";
             this.HMLabelCard.Size = new System.Drawing.Size(245, 25);
             this.HMLabelCard.TabIndex = 20;
             this.HMLabelCard.Text = "Hospitatlity Management";
             this.HMLabelCard.Click += new System.EventHandler(this.HMLabelCard_Click);
             // 
+            // RoundedFooter
+            // 
+            this.RoundedFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
+            this.RoundedFooter.BorderRadius = 20;
+            this.RoundedFooter.Controls.Add(this.CartItemNumLbl);
+            this.RoundedFooter.Controls.Add(this.TotalLbl);
+            this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
+            this.RoundedFooter.Controls.Add(this.label8);
+            this.RoundedFooter.Controls.Add(this.PaymentButton);
+            this.RoundedFooter.Controls.Add(this.CartItemLbl);
+            this.RoundedFooter.Controls.Add(this.CartIcon);
+            this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.RoundedFooter.Location = new System.Drawing.Point(26, 1120);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
+            this.RoundedFooter.Name = "RoundedFooter";
+            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
+            this.RoundedFooter.TabIndex = 40;
+            // 
+            // CartItemNumLbl
+            // 
+            this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CartItemNumLbl.Location = new System.Drawing.Point(44, 17);
+            this.CartItemNumLbl.Name = "CartItemNumLbl";
+            this.CartItemNumLbl.Size = new System.Drawing.Size(44, 20);
+            this.CartItemNumLbl.TabIndex = 0;
+            this.CartItemNumLbl.Text = "0";
+            // 
+            // TotalLbl
+            // 
+            this.TotalLbl.AutoSize = true;
+            this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.TotalLbl.Location = new System.Drawing.Point(376, 14);
+            this.TotalLbl.Name = "TotalLbl";
+            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
+            this.TotalLbl.TabIndex = 5;
+            this.TotalLbl.Text = "Total:";
+            // 
+            // TotalOutputLbl
+            // 
+            this.TotalOutputLbl.AutoSize = true;
+            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.TotalOutputLbl.Location = new System.Drawing.Point(391, 43);
+            this.TotalOutputLbl.Name = "TotalOutputLbl";
+            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
+            this.TotalOutputLbl.TabIndex = 4;
+            this.TotalOutputLbl.Text = "$0.00";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.label8.Location = new System.Drawing.Point(377, -21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 24);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Total:";
+            // 
+            // PaymentButton
+            // 
+            this.PaymentButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
+            this.PaymentButton.BorderRadius = 30;
+            this.PaymentButton.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PaymentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
+            this.PaymentButton.Location = new System.Drawing.Point(92, 14);
+            this.PaymentButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PaymentButton.Name = "PaymentButton";
+            this.PaymentButton.Size = new System.Drawing.Size(267, 79);
+            this.PaymentButton.TabIndex = 2;
+            this.PaymentButton.Text = "Proceed to Payment";
+            this.PaymentButton.UseVisualStyleBackColor = false;
+            // 
+            // CartItemLbl
+            // 
+            this.CartItemLbl.AutoSize = true;
+            this.CartItemLbl.CornerRadius = 50;
+            this.CartItemLbl.Location = new System.Drawing.Point(47, -17);
+            this.CartItemLbl.Name = "CartItemLbl";
+            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
+            this.CartItemLbl.TabIndex = 1;
+            this.CartItemLbl.Text = "0";
+            this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CartItemLbl.TextPadding = new System.Windows.Forms.Padding(5);
+            // 
+            // CartIcon
+            // 
+            this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
+            this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CartIcon.Location = new System.Drawing.Point(15, 28);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CartIcon.Name = "CartIcon";
+            this.CartIcon.Size = new System.Drawing.Size(47, 49);
+            this.CartIcon.TabIndex = 0;
+            this.CartIcon.TabStop = false;
+            // 
             // roundedPictureBox2
             // 
             this.roundedPictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox2.BackgroundImage")));
             this.roundedPictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox2.CornerRadius = 40;
-            this.roundedPictureBox2.Location = new System.Drawing.Point(35, 11);
+            this.roundedPictureBox2.Location = new System.Drawing.Point(12, 11);
             this.roundedPictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox2.Name = "roundedPictureBox2";
             this.roundedPictureBox2.Size = new System.Drawing.Size(111, 53);
@@ -149,7 +257,7 @@
             this.ProwareImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProwareImageCard.BackgroundImage")));
             this.ProwareImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ProwareImageCard.CornerRadius = 40;
-            this.ProwareImageCard.Location = new System.Drawing.Point(25, 777);
+            this.ProwareImageCard.Location = new System.Drawing.Point(29, 777);
             this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProwareImageCard.Name = "ProwareImageCard";
             this.ProwareImageCard.Size = new System.Drawing.Size(245, 258);
@@ -161,7 +269,7 @@
             // 
             this.ProwareBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ProwareBackCard.CornerRadius = 40;
-            this.ProwareBackCard.Location = new System.Drawing.Point(25, 777);
+            this.ProwareBackCard.Location = new System.Drawing.Point(29, 777);
             this.ProwareBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProwareBackCard.Name = "ProwareBackCard";
             this.ProwareBackCard.Size = new System.Drawing.Size(245, 320);
@@ -174,7 +282,7 @@
             this.HMImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HMImageCard.BackgroundImage")));
             this.HMImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMImageCard.CornerRadius = 40;
-            this.HMImageCard.Location = new System.Drawing.Point(299, 439);
+            this.HMImageCard.Location = new System.Drawing.Point(303, 438);
             this.HMImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMImageCard.Name = "HMImageCard";
             this.HMImageCard.Size = new System.Drawing.Size(245, 258);
@@ -186,7 +294,7 @@
             // 
             this.HMBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.HMBackCard.CornerRadius = 40;
-            this.HMBackCard.Location = new System.Drawing.Point(299, 439);
+            this.HMBackCard.Location = new System.Drawing.Point(303, 438);
             this.HMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMBackCard.Name = "HMBackCard";
             this.HMBackCard.Size = new System.Drawing.Size(245, 320);
@@ -199,7 +307,7 @@
             this.TMImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TMImageCard.BackgroundImage")));
             this.TMImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMImageCard.CornerRadius = 40;
-            this.TMImageCard.Location = new System.Drawing.Point(25, 439);
+            this.TMImageCard.Location = new System.Drawing.Point(29, 438);
             this.TMImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMImageCard.Name = "TMImageCard";
             this.TMImageCard.Size = new System.Drawing.Size(245, 258);
@@ -211,7 +319,7 @@
             // 
             this.TMBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMBackCard.CornerRadius = 40;
-            this.TMBackCard.Location = new System.Drawing.Point(25, 439);
+            this.TMBackCard.Location = new System.Drawing.Point(29, 438);
             this.TMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMBackCard.Name = "TMBackCard";
             this.TMBackCard.Size = new System.Drawing.Size(245, 320);
@@ -224,7 +332,7 @@
             this.ShsImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShsImageCard.BackgroundImage")));
             this.ShsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsImageCard.CornerRadius = 40;
-            this.ShsImageCard.Location = new System.Drawing.Point(25, 94);
+            this.ShsImageCard.Location = new System.Drawing.Point(29, 100);
             this.ShsImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShsImageCard.Name = "ShsImageCard";
             this.ShsImageCard.Size = new System.Drawing.Size(245, 258);
@@ -236,7 +344,7 @@
             // 
             this.ShsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsBackCard.CornerRadius = 40;
-            this.ShsBackCard.Location = new System.Drawing.Point(25, 92);
+            this.ShsBackCard.Location = new System.Drawing.Point(29, 98);
             this.ShsBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShsBackCard.Name = "ShsBackCard";
             this.ShsBackCard.Size = new System.Drawing.Size(245, 320);
@@ -250,7 +358,7 @@
             this.ICTImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ICTImageCard.CornerRadius = 40;
             this.ICTImageCard.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.ICTImageCard.Location = new System.Drawing.Point(299, 92);
+            this.ICTImageCard.Location = new System.Drawing.Point(303, 98);
             this.ICTImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ICTImageCard.Name = "ICTImageCard";
             this.ICTImageCard.Size = new System.Drawing.Size(245, 258);
@@ -262,7 +370,7 @@
             // 
             this.ICTBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ICTBackCard.CornerRadius = 40;
-            this.ICTBackCard.Location = new System.Drawing.Point(299, 92);
+            this.ICTBackCard.Location = new System.Drawing.Point(303, 98);
             this.ICTBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ICTBackCard.Name = "ICTBackCard";
             this.ICTBackCard.Size = new System.Drawing.Size(245, 320);
@@ -275,7 +383,7 @@
             this.roundedPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.BackgroundImage")));
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(31, 326);
+            this.roundedPictureBox1.Location = new System.Drawing.Point(35, 332);
             this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
             this.roundedPictureBox1.Size = new System.Drawing.Size(111, 53);
@@ -289,6 +397,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(593, 878);
+            this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.roundedPictureBox2);
             this.Controls.Add(this.ProwareLabelCard);
             this.Controls.Add(this.ProwareImageCard);
@@ -314,6 +423,9 @@
             this.Text = "STI GearPoint";
             this.Load += new System.EventHandler(this.Main_Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.RoundedFooter.ResumeLayout(false);
+            this.RoundedFooter.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProwareBackCard)).EndInit();
@@ -350,5 +462,13 @@
         private RoundedPictureBox ProwareBackCard;
         private RoundedPictureBox ProwareImageCard;
         private RoundedPictureBox roundedPictureBox2;
+        private RoundedPanel RoundedFooter;
+        private System.Windows.Forms.Label CartItemNumLbl;
+        private System.Windows.Forms.Label TotalLbl;
+        private System.Windows.Forms.Label TotalOutputLbl;
+        private System.Windows.Forms.Label label8;
+        private RoundButton PaymentButton;
+        private RoundedBackLabel CartItemLbl;
+        private System.Windows.Forms.PictureBox CartIcon;
     }
 }

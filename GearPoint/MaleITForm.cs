@@ -18,9 +18,8 @@ namespace GearPoint
         Cart cart;
 
         AddOrder addOrder;
-        public MaleITForm(string category, char gender)
+        public MaleITForm(char gender)
         {
-            this.category = category;
             this.gender = gender;
             InitializeComponent();
         }

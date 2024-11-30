@@ -20,10 +20,9 @@ namespace GearPoint
 
         AddOrder addOrder;
         GenderCheckpoint genderCheckpoint;
-        public FemaleShsForm(string category, char gender)
+        public FemaleShsForm(char gender)
         {
             this.gender = gender;
-            this.category = category;
             InitializeComponent();
         }
 

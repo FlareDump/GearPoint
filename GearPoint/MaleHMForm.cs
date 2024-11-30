@@ -17,7 +17,7 @@ namespace GearPoint
         double price;
         Cart cart;
 
-        public MaleHMForm(string category, char gender)
+        public MaleHMForm(char gender)
         {
             this.category = category;
             this.gender = gender;

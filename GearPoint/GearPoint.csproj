@@ -100,6 +100,12 @@
     <Compile Include="MaleHMForm.Designer.cs">
       <DependentUpon>MaleHMForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProwareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProwareForm.Designer.cs">
+      <DependentUpon>ProwareForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="rondedBackLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MaleTMForm.resx">
       <DependentUpon>MaleTMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProwareForm.resx">
+      <DependentUpon>ProwareForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartingPoint.resx">
       <DependentUpon>StartingPoint.cs</DependentUpon>

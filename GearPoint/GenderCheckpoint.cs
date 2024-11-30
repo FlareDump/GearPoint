@@ -1,113 +1,91 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class GenderCheckpoint : Form
-
     {
-        private MaleShsForm maleShsForm;
-        Main_Menu mainMenu = new Main_Menu();
-        FemaleShsForm femaleShsForm;
-        FemaleTMForm femaleTMForm;
-        FemaleHMForm femaleHMForm;
-        MaleHMForm maleHMForm;
-        MaleITForm maleITForm;
-        FemaleITForm femaleITForm;
+        private Main_Menu mainMenu = new Main_Menu();
 
-        public string category;
-        public char gender;
+        public string Category { get; }
+        public char Gender { get; private set; }
 
         public GenderCheckpoint(string category)
         {
-            this.category = category;
+            Category = category;
             InitializeComponent();
-
-        }
-
-        private void GenderCheckpoint_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void BACKButton4_Click(object sender, EventArgs e)
         {
             mainMenu.Show();
+            this.Close();
         }
 
         private void FEMALEButton2_Click(object sender, EventArgs e)
         {
-            gender = 'F';
-
-            if (gender == 'F' && category == "SHS")
-            {
-                femaleShsForm = new FemaleShsForm(category, gender);
-                femaleShsForm.Show();
-                this.Close();
-
-            }
-            else if(gender == 'F' && category == "IT")
-            {
-                femaleITForm = new FemaleITForm(category, gender);
-                femaleITForm.Show();
-                this.Close();
-            }
-            else if (gender == 'F' && category == "TM")
-            {
-                femaleTMForm = new FemaleTMForm(category, gender);
-                femaleTMForm.Show();
-                this.Close();
-            }
-
-            else if (gender == 'F' && category == "HM")
-            {
-                femaleHMForm = new FemaleHMForm(category, gender);
-                femaleHMForm.Show();
-                this.Close();
-            }
-
-
-
-            this.Close();
+            Gender = 'F';
+            NavigateToForm();
         }
 
         private void MALEButton1_Click(object sender, EventArgs e)
         {
-            gender = 'M';
+            Gender = 'M';
+            NavigateToForm();
+        }
 
-            if (gender == 'M' && category == "SHS")
-            {
-                maleShsForm = new MaleShsForm(category, gender);
-                maleShsForm.Show();
-                this.Close();
-            }
-            else if (gender == 'M' && category == "IT")
-            {
-                maleITForm = new MaleITForm(category, gender);
-                maleITForm.Show();
-                this.Close();
-            }
-            else if (gender == 'M' && category == "TM")
-            {
-                femaleTMForm = new FemaleTMForm(category, gender);
-                femaleTMForm.Show();
-                this.Close();
-            }
-            else if (gender == 'M' && category == "HM")
-            {
-                maleHMForm = new MaleHMForm(category, gender);
-                maleHMForm.Show();
-                this.Close();
+        private void NavigateToForm()
+        {
+            Form targetForm = GetTargetForm(Category, Gender);
 
+            if (targetForm != null)
+            {
+                targetForm.Show();
+                this.Close();
             }
+            else
+            {
+                MessageBox.Show("Invalid Choices");
+            }
+        }
 
+        private Form GetTargetForm(string category, char gender)
+        {
+            switch (gender)
+            {
+                case 'F':
+                    switch (category)
+                    {
+                        case "SHS":
+                            return new FemaleShsForm(gender);
+                        case "IT":
+                            return new FemaleITForm(gender);
+                        case "TM":
+                            return new FemaleTMForm(gender);
+                        case "HM":
+                            return new FemaleHMForm(gender);
+                        default:
+                            return null;
+                    }
+
+                case 'M':
+                    switch (category)
+                    {
+                        case "SHS":
+                            return new MaleShsForm(gender);
+                        case "IT":
+                            return new MaleITForm(gender);
+                        case "TM":
+                            return new MaleTMForm(gender);
+                        case "HM":
+                            return new MaleHMForm(gender);
+                        default:
+                            return null;
+                    }
+
+                default:
+                    return null;
+            }
         }
     }
 }

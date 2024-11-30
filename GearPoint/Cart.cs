@@ -26,6 +26,15 @@ namespace GearPoint
             InitializeComponent();
         }
 
+        public Cart(string item, string size, string quantity, string price)
+        {
+            this.item = item;
+            this.size = size;
+            this.quantity = quantity;
+            this.price = price;
+            InitializeComponent();
+        }
+
         private void Cart_Load(object sender, EventArgs e)
         {
             AddToCart(item, gender, size, quantity, price);

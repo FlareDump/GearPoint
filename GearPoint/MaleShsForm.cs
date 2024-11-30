@@ -19,10 +19,9 @@ namespace GearPoint
 
         GenderCheckpoint genderCheckpoint;
 
-        public MaleShsForm(string category, char gender)
+        public MaleShsForm(char gender)
         {
             this.gender = gender;
-            this.category = category;
             InitializeComponent();
         }
 

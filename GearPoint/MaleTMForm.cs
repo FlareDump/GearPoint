@@ -12,8 +12,14 @@ namespace GearPoint
 {
     public partial class MaleTMForm : Form
     {
-        public MaleTMForm()
+        string category;
+        char gender;
+        double price;
+        Cart cart;
+
+        public MaleTMForm(char gender)
         {
+            this.gender = gender;
             InitializeComponent();
         }
 

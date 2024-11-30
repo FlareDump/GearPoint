@@ -18,9 +18,8 @@ namespace GearPoint
         double price;
         Cart cart;
 
-        public FemaleITForm(string category, char gender)
+        public FemaleITForm(char gender)
         {
-            this.category = category;
             this.gender = gender;
             InitializeComponent();
         }

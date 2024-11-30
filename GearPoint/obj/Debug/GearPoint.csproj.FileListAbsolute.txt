@@ -154,3 +154,5 @@ C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.exe
 C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.pdb
 C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleITForm.resources
 C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleITForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleTMForm.resources
+C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.ProwareForm.resources

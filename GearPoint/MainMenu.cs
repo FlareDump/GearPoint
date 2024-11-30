@@ -14,6 +14,7 @@ namespace GearPoint
     public partial class Main_Menu : Form
     {
         GenderCheckpoint genderCheckpoint;
+        ProwareForm prowareForm;
         string category;
 
         public Main_Menu()
@@ -134,19 +135,25 @@ namespace GearPoint
         // Proware Card Button
         private void ProwareLabelCard_Click(object sender, EventArgs e)
         {
-            //Dapat naa na ang Proware Form giatay
+            category = "Proware";
+            prowareForm = new ProwareForm(category);
+            prowareForm.Show();
             this.Close();
         }
 
         private void ProwareImageCard_Click(object sender, EventArgs e)
         {
-            //Dapat naa na ang Proware Form giatay
+            category = "Proware";
+            prowareForm = new ProwareForm(category);
+            prowareForm.Show();
             this.Close();
         }
 
         private void ProwareBackCard_Click(object sender, EventArgs e)
         {
-            //Dapat naa na ang Proware Form giatay
+            category = "Proware";
+            prowareForm = new ProwareForm(category);
+            prowareForm.Show();
             this.Close();
         }
         // End of Prwoware Card Button

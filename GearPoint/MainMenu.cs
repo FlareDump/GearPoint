@@ -1,162 +1,56 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class Main_Menu : Form
     {
-        GenderCheckpoint genderCheckpoint;
-        ProwareForm prowareForm;
-        string category;
-
         public Main_Menu()
-        { 
+        {
             InitializeComponent();
         }
 
-        private void Main_Menu_Load(object sender, EventArgs e)
-        {
+        private void Main_Menu_Load(object sender, EventArgs e) { }
 
-        }
-        //Shs Card button
-        private void ShsImageCard_Click(object sender, EventArgs e)
+        // Reusable method for category navigation
+        private void NavigateToCategory(string selectedCategory, bool isProware = false)
         {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
+            if (isProware)
+            {
+                var prowareForm = new ProwareForm(selectedCategory);
+                prowareForm.Show();
+            }
+            else
+            {
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory);
+                genderCheckpoint.Show();
+            }
             this.Close();
         }
 
-        private void ShsLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
+        // SHS Card Handlers
+        private void ShsImageCard_Click(object sender, EventArgs e) => NavigateToCategory("SHS");
+        private void ShsLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("SHS");
+        private void ShsBackCard_Click(object sender, EventArgs e) => NavigateToCategory("SHS");
 
-        private void ShsBackCard_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        // End of Shs Card button
+        // ICT Card Handlers
+        private void ICTImageCard_Click(object sender, EventArgs e) => NavigateToCategory("IT");
+        private void ICTLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("IT");
+        private void ICTBackCard_Click(object sender, EventArgs e) => NavigateToCategory("IT");
 
-        // ICT Card Button
-        private void ICTImageCard_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
+        // TM Card Handlers
+        private void TMImageCard_Click(object sender, EventArgs e) => NavigateToCategory("TM");
+        private void TMLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("TM");
+        private void TMBackCard_Click(object sender, EventArgs e) => NavigateToCategory("TM");
 
-        private void ICTLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
+        // HM Card Handlers
+        private void HMImageCard_Click(object sender, EventArgs e) => NavigateToCategory("HM");
+        private void HMLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("HM");
+        private void HMBackCard_Click(object sender, EventArgs e) => NavigateToCategory("HM");
 
-        private void ICTBackCard_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        // End of ICT Card Button
-
-        // TM Card Button
-
-        private void TMLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void TMImageCard_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void TMBackCard_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        // End of TM Card Button
-
-        // HM Card Button
-        private void HMLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void HMImageCard_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void HMBackCard_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-
-        }
-        // End of HM Card Button
-
-        // Proware Card Button
-        private void ProwareLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "Proware";
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-
-        private void ProwareImageCard_Click(object sender, EventArgs e)
-        {
-            category = "Proware";
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-
-        private void ProwareBackCard_Click(object sender, EventArgs e)
-        {
-            category = "Proware";
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-        // End of Prwoware Card Button
-
+        // Proware Card Handlers
+        private void ProwareImageCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
+        private void ProwareLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
+        private void ProwareBackCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
     }
 }

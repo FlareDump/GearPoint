@@ -32,19 +32,19 @@ namespace GearPoint
         private void SHSWomenPoloTopBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenPoloTopLbl.Text, 250);
 
         // Skirt Handlers
-        private void SHSWomenPantsImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 250);
-        private void SHSWomenSkirtLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 250);
-        private void SHSWomenSkirtBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 250);
+        private void SHSWomenPantsImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 200);
+        private void SHSWomenSkirtLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 200);
+        private void SHSWomenSkirtBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 200);
 
         // Neck Tie Handlers
-        private void ShsWomenNeckTiePicture_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 250);
-        private void SHSWomenNeckTieLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 250);
-        private void SHSWomenNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 250);
+        private void ShsWomenNeckTiePicture_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 85);
+        private void SHSWomenNeckTieLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 85);
+        private void SHSWomenNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 85);
 
         // Uniform Set Handlers
-        private void ShsWomenUniformSetPicture_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 1000);
-        private void ShsWomenUniformSetLbl_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 1000);
-        private void ShsWomenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 1000);
+        private void ShsWomenUniformSetPicture_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 535);
+        private void ShsWomenUniformSetLbl_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 535);
+        private void ShsWomenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 535);
 
         // Proware Handlers
         private void HandleProwareNavigation()

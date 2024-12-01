@@ -1,67 +1,82 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class FemaleShsForm : Form
     {
+        private readonly char gender;
+        private string category;
+        private double price;
 
-        string category;
-        char gender;
-        double price;
-        Cart cart;
-
-        AddOrder addOrder;
-        GenderCheckpoint genderCheckpoint;
         public FemaleShsForm(char gender)
         {
             this.gender = gender;
             InitializeComponent();
         }
 
-       
-        private void ShsWomenTopPoloPicture_Click(object sender, EventArgs e)
+        private void FemaleShsForm_Load(object sender, EventArgs e) { }
+
+        // Reusable method for handling item selection
+        private void HandleItemSelection(string itemName, double itemPrice)
         {
-            price = 250;
-            addOrder = new AddOrder(ShsWomenTopPoloPicture.Text,gender, price);
+            price = itemPrice;
+            var addOrder = new AddOrder(itemName, gender, price);
             addOrder.Show();
             this.Close();
         }
 
-        private void SHSWomenPantsImage_Click(object sender, EventArgs e)
+        // Top Item Handlers
+        private void ShsWomenTopPoloPicture_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenPoloTopLbl.Text, 250);
+        private void SHSWomenPoloTopLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenPoloTopLbl.Text, 250);
+        private void SHSWomenPoloTopBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenPoloTopLbl.Text, 250);
+
+        // Skirt Handlers
+        private void SHSWomenPantsImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 250);
+        private void SHSWomenSkirtLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 250);
+        private void SHSWomenSkirtBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenSkirtLbl.Text, 250);
+
+        // Neck Tie Handlers
+        private void ShsWomenNeckTiePicture_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 250);
+        private void SHSWomenNeckTieLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 250);
+        private void SHSWomenNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSWomenNeckTieLbl.Text, 250);
+
+        // Uniform Set Handlers
+        private void ShsWomenUniformSetPicture_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 1000);
+        private void ShsWomenUniformSetLbl_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 1000);
+        private void ShsWomenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsWomenUniformSetLbl.Text, 1000);
+
+        // Proware Handlers
+        private void HandleProwareNavigation()
         {
-            price = 250;
-            addOrder = new AddOrder(SHSWomenPantsImage.Text, gender, price);
-            addOrder.Show();
+            var prowareForm = new ProwareForm(category);
+            prowareForm.Show();
             this.Close();
         }
 
-        private void ShsWomenNeckTiePicture_Click(object sender, EventArgs e)
+        private void ProwareLabelCard_Click(object sender, EventArgs e) => HandleProwareNavigation();
+        private void ProwareImageCard_Click(object sender, EventArgs e) => HandleProwareNavigation();
+
+        // Category Selection Handlers
+        private void HandleCategorySelection(string newCategory)
         {
-            price = 250;
-            addOrder = new AddOrder(ShsWomenNeckTiePicture.Text,gender, price);
-            addOrder.Show();
+            category = newCategory;
+            var genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
             this.Close();
         }
 
-        private void ShsWomenUniformSetPicture_Click(object sender, EventArgs e)
-        {
-            price = 1000;
-            addOrder = new AddOrder(ShsWomenUniformSetPicture.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        private void ICTHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void ICTHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void TMHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void TMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+        private void HMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
 
+        // Cart Icon Handler
         private void CartIcon_Click(object sender, EventArgs e)
         {
-            cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
+            var cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
             cart.Show();
             this.Close();
         }

@@ -1,24 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class MaleShsForm : Form
     {
-        char gender;
-        string category;
-        double price;
-        Cart cart;
-
-        GenderCheckpoint genderCheckpoint;
-        ProwareForm prowareForm;
+        private readonly char gender;
+        private string category;
+        private double price;
 
         public MaleShsForm(char gender)
         {
@@ -26,175 +15,69 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        AddOrder addOrder;
+        private void MaleShsForm_Load(object sender, EventArgs e) { }
 
-        private void MaleShsForm_Load(object sender, EventArgs e)
-        { 
-
-        }
-
-        private void SHSMenTopImage_Click(object sender, EventArgs e)
+        // Unified method for handling item selection
+        private void HandleItemSelection(string itemName, double itemPrice)
         {
-            price = 250;
-            addOrder = new AddOrder(SHSMenTopLbl.Text, gender, price);
+            price = itemPrice;
+            var addOrder = new AddOrder(itemName, gender, price);
             addOrder.Show();
             this.Close();
         }
 
-        private void SHSMenTopLbl_Click(object sender, EventArgs e)
+        // Top Item Handlers
+        private void SHSMenTopImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
+        private void SHSMenTopLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
+        private void SHSMentopCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
+
+        // Pants Handlers
+        private void SHSMenPantsImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300);
+        private void SHSMenPantsLabel_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300);
+        private void SHSMenPantsBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300);
+
+        // Neck Tie Handlers
+        private void SHSMenNeckTieImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85);
+        private void SHSNeckTieLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85);
+        private void SHSNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85);
+
+        // Uniform Set Handlers
+        private void SHSMenUniformSetImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635);
+        private void SHSMenUniformSetLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635);
+        private void SHSMenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635);
+
+        // Proware Handlers
+        private void HandleProwareNavigation()
         {
-            price = 250;
-            addOrder = new AddOrder(SHSMenTopLbl.Text, gender, price);
-            addOrder.Show();
+            var prowareForm = new ProwareForm(category);
+            prowareForm.Show();
             this.Close();
         }
 
-        private void SHSMentopCard_Click(object sender, EventArgs e)
+        private void ProwareLabelCard_Click(object sender, EventArgs e) => HandleProwareNavigation();
+        private void ProwareImageCard_Click(object sender, EventArgs e) => HandleProwareNavigation();
+
+        // Gender Checkpoint Handlers
+        private void HandleCategorySelection(string newCategory)
         {
-            price = 250;
-            addOrder = new AddOrder(SHSMenTopLbl.Text, gender, price);
-            addOrder.Show();
+            category = newCategory;
+            var genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
             this.Close();
         }
 
-        private void SHSMenPantsImage_Click(object sender, EventArgs e)
-        { 
-            price = 300;
-            addOrder = new AddOrder(SHSMenPantsLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        private void ICTHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void ICTHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void TMHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void TMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+        private void HMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
 
-        private void SHSMenPantsLabel_Click(object sender, EventArgs e)
-        {
-            price = 300;
-            addOrder = new AddOrder(SHSMenPantsLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenPantsBackCard_Click(object sender, EventArgs e)
-        {
-            price = 300;
-            addOrder = new AddOrder(SHSMenPantsLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenNeckTieImage_Click(object sender, EventArgs e)
-        {
-            price = 85;
-            addOrder = new AddOrder(SHSNeckTieLbl.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSNeckTieLbl_Click(object sender, EventArgs e)
-        {
-            price = 85;
-            addOrder = new AddOrder(SHSNeckTieLbl.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSNeckTieBackCard_Click(object sender, EventArgs e)
-        {
-            price = 85;
-            addOrder = new AddOrder(SHSNeckTieLbl.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenUniformSetImage_Click(object sender, EventArgs e)
-        {
-            price = 635;
-            addOrder = new AddOrder(SHSMenUniformSetLbl.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenUniformSetLbl_Click(object sender, EventArgs e)
-        {
-            price = 635;
-            addOrder = new AddOrder(SHSMenUniformSetLbl.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void SHSMenUniformSetBackCard_Click(object sender, EventArgs e)
-        {
-            price = 635;
-            addOrder = new AddOrder(SHSMenUniformSetLbl.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
+        // Cart Handler
         private void CartIcon_Click(object sender, EventArgs e)
         {
-            cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
+            var cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
             cart.Show();
-            this.Close();
-        }
-
-        private void ProwareLabelCard_Click(object sender, EventArgs e)
-        {
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-
-        private void ProwareImageCard_Click(object sender, EventArgs e)
-        { 
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-
-        private void ICTHeaderLabel_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void ICTHeaderImage_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void TMHeaderLabel_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void TMHeaderImage_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void HMLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void HMHeaderImage_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
             this.Close();
         }
     }

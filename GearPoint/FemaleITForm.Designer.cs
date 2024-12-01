@@ -529,7 +529,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(573, 882);
+            this.ClientSize = new System.Drawing.Size(575, 882);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.roundedPictureBox5);
             this.Controls.Add(this.roundedPictureBox6);

@@ -201,7 +201,7 @@
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.RoundedFooter.Location = new System.Drawing.Point(16, 1808);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 82;
@@ -330,7 +330,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-84, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(717, 80);
@@ -375,7 +375,7 @@
             this.HMKitchenUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMKitchenUniformSetImage.CornerRadius = 20;
             this.HMKitchenUniformSetImage.Location = new System.Drawing.Point(17, 1473);
-            this.HMKitchenUniformSetImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMKitchenUniformSetImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMKitchenUniformSetImage.Name = "HMKitchenUniformSetImage";
             this.HMKitchenUniformSetImage.Size = new System.Drawing.Size(264, 214);
             this.HMKitchenUniformSetImage.TabIndex = 95;
@@ -398,7 +398,7 @@
             this.HMChefsPantsImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMChefsPantsImage.CornerRadius = 20;
             this.HMChefsPantsImage.Location = new System.Drawing.Point(307, 1201);
-            this.HMChefsPantsImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMChefsPantsImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMChefsPantsImage.Name = "HMChefsPantsImage";
             this.HMChefsPantsImage.Size = new System.Drawing.Size(264, 214);
             this.HMChefsPantsImage.TabIndex = 92;
@@ -421,7 +421,7 @@
             this.HMGrayChefsPoloImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMGrayChefsPoloImage.CornerRadius = 20;
             this.HMGrayChefsPoloImage.Location = new System.Drawing.Point(15, 1201);
-            this.HMGrayChefsPoloImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMGrayChefsPoloImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMGrayChefsPoloImage.Name = "HMGrayChefsPoloImage";
             this.HMGrayChefsPoloImage.Size = new System.Drawing.Size(264, 214);
             this.HMGrayChefsPoloImage.TabIndex = 89;
@@ -444,7 +444,7 @@
             this.HMGraySkullCapImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMGraySkullCapImage.CornerRadius = 20;
             this.HMGraySkullCapImage.Location = new System.Drawing.Point(307, 922);
-            this.HMGraySkullCapImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMGraySkullCapImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMGraySkullCapImage.Name = "HMGraySkullCapImage";
             this.HMGraySkullCapImage.Size = new System.Drawing.Size(264, 214);
             this.HMGraySkullCapImage.TabIndex = 86;
@@ -467,7 +467,7 @@
             this.HMFemaleUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMFemaleUniformSetImage.CornerRadius = 20;
             this.HMFemaleUniformSetImage.Location = new System.Drawing.Point(13, 922);
-            this.HMFemaleUniformSetImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMFemaleUniformSetImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMFemaleUniformSetImage.Name = "HMFemaleUniformSetImage";
             this.HMFemaleUniformSetImage.Size = new System.Drawing.Size(264, 214);
             this.HMFemaleUniformSetImage.TabIndex = 83;
@@ -490,7 +490,7 @@
             this.HMSkirtImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMSkirtImage.CornerRadius = 20;
             this.HMSkirtImage.Location = new System.Drawing.Point(307, 643);
-            this.HMSkirtImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMSkirtImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMSkirtImage.Name = "HMSkirtImage";
             this.HMSkirtImage.Size = new System.Drawing.Size(264, 214);
             this.HMSkirtImage.TabIndex = 79;
@@ -513,7 +513,7 @@
             this.HMBlazerImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMBlazerImage.CornerRadius = 20;
             this.HMBlazerImage.Location = new System.Drawing.Point(303, 367);
-            this.HMBlazerImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMBlazerImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMBlazerImage.Name = "HMBlazerImage";
             this.HMBlazerImage.Size = new System.Drawing.Size(264, 214);
             this.HMBlazerImage.TabIndex = 73;
@@ -525,7 +525,7 @@
             this.HMPantsImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMPantsImage.CornerRadius = 20;
             this.HMPantsImage.Location = new System.Drawing.Point(15, 643);
-            this.HMPantsImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMPantsImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMPantsImage.Name = "HMPantsImage";
             this.HMPantsImage.Size = new System.Drawing.Size(264, 214);
             this.HMPantsImage.TabIndex = 76;
@@ -559,7 +559,7 @@
             this.HMlongsleevePoloImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMlongsleevePoloImage.CornerRadius = 20;
             this.HMlongsleevePoloImage.Location = new System.Drawing.Point(15, 367);
-            this.HMlongsleevePoloImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMlongsleevePoloImage.Margin = new System.Windows.Forms.Padding(4);
             this.HMlongsleevePoloImage.Name = "HMlongsleevePoloImage";
             this.HMlongsleevePoloImage.Size = new System.Drawing.Size(264, 214);
             this.HMlongsleevePoloImage.TabIndex = 70;
@@ -701,7 +701,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(596, 912);
+            this.ClientSize = new System.Drawing.Size(575, 882);
             this.Controls.Add(this.gradientRoundPanel1);
             this.Controls.Add(this.ICTBackCard);
             this.Controls.Add(this.ProwareCardBack);
@@ -736,7 +736,7 @@
             this.Controls.Add(this.roundedPictureBox6);
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FemaleHMForm";
             this.Text = "STI Gearpoint";
             this.RoundedFooter.ResumeLayout(false);

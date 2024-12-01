@@ -525,7 +525,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(598, 878);
+            this.ClientSize = new System.Drawing.Size(571, 878);
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.SHSMenUniformSetLbl);
             this.Controls.Add(this.SHSMenUniformSetImage);

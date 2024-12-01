@@ -111,7 +111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(571, 899);
+            this.ClientSize = new System.Drawing.Size(571, 878);
             this.Controls.Add(this.BACKButton4);
             this.Controls.Add(this.FEMALEButton2);
             this.Controls.Add(this.MALEButton1);

@@ -543,7 +543,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(573, 1055);
+            this.ClientSize = new System.Drawing.Size(575, 882);
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TMUniformSetImage);

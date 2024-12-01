@@ -480,7 +480,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(573, 1055);
+            this.ClientSize = new System.Drawing.Size(575, 882);
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.gradientRoundPanel1);
             this.Controls.Add(this.ITMenUniformSetLabel);
@@ -502,7 +502,6 @@
             this.Name = "MaleITForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ITuniformFORM";
-            this.Load += new System.EventHandler(this.ITuniformFORM_Load);
             this.HMBackCard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).EndInit();
             this.TMBackCard.ResumeLayout(false);

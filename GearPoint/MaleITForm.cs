@@ -12,13 +12,14 @@ namespace GearPoint
 {
     public partial class MaleITForm : Form
     {
-        string category;
         char gender;
+        string category;
         double price;
-        Cart cart;
 
-        GenderCheckpoint genderCheckpoint;
+        Cart cart;
         AddOrder addOrder;
+        GenderCheckpoint genderCheckpoint;
+        ProwareForm prowareForm;
 
         public MaleITForm(char gender)
         {
@@ -26,14 +27,79 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        private void ITuniformFORM_Load(object sender, EventArgs e)
-        {
-        }
-
+        //IT Top
         private void ITMenTopImage_Click(object sender, EventArgs e)
         {
+            price = 350;
+            addOrder = new AddOrder(ITMenTopLbl.Text, price);
+            addOrder.Show();
 
+        } 
+        private void ITMenTopLbl_Click(object sender, EventArgs e)
+        {
+            price = 350;
+            addOrder = new AddOrder(ITMenTopLbl.Text, price);
+            addOrder.Show();
         }
+        private void ICTMentopCard_Click(object sender, EventArgs e)
+        {
+            price = 350;
+            addOrder = new AddOrder(ITMenTopLbl.Text, price);
+            addOrder.Show();
+        }
+        //End IT Top
+
+        //IT Pants
+        private void ITMenPantsLabel_Click(object sender, EventArgs e)
+        {
+            price = 400;
+            addOrder = new AddOrder(ITMenPantsLabel.Text, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void ITMenPantsImage_Click(object sender, EventArgs e)
+        {
+            price = 400;
+            addOrder = new AddOrder(ITMenPantsLabel.Text, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void ITMenPantsBackCard_Click(object sender, EventArgs e)
+        {
+            price = 400;
+            addOrder = new AddOrder(ITMenPantsLabel.Text, price);
+            addOrder.Show();
+            this.Close();
+        }
+        //END IT Pants
+        //IT Uniform Set
+        private void ITMenUniformSetLabel_Click(object sender, EventArgs e)
+        {
+            price = 750;
+            addOrder = new AddOrder(ITMenUniformSetLabel.Text, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void ITmenUniformSetImage_Click(object sender, EventArgs e)
+        {
+            price = 750;
+            addOrder = new AddOrder(ITMenUniformSetLabel.Text, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void ITmenUniformSetBackCard_Click(object sender, EventArgs e)
+        {
+            price = 750;
+            addOrder = new AddOrder(ITMenUniformSetLabel.Text, price);
+            addOrder.Show();
+            this.Close();
+        }
+        //END Uniform Set
+
 
         //HEADERSS
 
@@ -52,8 +118,6 @@ namespace GearPoint
             genderCheckpoint.Show();
             this.Close();
         }
-
-        
 
     }
 }

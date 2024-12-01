@@ -263,5 +263,23 @@
   <ItemGroup>
     <None Include="Resources\SHS-WOMENUNISET1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT Pants .jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT TOP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT TOP Zoomed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT PANTS Zoomed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICT Full Set.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

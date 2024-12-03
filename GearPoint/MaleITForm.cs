@@ -1,25 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class MaleITForm : Form
     {
-        char gender;
-        string category;
-        double price;
-
-        Cart cart;
-        AddOrder addOrder;
-        GenderCheckpoint genderCheckpoint;
-        ProwareForm prowareForm;
+        private char gender;
+        private string category;
+        private double price;
 
         public MaleITForm(char gender)
         {
@@ -27,97 +15,57 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        //IT Top
-        private void ITMenTopImage_Click(object sender, EventArgs e)
+        // Reusable method for adding orders
+        private void AddOrderItem(string itemName, double itemPrice)
         {
-            price = 350;
-            addOrder = new AddOrder(ITMenTopLbl.Text, price);
-            addOrder.Show();
-
-        } 
-        private void ITMenTopLbl_Click(object sender, EventArgs e)
-        {
-            price = 350;
-            addOrder = new AddOrder(ITMenTopLbl.Text, price);
-            addOrder.Show();
-        }
-        private void ICTMentopCard_Click(object sender, EventArgs e)
-        {
-            price = 350;
-            addOrder = new AddOrder(ITMenTopLbl.Text, price);
-            addOrder.Show();
-        }
-        //End IT Top
-
-        //IT Pants
-        private void ITMenPantsLabel_Click(object sender, EventArgs e)
-        {
-            price = 400;
-            addOrder = new AddOrder(ITMenPantsLabel.Text, price);
+            price = itemPrice;
+            var addOrder = new AddOrder(itemName, gender, price);
             addOrder.Show();
             this.Close();
         }
 
-        private void ITMenPantsImage_Click(object sender, EventArgs e)
+        // Reusable method for navigating to other forms
+        private void NavigateToForm(string selectedCategory, bool isProware = false)
         {
-            price = 400;
-            addOrder = new AddOrder(ITMenPantsLabel.Text, price);
-            addOrder.Show();
+            if (isProware)
+            {
+                var prowareForm = new ProwareForm(selectedCategory);
+                prowareForm.Show();
+            }
+            else
+            {
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory);
+                genderCheckpoint.Show();
+            }
             this.Close();
         }
 
-        private void ITMenPantsBackCard_Click(object sender, EventArgs e)
-        {
-            price = 400;
-            addOrder = new AddOrder(ITMenPantsLabel.Text, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //END IT Pants
-        //IT Uniform Set
-        private void ITMenUniformSetLabel_Click(object sender, EventArgs e)
-        {
-            price = 750;
-            addOrder = new AddOrder(ITMenUniformSetLabel.Text, price);
-            addOrder.Show();
-            this.Close();
-        }
+        // IT Top Handlers
+        private void ITMenTopImage_Click(object sender, EventArgs e) => AddOrderItem(ITMenTopLbl.Text, 350);
+        private void ITMenTopLbl_Click(object sender, EventArgs e) => AddOrderItem(ITMenTopLbl.Text, 350);
+        private void ICTMentopCard_Click(object sender, EventArgs e) => AddOrderItem(ITMenTopLbl.Text, 350);
 
-        private void ITmenUniformSetImage_Click(object sender, EventArgs e)
-        {
-            price = 750;
-            addOrder = new AddOrder(ITMenUniformSetLabel.Text, price);
-            addOrder.Show();
-            this.Close();
-        }
+        // IT Pants Handlers
+        private void ITMenPantsLabel_Click(object sender, EventArgs e) => AddOrderItem(ITMenPantsLabel.Text, 400);
+        private void ITMenPantsImage_Click(object sender, EventArgs e) => AddOrderItem(ITMenPantsLabel.Text, 400);
+        private void ITMenPantsBackCard_Click(object sender, EventArgs e) => AddOrderItem(ITMenPantsLabel.Text, 400);
 
-        private void ITmenUniformSetBackCard_Click(object sender, EventArgs e)
-        {
-            price = 750;
-            addOrder = new AddOrder(ITMenUniformSetLabel.Text, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //END Uniform Set
+        // IT Uniform Set Handlers
+        private void ITMenUniformSetLabel_Click(object sender, EventArgs e) => AddOrderItem(ITMenUniformSetLabel.Text, 750);
+        private void ITmenUniformSetImage_Click(object sender, EventArgs e) => AddOrderItem(ITMenUniformSetLabel.Text, 750);
+        private void ITmenUniformSetBackCard_Click(object sender, EventArgs e) => AddOrderItem(ITMenUniformSetLabel.Text, 750);
 
+        // Navigation Handlers
+        private void ProwareLabelCard_Click(object sender, EventArgs e) => NavigateToForm(category, true);
+        private void ProwareImageCard_Click(object sender, EventArgs e) => NavigateToForm(category, true);
 
-        //HEADERSS
+        private void ShsLabel_Click(object sender, EventArgs e) => NavigateToForm("SHS");
+        private void SHSImageCard_Click(object sender, EventArgs e) => NavigateToForm("SHS");
 
-        private void ShsLabel_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
+        private void TMLabel_Click(object sender, EventArgs e) => NavigateToForm("TM");
+        private void TMImageCard_Click(object sender, EventArgs e) => NavigateToForm("TM");
 
-        private void SHSImageCard_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
+        private void HMLabelCard_Click(object sender, EventArgs e) => NavigateToForm("HM");
+        private void HMImageCard_Click(object sender, EventArgs e) => NavigateToForm("HM");
     }
 }

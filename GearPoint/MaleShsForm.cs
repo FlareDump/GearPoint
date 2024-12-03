@@ -26,6 +26,23 @@ namespace GearPoint
             this.Close();
         }
 
+        // Gender Checkpoint Handlers
+        private void HandleCategorySelection(string newCategory)
+        {
+            category = newCategory;
+            var genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
+        }
+
+        private void ICTHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void ICTHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void TMHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void TMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+        private void HMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+
+
         // Top Item Handlers
         private void SHSMenTopImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
         private void SHSMenTopLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
@@ -56,22 +73,6 @@ namespace GearPoint
 
         private void ProwareLabelCard_Click(object sender, EventArgs e) => HandleProwareNavigation();
         private void ProwareImageCard_Click(object sender, EventArgs e) => HandleProwareNavigation();
-
-        // Gender Checkpoint Handlers
-        private void HandleCategorySelection(string newCategory)
-        {
-            category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void ICTHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
-        private void ICTHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
-        private void TMHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
-        private void TMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
-        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
-        private void HMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
 
         // Cart Handler
         private void CartIcon_Click(object sender, EventArgs e)

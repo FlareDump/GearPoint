@@ -13,10 +13,14 @@ namespace GearPoint
     public partial class FemaleITForm : Form
     {
 
-        string category;
         char gender;
+        string category;
         double price;
+ 
         Cart cart;
+        AddOrder addOrder;
+        GenderCheckpoint genderCheckpoint;
+        ProwareForm prowareForm;
 
         public FemaleITForm(char gender)
         {
@@ -24,6 +28,28 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        
+        private void ITBlouseLabel_Click(object sender, EventArgs e)
+        {
+            price = 250;
+            addOrder = new AddOrder(ITBlouseLabel.Text, gender , price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void ITBlouseImage_Click(object sender, EventArgs e)
+        {
+            price = 250;
+            addOrder = new AddOrder(ITBlouseLabel.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
+
+        private void ITBlouseBackCard_Click(object sender, EventArgs e)
+        {
+            price = 250;
+            addOrder = new AddOrder(ITBlouseLabel.Text, gender, price);
+            addOrder.Show();
+            this.Close();
+        }
     }
 }

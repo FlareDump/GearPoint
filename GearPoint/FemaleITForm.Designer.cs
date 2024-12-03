@@ -35,8 +35,8 @@
             this.roundedPictureBox10 = new GearPoint.RoundedPictureBox();
             this.ITMenPantsImage = new GearPoint.RoundedPictureBox();
             this.SHSMenPantsBackCard = new GearPoint.RoundedPictureBox();
-            this.ITMenTopImage = new GearPoint.RoundedPictureBox();
-            this.SHSMentopCard = new GearPoint.RoundedPictureBox();
+            this.ITBlouseImage = new GearPoint.RoundedPictureBox();
+            this.ITBlouseBackCard = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox13 = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox1 = new GearPoint.RoundedPictureBox();
             this.CartItemNumLbl = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@
             this.HMBackCard = new GradientRoundPanel();
             this.CartItemLbl = new GearPoint.RoundedBackLabel();
             this.RoundedFooter = new GearPoint.RoundedPanel();
-            this.ITMenTopLbl = new System.Windows.Forms.Label();
+            this.ITBlouseLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -71,8 +71,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ITMenPantsImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SHSMenPantsBackCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ITMenTopImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SHSMentopCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ITBlouseImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ITBlouseBackCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).BeginInit();
@@ -161,28 +161,30 @@
             this.SHSMenPantsBackCard.TabIndex = 63;
             this.SHSMenPantsBackCard.TabStop = false;
             // 
-            // ITMenTopImage
+            // ITBlouseImage
             // 
-            this.ITMenTopImage.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
-            this.ITMenTopImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ITMenTopImage.CornerRadius = 20;
-            this.ITMenTopImage.Location = new System.Drawing.Point(14, 360);
-            this.ITMenTopImage.Margin = new System.Windows.Forms.Padding(4);
-            this.ITMenTopImage.Name = "ITMenTopImage";
-            this.ITMenTopImage.Size = new System.Drawing.Size(264, 214);
-            this.ITMenTopImage.TabIndex = 60;
-            this.ITMenTopImage.TabStop = false;
+            this.ITBlouseImage.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
+            this.ITBlouseImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ITBlouseImage.CornerRadius = 20;
+            this.ITBlouseImage.Location = new System.Drawing.Point(14, 360);
+            this.ITBlouseImage.Margin = new System.Windows.Forms.Padding(4);
+            this.ITBlouseImage.Name = "ITBlouseImage";
+            this.ITBlouseImage.Size = new System.Drawing.Size(264, 214);
+            this.ITBlouseImage.TabIndex = 60;
+            this.ITBlouseImage.TabStop = false;
+            this.ITBlouseImage.Click += new System.EventHandler(this.ITBlouseImage_Click);
             // 
-            // SHSMentopCard
+            // ITBlouseBackCard
             // 
-            this.SHSMentopCard.BackColor = System.Drawing.Color.Gainsboro;
-            this.SHSMentopCard.CornerRadius = 40;
-            this.SHSMentopCard.Location = new System.Drawing.Point(14, 360);
-            this.SHSMentopCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SHSMentopCard.Name = "SHSMentopCard";
-            this.SHSMentopCard.Size = new System.Drawing.Size(264, 258);
-            this.SHSMentopCard.TabIndex = 61;
-            this.SHSMentopCard.TabStop = false;
+            this.ITBlouseBackCard.BackColor = System.Drawing.Color.Gainsboro;
+            this.ITBlouseBackCard.CornerRadius = 40;
+            this.ITBlouseBackCard.Location = new System.Drawing.Point(14, 360);
+            this.ITBlouseBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ITBlouseBackCard.Name = "ITBlouseBackCard";
+            this.ITBlouseBackCard.Size = new System.Drawing.Size(264, 258);
+            this.ITBlouseBackCard.TabIndex = 61;
+            this.ITBlouseBackCard.TabStop = false;
+            this.ITBlouseBackCard.Click += new System.EventHandler(this.ITBlouseBackCard_Click);
             // 
             // roundedPictureBox13
             // 
@@ -446,16 +448,17 @@
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 68;
             // 
-            // ITMenTopLbl
+            // ITBlouseLabel
             // 
-            this.ITMenTopLbl.AutoSize = true;
-            this.ITMenTopLbl.BackColor = System.Drawing.Color.Gainsboro;
-            this.ITMenTopLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITMenTopLbl.Location = new System.Drawing.Point(19, 581);
-            this.ITMenTopLbl.Name = "ITMenTopLbl";
-            this.ITMenTopLbl.Size = new System.Drawing.Size(93, 23);
-            this.ITMenTopLbl.TabIndex = 69;
-            this.ITMenTopLbl.Text = "IT Blouse";
+            this.ITBlouseLabel.AutoSize = true;
+            this.ITBlouseLabel.BackColor = System.Drawing.Color.Gainsboro;
+            this.ITBlouseLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ITBlouseLabel.Location = new System.Drawing.Point(19, 581);
+            this.ITBlouseLabel.Name = "ITBlouseLabel";
+            this.ITBlouseLabel.Size = new System.Drawing.Size(93, 23);
+            this.ITBlouseLabel.TabIndex = 69;
+            this.ITBlouseLabel.Text = "IT Blouse";
+            this.ITBlouseLabel.Click += new System.EventHandler(this.ITBlouseLabel_Click);
             // 
             // label1
             // 
@@ -536,13 +539,13 @@
             this.Controls.Add(this.roundedPictureBox7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ITMenTopLbl);
+            this.Controls.Add(this.ITBlouseLabel);
             this.Controls.Add(this.ITmenUniformSetImage);
             this.Controls.Add(this.roundedPictureBox10);
             this.Controls.Add(this.ITMenPantsImage);
             this.Controls.Add(this.SHSMenPantsBackCard);
-            this.Controls.Add(this.ITMenTopImage);
-            this.Controls.Add(this.SHSMentopCard);
+            this.Controls.Add(this.ITBlouseImage);
+            this.Controls.Add(this.ITBlouseBackCard);
             this.Controls.Add(this.roundedPictureBox13);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.gradientRoundPanel1);
@@ -560,8 +563,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ITMenPantsImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SHSMenPantsBackCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ITMenTopImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SHSMentopCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ITBlouseImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ITBlouseBackCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox2)).EndInit();
@@ -590,8 +593,8 @@
         private RoundedPictureBox roundedPictureBox10;
         private RoundedPictureBox ITMenPantsImage;
         private RoundedPictureBox SHSMenPantsBackCard;
-        private RoundedPictureBox ITMenTopImage;
-        private RoundedPictureBox SHSMentopCard;
+        private RoundedPictureBox ITBlouseImage;
+        private RoundedPictureBox ITBlouseBackCard;
         private RoundedPictureBox roundedPictureBox13;
         private RoundedPictureBox roundedPictureBox1;
         private System.Windows.Forms.Label CartItemNumLbl;
@@ -613,7 +616,7 @@
         private GradientRoundPanel HMBackCard;
         private RoundedBackLabel CartItemLbl;
         private RoundedPanel RoundedFooter;
-        private System.Windows.Forms.Label ITMenTopLbl;
+        private System.Windows.Forms.Label ITBlouseLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;

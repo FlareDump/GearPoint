@@ -28,5 +28,15 @@ namespace GearPoint
         {
 
         }
+
+        private void HMLongSleevePoloLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HMLongSleevePoloBackCard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

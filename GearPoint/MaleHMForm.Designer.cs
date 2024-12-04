@@ -39,7 +39,7 @@
             this.CartItemLbl = new GearPoint.RoundedBackLabel();
             this.CartIcon = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.HMLongSleevePoloLabel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.SHSMenPantsLabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,7 +58,7 @@
             this.roundedPictureBox12 = new GearPoint.RoundedPictureBox();
             this.SHSMenPantsBackCard = new GearPoint.RoundedPictureBox();
             this.HMMenLongSleevePoloImage = new GearPoint.RoundedPictureBox();
-            this.roundedPictureBox6 = new GearPoint.RoundedPictureBox();
+            this.HMLongSleevePoloBackCard = new GearPoint.RoundedPictureBox();
             this.roundedPictureBox1 = new GearPoint.RoundedPictureBox();
             this.gradientRoundPanel1 = new GradientRoundPanel();
             this.roundedPictureBox3 = new GearPoint.RoundedPictureBox();
@@ -88,7 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SHSMenPantsBackCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HMMenLongSleevePoloImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMLongSleevePoloBackCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).BeginInit();
             this.gradientRoundPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).BeginInit();
@@ -220,16 +220,17 @@
             this.label7.TabIndex = 50;
             this.label7.Text = "HM Pants";
             // 
-            // label4
+            // HMLongSleevePoloLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Gainsboro;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 569);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(243, 23);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "HM Men Long Sleeve Polo";
+            this.HMLongSleevePoloLabel.AutoSize = true;
+            this.HMLongSleevePoloLabel.BackColor = System.Drawing.Color.Gainsboro;
+            this.HMLongSleevePoloLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HMLongSleevePoloLabel.Location = new System.Drawing.Point(19, 569);
+            this.HMLongSleevePoloLabel.Name = "HMLongSleevePoloLabel";
+            this.HMLongSleevePoloLabel.Size = new System.Drawing.Size(243, 23);
+            this.HMLongSleevePoloLabel.TabIndex = 44;
+            this.HMLongSleevePoloLabel.Text = "HM Men Long Sleeve Polo";
+            this.HMLongSleevePoloLabel.Click += new System.EventHandler(this.HMLongSleevePoloLabel_Click);
             // 
             // dataGridView1
             // 
@@ -430,16 +431,17 @@
             this.HMMenLongSleevePoloImage.TabStop = false;
             this.HMMenLongSleevePoloImage.Click += new System.EventHandler(this.HMMenLongSleevePoloImage_Click);
             // 
-            // roundedPictureBox6
+            // HMLongSleevePoloBackCard
             // 
-            this.roundedPictureBox6.BackColor = System.Drawing.Color.Gainsboro;
-            this.roundedPictureBox6.CornerRadius = 40;
-            this.roundedPictureBox6.Location = new System.Drawing.Point(11, 347);
-            this.roundedPictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.roundedPictureBox6.Name = "roundedPictureBox6";
-            this.roundedPictureBox6.Size = new System.Drawing.Size(264, 258);
-            this.roundedPictureBox6.TabIndex = 43;
-            this.roundedPictureBox6.TabStop = false;
+            this.HMLongSleevePoloBackCard.BackColor = System.Drawing.Color.Gainsboro;
+            this.HMLongSleevePoloBackCard.CornerRadius = 40;
+            this.HMLongSleevePoloBackCard.Location = new System.Drawing.Point(11, 347);
+            this.HMLongSleevePoloBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HMLongSleevePoloBackCard.Name = "HMLongSleevePoloBackCard";
+            this.HMLongSleevePoloBackCard.Size = new System.Drawing.Size(264, 258);
+            this.HMLongSleevePoloBackCard.TabIndex = 43;
+            this.HMLongSleevePoloBackCard.TabStop = false;
+            this.HMLongSleevePoloBackCard.Click += new System.EventHandler(this.HMLongSleevePoloBackCard_Click);
             // 
             // roundedPictureBox1
             // 
@@ -639,9 +641,9 @@
             this.Controls.Add(this.HMmenPants);
             this.Controls.Add(this.roundedPictureBox12);
             this.Controls.Add(this.SHSMenPantsBackCard);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.HMLongSleevePoloLabel);
             this.Controls.Add(this.HMMenLongSleevePoloImage);
-            this.Controls.Add(this.roundedPictureBox6);
+            this.Controls.Add(this.HMLongSleevePoloBackCard);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -665,7 +667,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SHSMenPantsBackCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HMMenLongSleevePoloImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMLongSleevePoloBackCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
             this.gradientRoundPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox3)).EndInit();
@@ -698,9 +700,9 @@
         private RoundedPictureBox HMmenPants;
         private RoundedPictureBox roundedPictureBox12;
         private RoundedPictureBox SHSMenPantsBackCard;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label HMLongSleevePoloLabel;
         private RoundedPictureBox HMMenLongSleevePoloImage;
-        private RoundedPictureBox roundedPictureBox6;
+        private RoundedPictureBox HMLongSleevePoloBackCard;
         private RoundedPictureBox roundedPictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label SHSMenPantsLabel;

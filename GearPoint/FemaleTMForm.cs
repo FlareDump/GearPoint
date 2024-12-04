@@ -152,7 +152,7 @@ namespace GearPoint
         private void ShsLabel_Click(object sender, EventArgs e)
         {
             category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(gender);
+            genderCheckpoint = new GenderCheckpoint(category);
             genderCheckpoint.Show();
             this.Close();
         }
@@ -160,7 +160,7 @@ namespace GearPoint
         private void SHSImage_Click(object sender, EventArgs e)
         {
             category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(gender);
+            genderCheckpoint = new GenderCheckpoint(category);
             genderCheckpoint.Show();
             this.Close();
         }

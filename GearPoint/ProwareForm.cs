@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GearPoint
@@ -24,85 +17,94 @@ namespace GearPoint
 
         public ProwareForm(string category)
         {
-            this.category = category;
+            this.category = category;           
             InitializeComponent();
         }
 
+        private void HandleItemSelection(string itemName, double itemPrice)
+        {
+            price = itemPrice;
+            var addOrder = new AddOrder(itemName, price);
+            addOrder.Show();
+            this.Close();
+
+        }
         private void ProwareForm_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        //39th Anniversary Shirt Handler
+        private void ThirtyNineAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtImageCard.Text, 250);
+        private void ThirtyNineAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtPictureCard.Text, 250);
+        private void ThirtyNineAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtLabelCard.Text, 250);
+
+        //40th Anniversary Shirt Handler
+        private void FourthyAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtImageCard.Text, 250);
+        private void FourthyAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtLabelCard.Text, 250);
+        private void FourthyAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtPictureCard.Text, 250);
+
+        //41th Anniversary Shirt Handler
+        private void FourthyOneAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtImageCard.Text, 250);
+        private void FourthyOneAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtLabelCard.Text, 250);
+        private void FourthyOneAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtPictureCard.Text, 250);
+
+        //Shs PE Shirt Handler
+        private void ShsPEShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtImageCard.Text, 250);
+        private void ShsPEShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtLabelCard.Text, 250);
+        private void ShsPEShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtPictureCard.Text, 250);
+
+        //Shs PE Pants Handler
+        private void ShsPEPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsImageCard.Text, 250);
+        private void ShsPEPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsLabelCard.Text, 250);
+        private void ShsPEPantsPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsPictureCard.Text, 250);
+
+        //Shs PE Set Handler
+        private void ShsPESetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetImageCard.Text, 250);
+        private void ShsPESetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetLabelCard.Text, 250);
+        private void ShsPESetPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetPictureCard.Text, 250);
+
+        //Tertiary PE Shirt Handler
+        private void TertiaryPEShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsImageCard.Text, 250);
+        private void TertiaryPEShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, 250);
+        private void TertiaryPEShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsPictureCard.Text, 250);
+
+        //Tertiary PE Pants Handler
+        private void TertiaryPEPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsImageCard.Text, 250);
+        private void TertiaryPEPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, 250);
+        private void TertiaryPEPantsPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsPictureCard.Text, 250);
+
+        //Tertiary PE Set Handler
+        private void TertiaryPESetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetImageCard.Text, 250);
+        private void TertiaryPESetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetLabelCard.Text, 250);
+        private void TertiaryPESetPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetPictureCard.Text, 250);
+
+        //NSTP Shirt Handler
+        private void NstpShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtImageCard.Text, 250);
+        private void NstpShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtLabelCard.Text, 250);
+        private void NstpShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtPictureCard.Text, 250);
+
+        private void HandleCategorySelection(string newCategory)
+        {
+            category = newCategory;
+            var genderCheckpoint = new GenderCheckpoint(category);
+            genderCheckpoint.Show();
+            this.Close();
         }
         //SHS
-        private void SHSLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void SHSimageCard_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        //END OF SHS
-
+        private void SHSLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("SHS");
+        private void SHSimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("SHS");
         //TM
-        private void TMLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void TMimageCard_Click(object sender, EventArgs e)
-        {
-            category = "TM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        //END OF TM
-
+        private void TMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void TMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
         //IT
-        private void ITLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void ITimageCard_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        //END OF IT
-
+        private void ITLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void ITimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
         //HM
-        private void HMLabelCard_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
+        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+        private void HMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
 
-        private void HMimageCard_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        //END OF HM
+
+
     }
 }

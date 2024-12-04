@@ -102,7 +102,6 @@ C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.Cart.resources
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.FemaleHMForm.resources
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.FemaleShsForm.resources
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.FemaleTMForm.resources
-C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.ITuniformFORM.resources
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.MaleHMForm.resources
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.StartingPoint.resources
 C:\Users\Lomotos\Desktop\Gearpoint\GearPoint\obj\Debug\GearPoint.Main_Menu.resources
@@ -156,3 +155,7 @@ C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleITForm.resou
 C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleITForm.resources
 C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleTMForm.resources
 C:\Users\rayver\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.ProwareForm.resources
+C:\Users\Lomotos\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.FemaleITForm.resources
+C:\Users\Lomotos\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleITForm.resources
+C:\Users\Lomotos\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.MaleTMForm.resources
+C:\Users\Lomotos\Desktop\GEARPOINT\GearPoint\obj\Debug\GearPoint.ProwareForm.resources

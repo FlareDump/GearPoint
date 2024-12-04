@@ -35,7 +35,7 @@ namespace GearPoint
         private void HMBlazerImage_Click(object sender, EventArgs e)
         {
             price = 250;
-            addOrder = new AddOrder(HMBlazerImage.Text, gender, price);
+            addOrder = new AddOrder(HMBlazerImageCard.Text, gender, price);
             addOrder.Show();
             this.Close();
         }
@@ -106,6 +106,11 @@ namespace GearPoint
             cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
             cart.Show();
             this.Close();
+        }
+
+        private void roundedPictureBox4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -67,5 +67,6 @@ namespace GearPoint
 
         private void HMLabelCard_Click(object sender, EventArgs e) => NavigateToForm("HM");
         private void HMImageCard_Click(object sender, EventArgs e) => NavigateToForm("HM");
+
     }
 }

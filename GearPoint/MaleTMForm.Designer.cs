@@ -93,11 +93,10 @@
             this.ProwareLabelCard.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProwareLabelCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ProwareLabelCard.Location = new System.Drawing.Point(0, 2);
-            this.ProwareLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProwareLabelCard.Name = "ProwareLabelCard";
-            this.ProwareLabelCard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.ProwareLabelCard.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.ProwareLabelCard.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ProwareLabelCard.Size = new System.Drawing.Size(196, 98);
+            this.ProwareLabelCard.Size = new System.Drawing.Size(261, 121);
             this.ProwareLabelCard.TabIndex = 109;
             this.ProwareLabelCard.Text = "Proware";
             this.ProwareLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,10 +108,10 @@
             this.ITPictureCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_IT1;
             this.ITPictureCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ITPictureCard.CornerRadius = 30;
-            this.ITPictureCard.Location = new System.Drawing.Point(110, 0);
-            this.ITPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ITPictureCard.Location = new System.Drawing.Point(147, 0);
+            this.ITPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ITPictureCard.Name = "ITPictureCard";
-            this.ITPictureCard.Size = new System.Drawing.Size(100, 101);
+            this.ITPictureCard.Size = new System.Drawing.Size(133, 124);
             this.ITPictureCard.TabIndex = 37;
             this.ITPictureCard.TabStop = false;
             this.ITPictureCard.Click += new System.EventHandler(this.ITPictureCard_Click);
@@ -122,11 +121,10 @@
             this.ITLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.ITLabelCard.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ITLabelCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ITLabelCard.Location = new System.Drawing.Point(2, 1);
-            this.ITLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ITLabelCard.Location = new System.Drawing.Point(3, 1);
             this.ITLabelCard.Name = "ITLabelCard";
-            this.ITLabelCard.Padding = new System.Windows.Forms.Padding(5, 30, 0, 0);
-            this.ITLabelCard.Size = new System.Drawing.Size(176, 99);
+            this.ITLabelCard.Padding = new System.Windows.Forms.Padding(7, 37, 0, 0);
+            this.ITLabelCard.Size = new System.Drawing.Size(235, 122);
             this.ITLabelCard.TabIndex = 12;
             this.ITLabelCard.Text = "Information and Communications\r\nTechnology";
             this.ITLabelCard.Click += new System.EventHandler(this.ITLabelCard_Click);
@@ -137,10 +135,10 @@
             this.ShsPictureCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ShsPictureCard.BackgroundImage")));
             this.ShsPictureCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ShsPictureCard.CornerRadius = 30;
-            this.ShsPictureCard.Location = new System.Drawing.Point(107, 1);
-            this.ShsPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ShsPictureCard.Location = new System.Drawing.Point(143, 1);
+            this.ShsPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShsPictureCard.Name = "ShsPictureCard";
-            this.ShsPictureCard.Size = new System.Drawing.Size(113, 101);
+            this.ShsPictureCard.Size = new System.Drawing.Size(151, 124);
             this.ShsPictureCard.TabIndex = 37;
             this.ShsPictureCard.TabStop = false;
             this.ShsPictureCard.Click += new System.EventHandler(this.ShsPictureCard_Click);
@@ -150,10 +148,9 @@
             this.ShsLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.ShsLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShsLabelCard.Location = new System.Drawing.Point(0, 1);
-            this.ShsLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ShsLabelCard.Name = "ShsLabelCard";
-            this.ShsLabelCard.Padding = new System.Windows.Forms.Padding(20, 30, 100, 0);
-            this.ShsLabelCard.Size = new System.Drawing.Size(196, 101);
+            this.ShsLabelCard.Padding = new System.Windows.Forms.Padding(27, 37, 133, 0);
+            this.ShsLabelCard.Size = new System.Drawing.Size(261, 124);
             this.ShsLabelCard.TabIndex = 12;
             this.ShsLabelCard.Text = "Senior  High              School";
             this.ShsLabelCard.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -166,10 +163,10 @@
             this.ProwareImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProwareImageCard.BackgroundImage")));
             this.ProwareImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ProwareImageCard.CornerRadius = 30;
-            this.ProwareImageCard.Location = new System.Drawing.Point(110, -1);
-            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ProwareImageCard.Location = new System.Drawing.Point(147, -1);
+            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProwareImageCard.Name = "ProwareImageCard";
-            this.ProwareImageCard.Size = new System.Drawing.Size(113, 101);
+            this.ProwareImageCard.Size = new System.Drawing.Size(151, 124);
             this.ProwareImageCard.TabIndex = 37;
             this.ProwareImageCard.TabStop = false;
             this.ProwareImageCard.Click += new System.EventHandler(this.ProwareImageCard_Click);
@@ -182,10 +179,10 @@
             this.HMBackCard.GradientEndColor = System.Drawing.Color.DarkRed;
             this.HMBackCard.GradientRatio = 0.4F;
             this.HMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.HMBackCard.Location = new System.Drawing.Point(229, 176);
-            this.HMBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.HMBackCard.Location = new System.Drawing.Point(305, 217);
+            this.HMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMBackCard.Name = "HMBackCard";
-            this.HMBackCard.Size = new System.Drawing.Size(200, 101);
+            this.HMBackCard.Size = new System.Drawing.Size(267, 124);
             this.HMBackCard.TabIndex = 120;
             // 
             // HMPictureCard
@@ -194,10 +191,10 @@
             this.HMPictureCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_HRM;
             this.HMPictureCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HMPictureCard.CornerRadius = 30;
-            this.HMPictureCard.Location = new System.Drawing.Point(103, 2);
-            this.HMPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.HMPictureCard.Location = new System.Drawing.Point(137, 2);
+            this.HMPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMPictureCard.Name = "HMPictureCard";
-            this.HMPictureCard.Size = new System.Drawing.Size(113, 101);
+            this.HMPictureCard.Size = new System.Drawing.Size(151, 124);
             this.HMPictureCard.TabIndex = 37;
             this.HMPictureCard.TabStop = false;
             this.HMPictureCard.Click += new System.EventHandler(this.HMPictureCard_Click);
@@ -206,11 +203,10 @@
             // 
             this.HMLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.HMLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMLabelCard.Location = new System.Drawing.Point(7, 2);
-            this.HMLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.HMLabelCard.Location = new System.Drawing.Point(9, 2);
             this.HMLabelCard.Name = "HMLabelCard";
-            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 75, 0);
-            this.HMLabelCard.Size = new System.Drawing.Size(191, 99);
+            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.HMLabelCard.Size = new System.Drawing.Size(255, 122);
             this.HMLabelCard.TabIndex = 12;
             this.HMLabelCard.Text = "Hospitality Management";
             this.HMLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -220,10 +216,10 @@
             // 
             this.TMNecktiePictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMNecktiePictureCard.CornerRadius = 40;
-            this.TMNecktiePictureCard.Location = new System.Drawing.Point(232, 510);
-            this.TMNecktiePictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMNecktiePictureCard.Location = new System.Drawing.Point(309, 628);
+            this.TMNecktiePictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMNecktiePictureCard.Name = "TMNecktiePictureCard";
-            this.TMNecktiePictureCard.Size = new System.Drawing.Size(198, 210);
+            this.TMNecktiePictureCard.Size = new System.Drawing.Size(264, 258);
             this.TMNecktiePictureCard.TabIndex = 119;
             this.TMNecktiePictureCard.TabStop = false;
             // 
@@ -231,9 +227,10 @@
             // 
             this.TMBlazerImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMBlazerImageCard.CornerRadius = 20;
-            this.TMBlazerImageCard.Location = new System.Drawing.Point(231, 292);
+            this.TMBlazerImageCard.Location = new System.Drawing.Point(308, 359);
+            this.TMBlazerImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TMBlazerImageCard.Name = "TMBlazerImageCard";
-            this.TMBlazerImageCard.Size = new System.Drawing.Size(198, 175);
+            this.TMBlazerImageCard.Size = new System.Drawing.Size(264, 215);
             this.TMBlazerImageCard.TabIndex = 114;
             this.TMBlazerImageCard.TabStop = false;
             this.TMBlazerImageCard.Click += new System.EventHandler(this.TMBlazerImage_Click);
@@ -242,9 +239,10 @@
             // 
             this.TMPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMPantsImageCard.CornerRadius = 20;
-            this.TMPantsImageCard.Location = new System.Drawing.Point(18, 510);
+            this.TMPantsImageCard.Location = new System.Drawing.Point(24, 628);
+            this.TMPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TMPantsImageCard.Name = "TMPantsImageCard";
-            this.TMPantsImageCard.Size = new System.Drawing.Size(198, 178);
+            this.TMPantsImageCard.Size = new System.Drawing.Size(264, 219);
             this.TMPantsImageCard.TabIndex = 116;
             this.TMPantsImageCard.TabStop = false;
             this.TMPantsImageCard.Click += new System.EventHandler(this.TMPantsIamge_Click);
@@ -253,10 +251,10 @@
             // 
             this.TMPantsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMPantsBackCard.CornerRadius = 40;
-            this.TMPantsBackCard.Location = new System.Drawing.Point(18, 510);
-            this.TMPantsBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMPantsBackCard.Location = new System.Drawing.Point(24, 628);
+            this.TMPantsBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMPantsBackCard.Name = "TMPantsBackCard";
-            this.TMPantsBackCard.Size = new System.Drawing.Size(198, 210);
+            this.TMPantsBackCard.Size = new System.Drawing.Size(264, 258);
             this.TMPantsBackCard.TabIndex = 117;
             this.TMPantsBackCard.TabStop = false;
             this.TMPantsBackCard.Click += new System.EventHandler(this.TMPantsBackCard_Click);
@@ -265,9 +263,10 @@
             // 
             this.TMSkirtImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMSkirtImage.CornerRadius = 20;
-            this.TMSkirtImage.Location = new System.Drawing.Point(232, 512);
+            this.TMSkirtImage.Location = new System.Drawing.Point(309, 630);
+            this.TMSkirtImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TMSkirtImage.Name = "TMSkirtImage";
-            this.TMSkirtImage.Size = new System.Drawing.Size(198, 178);
+            this.TMSkirtImage.Size = new System.Drawing.Size(264, 219);
             this.TMSkirtImage.TabIndex = 118;
             this.TMSkirtImage.TabStop = false;
             // 
@@ -275,10 +274,10 @@
             // 
             this.TMBlazerBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMBlazerBackCard.CornerRadius = 40;
-            this.TMBlazerBackCard.Location = new System.Drawing.Point(234, 292);
-            this.TMBlazerBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMBlazerBackCard.Location = new System.Drawing.Point(312, 359);
+            this.TMBlazerBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMBlazerBackCard.Name = "TMBlazerBackCard";
-            this.TMBlazerBackCard.Size = new System.Drawing.Size(198, 210);
+            this.TMBlazerBackCard.Size = new System.Drawing.Size(264, 258);
             this.TMBlazerBackCard.TabIndex = 115;
             this.TMBlazerBackCard.TabStop = false;
             this.TMBlazerBackCard.Click += new System.EventHandler(this.TMBlazerBackCard_Click);
@@ -287,9 +286,10 @@
             // 
             this.TMPoloImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMPoloImageCard.CornerRadius = 20;
-            this.TMPoloImageCard.Location = new System.Drawing.Point(15, 295);
+            this.TMPoloImageCard.Location = new System.Drawing.Point(20, 363);
+            this.TMPoloImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TMPoloImageCard.Name = "TMPoloImageCard";
-            this.TMPoloImageCard.Size = new System.Drawing.Size(198, 175);
+            this.TMPoloImageCard.Size = new System.Drawing.Size(264, 215);
             this.TMPoloImageCard.TabIndex = 112;
             this.TMPoloImageCard.TabStop = false;
             this.TMPoloImageCard.Click += new System.EventHandler(this.TMPoloImage_Click);
@@ -298,10 +298,10 @@
             // 
             this.TMPoloBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMPoloBackCard.CornerRadius = 40;
-            this.TMPoloBackCard.Location = new System.Drawing.Point(15, 295);
-            this.TMPoloBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMPoloBackCard.Location = new System.Drawing.Point(20, 363);
+            this.TMPoloBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMPoloBackCard.Name = "TMPoloBackCard";
-            this.TMPoloBackCard.Size = new System.Drawing.Size(198, 210);
+            this.TMPoloBackCard.Size = new System.Drawing.Size(264, 258);
             this.TMPoloBackCard.TabIndex = 113;
             this.TMPoloBackCard.TabStop = false;
             this.TMPoloBackCard.Click += new System.EventHandler(this.TMPoloBackCard_Click);
@@ -314,10 +314,10 @@
             this.ICTBackCard.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ICTBackCard.GradientRatio = 0.4F;
             this.ICTBackCard.GradientStartColor = System.Drawing.Color.Silver;
-            this.ICTBackCard.Location = new System.Drawing.Point(225, 69);
-            this.ICTBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ICTBackCard.Location = new System.Drawing.Point(300, 85);
+            this.ICTBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ICTBackCard.Name = "ICTBackCard";
-            this.ICTBackCard.Size = new System.Drawing.Size(198, 100);
+            this.ICTBackCard.Size = new System.Drawing.Size(264, 123);
             this.ICTBackCard.TabIndex = 110;
             // 
             // roundedPictureBox1
@@ -325,10 +325,10 @@
             this.roundedPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.BackgroundImage")));
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(18, 11);
-            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox1.Location = new System.Drawing.Point(24, 14);
+            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(83, 43);
+            this.roundedPictureBox1.Size = new System.Drawing.Size(111, 53);
             this.roundedPictureBox1.TabIndex = 108;
             this.roundedPictureBox1.TabStop = false;
             // 
@@ -337,9 +337,10 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(478, 65);
+            this.dataGridView1.Size = new System.Drawing.Size(637, 80);
             this.dataGridView1.TabIndex = 107;
             // 
             // TMBackCard
@@ -350,10 +351,10 @@
             this.TMBackCard.GradientEndColor = System.Drawing.Color.Gold;
             this.TMBackCard.GradientRatio = 0.4F;
             this.TMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.TMBackCard.Location = new System.Drawing.Point(9, 69);
-            this.TMBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMBackCard.Location = new System.Drawing.Point(12, 85);
+            this.TMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMBackCard.Name = "TMBackCard";
-            this.TMBackCard.Size = new System.Drawing.Size(198, 100);
+            this.TMBackCard.Size = new System.Drawing.Size(264, 123);
             this.TMBackCard.TabIndex = 111;
             // 
             // ProwareCardBack
@@ -364,10 +365,10 @@
             this.ProwareCardBack.GradientEndColor = System.Drawing.Color.CornflowerBlue;
             this.ProwareCardBack.GradientRatio = 0.5F;
             this.ProwareCardBack.GradientStartColor = System.Drawing.Color.White;
-            this.ProwareCardBack.Location = new System.Drawing.Point(12, 173);
-            this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(2);
+            this.ProwareCardBack.Location = new System.Drawing.Point(16, 213);
+            this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ProwareCardBack.Name = "ProwareCardBack";
-            this.ProwareCardBack.Size = new System.Drawing.Size(198, 100);
+            this.ProwareCardBack.Size = new System.Drawing.Size(264, 123);
             this.ProwareCardBack.TabIndex = 109;
             // 
             // RoundedFooter
@@ -383,18 +384,18 @@
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.RoundedFooter.Location = new System.Drawing.Point(15, 771);
+            this.RoundedFooter.Location = new System.Drawing.Point(20, 949);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RoundedFooter.Name = "RoundedFooter";
-            this.RoundedFooter.Size = new System.Drawing.Size(400, 82);
+            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 123;
             // 
             // CartItemNumLbl
             // 
             this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartItemNumLbl.Location = new System.Drawing.Point(33, 14);
-            this.CartItemNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CartItemNumLbl.Location = new System.Drawing.Point(44, 17);
             this.CartItemNumLbl.Name = "CartItemNumLbl";
-            this.CartItemNumLbl.Size = new System.Drawing.Size(33, 16);
+            this.CartItemNumLbl.Size = new System.Drawing.Size(44, 20);
             this.CartItemNumLbl.TabIndex = 0;
             this.CartItemNumLbl.Text = "0";
             // 
@@ -403,10 +404,9 @@
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(282, 11);
-            this.TotalLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalLbl.Location = new System.Drawing.Point(376, 14);
             this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(52, 19);
+            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
             this.TotalLbl.TabIndex = 5;
             this.TotalLbl.Text = "Total:";
             // 
@@ -415,10 +415,9 @@
             this.TotalOutputLbl.AutoSize = true;
             this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(293, 35);
-            this.TotalOutputLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalOutputLbl.Location = new System.Drawing.Point(391, 43);
             this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(82, 32);
+            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
             this.TotalOutputLbl.TabIndex = 4;
             this.TotalOutputLbl.Text = "$0.00";
             // 
@@ -427,10 +426,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(283, -17);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(377, -21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 19);
+            this.label8.Size = new System.Drawing.Size(64, 24);
             this.label8.TabIndex = 3;
             this.label8.Text = "Total:";
             // 
@@ -440,10 +438,10 @@
             this.roundButton1.BorderRadius = 30;
             this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.roundButton1.Location = new System.Drawing.Point(69, 11);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundButton1.Location = new System.Drawing.Point(92, 14);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(200, 64);
+            this.roundButton1.Size = new System.Drawing.Size(267, 79);
             this.roundButton1.TabIndex = 2;
             this.roundButton1.Text = "Proceed to Payment";
             this.roundButton1.UseVisualStyleBackColor = false;
@@ -452,10 +450,9 @@
             // 
             this.CartItemLbl.AutoSize = true;
             this.CartItemLbl.CornerRadius = 50;
-            this.CartItemLbl.Location = new System.Drawing.Point(35, -14);
-            this.CartItemLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CartItemLbl.Location = new System.Drawing.Point(47, -17);
             this.CartItemLbl.Name = "CartItemLbl";
-            this.CartItemLbl.Size = new System.Drawing.Size(15, 16);
+            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
             this.CartItemLbl.TabIndex = 1;
             this.CartItemLbl.Text = "0";
             this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -465,10 +462,10 @@
             // 
             this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
             this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CartIcon.Location = new System.Drawing.Point(11, 23);
-            this.CartIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.CartIcon.Location = new System.Drawing.Point(15, 28);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CartIcon.Name = "CartIcon";
-            this.CartIcon.Size = new System.Drawing.Size(35, 40);
+            this.CartIcon.Size = new System.Drawing.Size(47, 49);
             this.CartIcon.TabIndex = 0;
             this.CartIcon.TabStop = false;
             // 
@@ -476,9 +473,10 @@
             // 
             this.TMNecktieImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMNecktieImageCard.CornerRadius = 20;
-            this.TMNecktieImageCard.Location = new System.Drawing.Point(231, 510);
+            this.TMNecktieImageCard.Location = new System.Drawing.Point(308, 628);
+            this.TMNecktieImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TMNecktieImageCard.Name = "TMNecktieImageCard";
-            this.TMNecktieImageCard.Size = new System.Drawing.Size(198, 178);
+            this.TMNecktieImageCard.Size = new System.Drawing.Size(264, 219);
             this.TMNecktieImageCard.TabIndex = 126;
             this.TMNecktieImageCard.TabStop = false;
             // 
@@ -487,10 +485,9 @@
             this.TMPantsLabelCard.AutoSize = true;
             this.TMPantsLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMPantsLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMPantsLabelCard.Location = new System.Drawing.Point(26, 691);
-            this.TMPantsLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TMPantsLabelCard.Location = new System.Drawing.Point(35, 850);
             this.TMPantsLabelCard.Name = "TMPantsLabelCard";
-            this.TMPantsLabelCard.Size = new System.Drawing.Size(74, 18);
+            this.TMPantsLabelCard.Size = new System.Drawing.Size(95, 23);
             this.TMPantsLabelCard.TabIndex = 127;
             this.TMPantsLabelCard.Text = "TM Pants";
             this.TMPantsLabelCard.Click += new System.EventHandler(this.TMPantsLabel_Click);
@@ -500,10 +497,9 @@
             this.TMNeckTieLabelCard.AutoSize = true;
             this.TMNeckTieLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMNeckTieLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMNeckTieLabelCard.Location = new System.Drawing.Point(238, 691);
-            this.TMNeckTieLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TMNeckTieLabelCard.Location = new System.Drawing.Point(317, 850);
             this.TMNeckTieLabelCard.Name = "TMNeckTieLabelCard";
-            this.TMNeckTieLabelCard.Size = new System.Drawing.Size(87, 18);
+            this.TMNeckTieLabelCard.Size = new System.Drawing.Size(110, 23);
             this.TMNeckTieLabelCard.TabIndex = 128;
             this.TMNeckTieLabelCard.Text = "TM Necktie";
             // 
@@ -512,10 +508,9 @@
             this.TMPoloLabelCard.AutoSize = true;
             this.TMPoloLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMPoloLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMPoloLabelCard.Location = new System.Drawing.Point(26, 475);
-            this.TMPoloLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TMPoloLabelCard.Location = new System.Drawing.Point(35, 585);
             this.TMPoloLabelCard.Name = "TMPoloLabelCard";
-            this.TMPoloLabelCard.Size = new System.Drawing.Size(66, 18);
+            this.TMPoloLabelCard.Size = new System.Drawing.Size(84, 23);
             this.TMPoloLabelCard.TabIndex = 129;
             this.TMPoloLabelCard.Text = "TM Polo";
             this.TMPoloLabelCard.Click += new System.EventHandler(this.TMPoloLabel_Click);
@@ -525,20 +520,19 @@
             this.TMBlazerLabelCard.AutoSize = true;
             this.TMBlazerLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TMBlazerLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMBlazerLabelCard.Location = new System.Drawing.Point(245, 475);
-            this.TMBlazerLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TMBlazerLabelCard.Location = new System.Drawing.Point(327, 585);
             this.TMBlazerLabelCard.Name = "TMBlazerLabelCard";
-            this.TMBlazerLabelCard.Size = new System.Drawing.Size(78, 18);
+            this.TMBlazerLabelCard.Size = new System.Drawing.Size(100, 23);
             this.TMBlazerLabelCard.TabIndex = 130;
             this.TMBlazerLabelCard.Text = "TM Blazer";
             this.TMBlazerLabelCard.Click += new System.EventHandler(this.TMBlazerLabel_Click);
             // 
             // MaleTMForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(487, 750);
+            this.ClientSize = new System.Drawing.Size(592, 903);
             this.Controls.Add(this.TMBlazerLabelCard);
             this.Controls.Add(this.TMPoloLabelCard);
             this.Controls.Add(this.TMNeckTieLabelCard);
@@ -559,7 +553,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.ProwareCardBack);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MaleTMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";

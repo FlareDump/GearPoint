@@ -324,7 +324,6 @@
             this.ShsImageCard.Size = new System.Drawing.Size(113, 101);
             this.ShsImageCard.TabIndex = 37;
             this.ShsImageCard.TabStop = false;
-            this.ShsImageCard.Click += new System.EventHandler(this.roundedPictureBox4_Click);
             // 
             // ShsLabelCard
             // 

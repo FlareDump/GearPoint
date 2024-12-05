@@ -90,7 +90,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(560, 80);
@@ -156,7 +156,7 @@
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.RoundedFooter.Location = new System.Drawing.Point(27, 1120);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 40;
@@ -417,7 +417,7 @@
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STI GearPoint";

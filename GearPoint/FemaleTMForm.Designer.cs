@@ -591,7 +591,6 @@
             this.Name = "FemaleTMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FemaleTMForm";
-            this.Load += new System.EventHandler(this.FemaleTMForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TMUniformSetImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TMUniformSetBackCard)).EndInit();

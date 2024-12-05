@@ -1,222 +1,79 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class FemaleTMForm : Form
     {
-        char gender;
-        string category;
-        double price;
+        private char gender;
+        private string category;
 
-        Cart cart;
-        AddOrder addOrder;
-        GenderCheckpoint genderCheckpoint;
-        ProwareForm prowareForm;
         public FemaleTMForm(char gender)
         {
             this.gender = gender;
             InitializeComponent();
         }
 
-        private void FemaleTMForm_Load(object sender, EventArgs e)
+        // Reusable method for adding orders
+        private void AddOrderItem(string itemName, double price)
         {
-
-        }
-
-        //TM Blouse
-        private void TMBlouseLabel_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMBlouseLabel.Text, gender, price);
+            var addOrder = new AddOrder(itemName, gender, price);
             addOrder.Show();
             this.Close();
         }
 
-        private void TMBlouseImage_Click(object sender, EventArgs e)
+        // Reusable method for navigation
+        private void NavigateToForm(string selectedCategory, bool isProware = false)
         {
-            addOrder = new AddOrder(TMBlouseLabel.Text, gender, price);
-            addOrder.Show();
+            if (isProware)
+            {
+                var prowareForm = new ProwareForm(selectedCategory);
+                prowareForm.Show();
+            }
+            else
+            {
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory);
+                genderCheckpoint.Show();
+            }
             this.Close();
         }
 
-        private void TMBlouseBackCard_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMBlouseLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //END TM Blouse
+        // TM Blouse Handlers
+        private void TMBlouseLabel_Click(object sender, EventArgs e) => AddOrderItem(TMBlouseLabel.Text, 300);
+        private void TMBlouseImage_Click(object sender, EventArgs e) => AddOrderItem(TMBlouseLabel.Text, 300);
+        private void TMBlouseBackCard_Click(object sender, EventArgs e) => AddOrderItem(TMBlouseLabel.Text, 300);
 
-        //TM Blazer
-        private void TMBlazerLabel_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMBlazerLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        // TM Blazer Handlers
+        private void TMBlazerLabel_Click(object sender, EventArgs e) => AddOrderItem(TMBlazerLabel.Text, 600);
+        private void TMBlazerImage_Click(object sender, EventArgs e) => AddOrderItem(TMBlazerLabel.Text, 600);
+        private void TMBlazerBackCard_Click(object sender, EventArgs e) => AddOrderItem(TMBlazerLabel.Text, 600);
 
-        private void TMBlazerImage_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMBlazerLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        // TM NeckTie Handlers
+        private void TMNeckTieLabel_Click(object sender, EventArgs e) => AddOrderItem(TMNeckTieLabel.Text, 100);
+        private void TMNeckTieImage_Click(object sender, EventArgs e) => AddOrderItem(TMNeckTieLabel.Text, 100);
+        private void TMNeckTieBackCard_Click(object sender, EventArgs e) => AddOrderItem(TMNeckTieLabel.Text, 100);
 
-        private void TMBlazerBackCard_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMBlazerLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //END TM Blazer
+        // TM Skirt Handlers
+        private void TMSkirtLabel_Click(object sender, EventArgs e) => AddOrderItem(TMSkirtLabel.Text, 400);
+        private void TMSkirtImage_Click(object sender, EventArgs e) => AddOrderItem(TMSkirtLabel.Text, 400);
+        private void TMSkirtBackCard_Click(object sender, EventArgs e) => AddOrderItem(TMSkirtLabel.Text, 400);
 
-        //TM NeckTie
-        private void TMNeckTieLabel_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMNeckTieLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        // TM Uniform Set Handlers
+        private void TMUniformSetLabel_Click(object sender, EventArgs e) => AddOrderItem(TMUniformSetLabel.Text, 1200);
+        private void TMUniformSetImage_Click(object sender, EventArgs e) => AddOrderItem(TMUniformSetLabel.Text, 1200);
+        private void TMUniformSetBackCard_Click(object sender, EventArgs e) => AddOrderItem(TMUniformSetLabel.Text, 1200);
 
-        private void TMNeckTieImage_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMNeckTieLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        // Navigation Handlers
+        private void ShsLabel_Click(object sender, EventArgs e) => NavigateToForm("SHS");
+        private void SHSImage_Click(object sender, EventArgs e) => NavigateToForm("SHS");
 
-        private void TMNeckTieBackCard_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMNeckTieLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //END TM NeckTie
+        private void ITLabel_Click(object sender, EventArgs e) => NavigateToForm("IT");
+        private void ITImage_Click(object sender, EventArgs e) => NavigateToForm("IT");
 
-        //TM Skirt
-        private void TMSkirtLabel_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMSkirtLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
+        private void ProwareLabel_Click(object sender, EventArgs e) => NavigateToForm(category, true);
+        private void ProwareImage_Click(object sender, EventArgs e) => NavigateToForm(category, true);
 
-        private void TMSkirtImage_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMSkirtLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void TMSkirtBackCard_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMSkirtLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //END TM Skirt
-
-        //TM Uniform Set
-        private void TMUniformSetLabel_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMUniformSetLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void TMUniformSetImage_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMUniformSetLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-
-        private void TMUniformSetBackCard_Click(object sender, EventArgs e)
-        {
-            addOrder = new AddOrder(TMUniformSetLabel.Text, gender, price);
-            addOrder.Show();
-            this.Close();
-        }
-        //TM Uniform Set
-
-        //Headers
-
-        //SHS
-        private void ShsLabel_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void SHSImage_Click(object sender, EventArgs e)
-        {
-            category = "SHS";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        //END SHS
-
-        //IT
-        private void ITLabel_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void ITImage_Click(object sender, EventArgs e)
-        {
-            category = "IT";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        //END IT
-
-        //Proware
-        private void ProwareLabel_Click(object sender, EventArgs e)
-        {
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-
-        private void ProwareImage_Click(object sender, EventArgs e)
-        {
-            prowareForm = new ProwareForm(category);
-            prowareForm.Show();
-            this.Close();
-        }
-        //End Proware
-
-        //HM
-        private void HMLabel_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-
-        private void HMImage_Click(object sender, EventArgs e)
-        {
-            category = "HM";
-            genderCheckpoint = new GenderCheckpoint(category);
-            genderCheckpoint.Show();
-            this.Close();
-        }
-        //END HM
-
+        private void HMLabel_Click(object sender, EventArgs e) => NavigateToForm("HM");
+        private void HMImage_Click(object sender, EventArgs e) => NavigateToForm("HM");
     }
 }

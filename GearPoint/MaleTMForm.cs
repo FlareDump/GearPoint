@@ -81,5 +81,9 @@ namespace GearPoint
         private void HMPictureCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
         private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
 
+        private void MaleTMForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

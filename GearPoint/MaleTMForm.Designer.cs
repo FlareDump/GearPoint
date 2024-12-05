@@ -228,7 +228,7 @@
             this.TMBlazerImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMBlazerImageCard.CornerRadius = 20;
             this.TMBlazerImageCard.Location = new System.Drawing.Point(308, 359);
-            this.TMBlazerImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMBlazerImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TMBlazerImageCard.Name = "TMBlazerImageCard";
             this.TMBlazerImageCard.Size = new System.Drawing.Size(264, 215);
             this.TMBlazerImageCard.TabIndex = 114;
@@ -240,7 +240,7 @@
             this.TMPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMPantsImageCard.CornerRadius = 20;
             this.TMPantsImageCard.Location = new System.Drawing.Point(24, 628);
-            this.TMPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMPantsImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TMPantsImageCard.Name = "TMPantsImageCard";
             this.TMPantsImageCard.Size = new System.Drawing.Size(264, 219);
             this.TMPantsImageCard.TabIndex = 116;
@@ -264,7 +264,7 @@
             this.TMSkirtImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMSkirtImage.CornerRadius = 20;
             this.TMSkirtImage.Location = new System.Drawing.Point(309, 630);
-            this.TMSkirtImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMSkirtImage.Margin = new System.Windows.Forms.Padding(4);
             this.TMSkirtImage.Name = "TMSkirtImage";
             this.TMSkirtImage.Size = new System.Drawing.Size(264, 219);
             this.TMSkirtImage.TabIndex = 118;
@@ -287,7 +287,7 @@
             this.TMPoloImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMPoloImageCard.CornerRadius = 20;
             this.TMPoloImageCard.Location = new System.Drawing.Point(20, 363);
-            this.TMPoloImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMPoloImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TMPoloImageCard.Name = "TMPoloImageCard";
             this.TMPoloImageCard.Size = new System.Drawing.Size(264, 215);
             this.TMPoloImageCard.TabIndex = 112;
@@ -337,7 +337,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-1, -1);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(637, 80);
@@ -385,7 +385,7 @@
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.RoundedFooter.Location = new System.Drawing.Point(20, 949);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 123;
@@ -474,7 +474,7 @@
             this.TMNecktieImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TMNecktieImageCard.CornerRadius = 20;
             this.TMNecktieImageCard.Location = new System.Drawing.Point(308, 628);
-            this.TMNecktieImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TMNecktieImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TMNecktieImageCard.Name = "TMNecktieImageCard";
             this.TMNecktieImageCard.Size = new System.Drawing.Size(264, 219);
             this.TMNecktieImageCard.TabIndex = 126;

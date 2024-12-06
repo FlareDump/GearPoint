@@ -18,24 +18,42 @@ namespace GearPoint
         string size;
         double price;
         double total;
+        string lastForm;
+        string category;
+
+        MaleShsForm maleShsForm;
+        FemaleShsForm femaleShsForm;
+        MaleITForm maleITForm;
+        FemaleITForm femaleITForm;
+        MaleTMForm maleTMForm;
+        FemaleTMForm femaleTMForm;
+        MaleHMForm maleHMForm;
+        FemaleHMForm femaleHMForm;
+        ProwareForm prowareForm;
+
         Cart cart;
         Main_Menu menu = new Main_Menu();
-        MaleShsForm maleShsForm;
-        MaleHMForm maleHMForm;
-        MaleITForm ituniform;
-        FemaleTMForm femaleTMForm;
-        FemaleShsForm femaleShsForm;
 
-        public AddOrder(string item_name, char gender, double price)
+
+        public AddOrder(string item_name, char gender, double price, string lastForm)
         {
             this.item_name = item_name;
             this.gender = gender;
             this.price = price;
+            this.lastForm = lastForm;
             InitializeComponent();
         }
 
         public AddOrder(string item_name, double price)
         {
+            this.item_name = item_name;
+            this.price = price;
+            InitializeComponent();
+        }
+
+        public AddOrder(string item_name, double price, string lastForm)
+        {
+            this.lastForm = lastForm;
             this.item_name = item_name;
             this.price = price;
             InitializeComponent();
@@ -73,7 +91,45 @@ namespace GearPoint
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            menu.Show();
+            switch (lastForm)
+            {
+                case "MaleSHS":
+                    maleShsForm = new MaleShsForm(gender, lastForm);
+                    maleShsForm.Show();
+                    break;
+                case "FemaleSHS": 
+                    femaleShsForm = new FemaleShsForm(gender, lastForm);
+                    femaleShsForm.Show();
+                    break;
+                case "MaleIT": 
+                    maleITForm = new MaleITForm(gender, lastForm);
+                    maleITForm.Show();
+                    break;
+                case "FemaleIT": 
+                    femaleITForm = new FemaleITForm(gender, lastForm);
+                    femaleITForm.Show();
+                    break;
+                case "MaleTM": 
+                    maleTMForm = new MaleTMForm(gender, lastForm);
+                    maleTMForm.Show();
+                    break;
+                case "FemaleTM": 
+                    femaleTMForm = new FemaleTMForm(gender, lastForm);
+                    femaleTMForm.Show();
+                    break;
+                case "MaleHM": 
+                    maleHMForm = new MaleHMForm(gender, lastForm);
+                    maleHMForm.Show();
+                    break;
+                case "FemaleHM": 
+                    maleHMForm= new MaleHMForm(gender, lastForm);
+                    femaleHMForm.Show();
+                    break;
+                case "Proware":
+                    prowareForm = new ProwareForm(category, lastForm);
+                    prowareForm.Show();
+                    break;
+            }
             this.Close();
 
         }

@@ -233,7 +233,7 @@
             this.SHSImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SHSImageCard.BackgroundImage")));
             this.SHSImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SHSImageCard.CornerRadius = 30;
-            this.SHSImageCard.Location = new System.Drawing.Point(153, -1);
+            this.SHSImageCard.Location = new System.Drawing.Point(153, 1);
             this.SHSImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSImageCard.Name = "SHSImageCard";
             this.SHSImageCard.Size = new System.Drawing.Size(151, 124);

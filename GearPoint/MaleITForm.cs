@@ -8,10 +8,12 @@ namespace GearPoint
         private char gender;
         private string category;
         private double price;
+        string lastForm;
 
-        public MaleITForm(char gender)
+        public MaleITForm(char gender, string lastForm)
         {
             this.gender = gender;
+            this.lastForm = lastForm;
             InitializeComponent();
         }
 
@@ -19,7 +21,7 @@ namespace GearPoint
         private void AddOrderItem(string itemName, double itemPrice)
         {
             price = itemPrice;
-            var addOrder = new AddOrder(itemName, gender, price);
+            var addOrder = new AddOrder(itemName, gender, price, "MaleIT");
             addOrder.Show();
             this.Close();
         }
@@ -29,12 +31,12 @@ namespace GearPoint
         {
             if (isProware)
             {
-                var prowareForm = new ProwareForm(selectedCategory);
+                var prowareForm = new ProwareForm(selectedCategory, lastForm);
                 prowareForm.Show();
             }
             else
             {
-                var genderCheckpoint = new GenderCheckpoint(selectedCategory);
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory, lastForm);
                 genderCheckpoint.Show();
             }
             this.Close();

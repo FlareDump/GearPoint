@@ -15,13 +15,15 @@ namespace GearPoint
         string category;
         char gender;
         double price;
+        string lastForm;
         Cart cart;
 
-        public MaleHMForm(char gender)
+        public MaleHMForm(char gender, string lastForm)
         {
 
             this.gender = gender;
             InitializeComponent();
+            this.lastForm = lastForm;
         }
         private void MaleHMForm_Load(object sender, EventArgs e)
         {
@@ -30,7 +32,7 @@ namespace GearPoint
         private void HandleItemSelection(string ItemName, double Itemprice)
         {
             price = Itemprice;
-            var addOrder = new AddOrder(ItemName, price);
+            var addOrder = new AddOrder(ItemName, gender, price, "MaleHM");
             addOrder.Show();
             this.Close();
         }
@@ -73,7 +75,7 @@ namespace GearPoint
         //PROWARE Handler
         private void HandleProwareNavigation()
         {
-            var Prowareform = new ProwareForm(category);
+            var Prowareform = new ProwareForm(category, lastForm);
             Prowareform.Show();
             this.Close();
 
@@ -87,7 +89,7 @@ namespace GearPoint
         private void HandleCategorySelection(string newCategory)
         {
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(newCategory);
+            var genderCheckpoint = new GenderCheckpoint(newCategory, lastForm);
             genderCheckpoint.Show();
             this.Close();
         }

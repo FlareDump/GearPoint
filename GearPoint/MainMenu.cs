@@ -5,9 +5,17 @@ namespace GearPoint
 {
     public partial class Main_Menu : Form
     {
+        string lastForm;
+
         public Main_Menu()
         {
             InitializeComponent();
+        }
+
+        public Main_Menu(string lastForm)
+        {
+            InitializeComponent();
+            this.lastForm = lastForm;
         }
 
         private void Main_Menu_Load(object sender, EventArgs e) { }
@@ -17,12 +25,12 @@ namespace GearPoint
         {
             if (isProware)
             {
-                var prowareForm = new ProwareForm(selectedCategory);
+                var prowareForm = new ProwareForm(selectedCategory, lastForm);
                 prowareForm.Show();
             }
             else
             {
-                var genderCheckpoint = new GenderCheckpoint(selectedCategory);
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "MainMenu");
                 genderCheckpoint.Show();
             }
             this.Close();

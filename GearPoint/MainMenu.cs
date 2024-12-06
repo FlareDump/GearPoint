@@ -5,7 +5,7 @@ namespace GearPoint
 {
     public partial class Main_Menu : Form
     {
-        string lastForm;
+        private string lastForm;
 
         public Main_Menu()
         {

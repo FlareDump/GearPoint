@@ -7,8 +7,7 @@ namespace GearPoint
     {
         private string category;
         private char gender;
-        private double price;
-        string lastForm;
+        private string lastForm;
 
         private Cart cart;
         private AddOrder addOrder;

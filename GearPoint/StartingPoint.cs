@@ -12,6 +12,7 @@ namespace GearPoint
 {
     public partial class StartingPoint : Form
     {
+
         public StartingPoint()
         {
             InitializeComponent();

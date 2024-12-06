@@ -30,7 +30,7 @@ namespace GearPoint
         }
 
         // Gender Checkpoint Handlers
-        private void HandleCategorySelection(string newCategory)
+        private void HandleCategorySelection(string newCategory, string lastForm)
         {
             category = newCategory;
             var genderCheckpoint = new GenderCheckpoint(category, lastForm);
@@ -38,12 +38,12 @@ namespace GearPoint
             this.Close();
         }
 
-        private void ICTHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
-        private void ICTHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
-        private void TMHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
-        private void TMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
-        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
-        private void HMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+        private void ICTHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("IT", "MaleSHS");
+        private void ICTHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("IT", "MaleSHS");
+        private void TMHeaderLabel_Click(object sender, EventArgs e) => HandleCategorySelection("TM", "MaleSHS");
+        private void TMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("TM", "MaleSHS");
+        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM", "MaleSHS");
+        private void HMHeaderImage_Click(object sender, EventArgs e) => HandleCategorySelection("HM", "MaleSHS");
 
 
         // Top Item Handlers

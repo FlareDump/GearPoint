@@ -55,7 +55,7 @@ namespace GearPoint
         //PROWARE Handler
         private void HandleProwareNavigation()
         {
-            var ProwareForm = new ProwareForm(category, lastForm);
+            var prowareForm = new ProwareForm(category, "MaleTM");
             prowareForm.Show();
             this.Close();
         }
@@ -66,7 +66,7 @@ namespace GearPoint
         private void HandleCategorySelection(string newCategory)
         {
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(newCategory, lastForm);
+            var genderCheckpoint = new GenderCheckpoint(newCategory, "MaleTM");
             genderCheckpoint.Show();
             this.Close();
         }

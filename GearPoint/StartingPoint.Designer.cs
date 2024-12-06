@@ -91,7 +91,6 @@
             this.Name = "StartingPoint";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STI GearPoint";
-            this.Load += new System.EventHandler(this.StartingPoint_Load);
             ((System.ComponentModel.ISupportInitialize)(this.STI_LOGO)).EndInit();
             this.ResumeLayout(false);
 

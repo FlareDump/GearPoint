@@ -62,7 +62,7 @@ namespace GearPoint
                     maleHMForm.Show();
                     break;
                 case "FemaleHM":
-                    maleHMForm = new MaleHMForm(Gender, lastForm);
+                    femaleHMForm = new FemaleHMForm(Gender, lastForm);
                     femaleHMForm.Show();
                     break;
                 case "Proware":
@@ -140,6 +140,11 @@ namespace GearPoint
                 default:
                     return null;
             }
+        }
+
+        private void GenderCheckpoint_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

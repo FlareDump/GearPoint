@@ -31,12 +31,12 @@ namespace GearPoint
         {
             if (isProware)
             {
-                var prowareForm = new ProwareForm(selectedCategory, lastForm);
+                var prowareForm = new ProwareForm(selectedCategory, "MaleIT");
                 prowareForm.Show();
             }
             else
             {
-                var genderCheckpoint = new GenderCheckpoint(selectedCategory, lastForm);
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "MaleIT");
                 genderCheckpoint.Show();
             }
             this.Close();

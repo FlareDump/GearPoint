@@ -91,25 +91,25 @@ namespace GearPoint
         private void NstpShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtLabelCard.Text, 250);
         private void NstpShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtPictureCard.Text, 250);
 
-        private void HandleCategorySelection(string newCategory)
+        private void HandleCategorySelection(string newCategory, string lastForm)
         {
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(category, lastForm);
+            genderCheckpoint = new GenderCheckpoint(category, lastForm);
             genderCheckpoint.Show();
             this.Close();
         }
         //SHS
-        private void SHSLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("SHS");
-        private void SHSimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("SHS");
+        private void SHSLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("SHS", "Proware");
+        private void SHSimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("SHS", "Proware");
         //TM
-        private void TMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
-        private void TMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+        private void TMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM", "Proware");
+        private void TMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM", "Proware");
         //IT
-        private void ITLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
-        private void ITimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("IT");
+        private void ITLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("IT", "Proware");
+        private void ITimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("IT", "Proware");
         //HM
-        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
-        private void HMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
+        private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM", "Proware");
+        private void HMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM", "Proware");
 
 
 

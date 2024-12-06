@@ -30,14 +30,14 @@ namespace GearPoint
 
         private void OpenGenderCheckpoint(string category)
         {
-            genderCheckpoint = new GenderCheckpoint(category, lastForm);
+            genderCheckpoint = new GenderCheckpoint(category, "FemaleHM");
             genderCheckpoint.Show();
             this.Close();
         }
 
         private void OpenProwareForm()
         {
-            prowareForm = new ProwareForm(category, lastForm);
+            prowareForm = new ProwareForm(category, "FemaleHM");
             prowareForm.Show();
             this.Close();
         }

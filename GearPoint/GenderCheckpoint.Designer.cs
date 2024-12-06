@@ -123,6 +123,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STI GearPoint";
             this.TransparencyKey = System.Drawing.Color.Transparent;
+            this.Load += new System.EventHandler(this.GenderCheckpoint_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.roundedPictureBox1)).EndInit();
             this.ResumeLayout(false);

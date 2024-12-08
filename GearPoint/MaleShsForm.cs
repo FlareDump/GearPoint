@@ -10,21 +10,30 @@ namespace GearPoint
         private string category;
         private double price;
         string lastForm;
+        public string totalPrice;
 
-        public MaleShsForm(char gender, string lastForm)
+        AddOrder addOrder;
+        Cart cart;
+
+        public MaleShsForm(char gender, string lastForm, string totalPrice)
         {
             this.gender = gender;
             this.lastForm = lastForm;
+
             InitializeComponent();
+            this.totalPrice = totalPrice;
         }
 
-        private void MaleShsForm_Load(object sender, EventArgs e) { }
+        private void MaleShsForm_Load(object sender, EventArgs e)
+        {
+            TotalOutputLbl.Text = totalPrice;
+        }
 
         // Unified method for handling item selection
         private void HandleItemSelection(string itemName, double itemPrice)
         {
             price = itemPrice;
-            var addOrder = new AddOrder(itemName, gender, price, "MaleSHS");
+            addOrder = new AddOrder(itemName, gender, price, "MaleSHS");
             addOrder.Show();
             this.Close();
         }
@@ -33,7 +42,7 @@ namespace GearPoint
         private void HandleCategorySelection(string newCategory, string lastForm)
         {
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(category, lastForm);
+            var genderCheckpoint = new GenderCheckpoint(category, lastForm, totalPrice);
             genderCheckpoint.Show();
             this.Close();
         }
@@ -69,7 +78,7 @@ namespace GearPoint
         // Proware Handlers
         private void HandleProwareNavigation()
         {
-            var prowareForm = new ProwareForm(category, lastForm);
+            var prowareForm = new ProwareForm(category, lastForm, totalPrice);
             prowareForm.Show();
             this.Close();
         }
@@ -80,7 +89,7 @@ namespace GearPoint
         // Cart Handler
         private void CartIcon_Click(object sender, EventArgs e)
         {
-            var cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
+            var cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A", "N/A");
             cart.Show();
             this.Close();
         }

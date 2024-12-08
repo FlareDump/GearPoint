@@ -13,31 +13,23 @@ namespace GearPoint
     public partial class Cart : Form
     {
 
-        string item, gender, size, quantity, price;
-      
+        public string item, gender, size, quantity, price, total;
 
-        public Cart(string item, string gender, string size, string quantity, string price)
+        public Cart(string item, string gender, string size, string quantity, string price, string total)
         {
             this.item = item;
             this.gender = gender;
             this.size = size;
             this.quantity = quantity;
             this.price = price;
-            InitializeComponent();
-        }
-
-        public Cart(string item, string size, string quantity, string price)
-        {
-            this.item = item;
-            this.size = size;
-            this.quantity = quantity;
-            this.price = price;
+            this.total = total;
             InitializeComponent();
         }
 
         private void Cart_Load(object sender, EventArgs e)
         {
             AddToCart(item, gender, size, quantity, price);
+            TotalResultlabel.Text = total;
         }
 
         public void AddToCart(string item, string gender, string size, string quantity, string price)

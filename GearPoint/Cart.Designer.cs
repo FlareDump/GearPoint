@@ -148,7 +148,7 @@
             this.TotalResultlabel.AutoSize = true;
             this.TotalResultlabel.Cursor = System.Windows.Forms.Cursors.Cross;
             this.TotalResultlabel.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalResultlabel.Location = new System.Drawing.Point(377, 702);
+            this.TotalResultlabel.Location = new System.Drawing.Point(329, 697);
             this.TotalResultlabel.Name = "TotalResultlabel";
             this.TotalResultlabel.Size = new System.Drawing.Size(70, 27);
             this.TotalResultlabel.TabIndex = 6;
@@ -159,7 +159,7 @@
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.Cursor = System.Windows.Forms.Cursors.Cross;
             this.TotalLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(325, 684);
+            this.TotalLabel.Location = new System.Drawing.Point(321, 674);
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(53, 19);
             this.TotalLabel.TabIndex = 5;

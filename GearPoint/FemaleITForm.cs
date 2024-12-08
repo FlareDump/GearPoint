@@ -8,12 +8,14 @@ namespace GearPoint
         private char gender;
         private string category;
         string lastForm;
+        public string totalPrice;
 
-        public FemaleITForm(char gender, string lastForm)
+        public FemaleITForm(char gender, string lastForm, string totalPrice)
         {
             this.gender = gender;
             this.lastForm = lastForm;
             InitializeComponent();
+            this.totalPrice = totalPrice;
         }
 
         // Reusable method for adding orders
@@ -29,12 +31,12 @@ namespace GearPoint
         {
             if (isProware)
             {
-                var prowareForm = new ProwareForm(selectedCategory, "FemaleIT");
+                var prowareForm = new ProwareForm(selectedCategory, "FemaleIT", totalPrice);
                 prowareForm.Show();
             }
             else
             {
-                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "FemaleIT");
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "FemaleIT", totalPrice);
                 genderCheckpoint.Show();
             }
             this.Close();
@@ -75,5 +77,10 @@ namespace GearPoint
         // HM Handlers
         private void HMLabelCard_Click(object sender, EventArgs e) => NavigateToForm("HM");
         private void HMimageCard_Click(object sender, EventArgs e) => NavigateToForm("HM");
+
+        private void FemaleITForm_Load(object sender, EventArgs e)
+        {
+            TotalOutputLbl.Text = totalPrice;
+        }
     }
 }

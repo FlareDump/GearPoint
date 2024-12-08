@@ -754,6 +754,7 @@
             this.Name = "FemaleHMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STI Gearpoint";
+            this.Load += new System.EventHandler(this.FemaleHMForm_Load);
             this.RoundedFooter.ResumeLayout(false);
             this.RoundedFooter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CartIcon)).EndInit();

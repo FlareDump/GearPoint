@@ -10,17 +10,18 @@ namespace GearPoint
         string category;
         double price;
         string lastForm;
+        public string totalPrice;
+
         Cart cart;
-
         AddOrder addOrder;
-
         GenderCheckpoint genderCheckpoint;
 
-        public ProwareForm(string category, string lastForm)
+        public ProwareForm(string category, string lastForm, string totalPrice)
         {
             this.category = category;
             InitializeComponent();
             this.lastForm = lastForm;
+            this.totalPrice = totalPrice;
         }
 
         public ProwareForm()
@@ -38,7 +39,7 @@ namespace GearPoint
         }
         private void ProwareForm_Load(object sender, EventArgs e)
         {
-            
+            TotalOutputLbl.Text = totalPrice;
         }
 
         //39th Anniversary Shirt Handler
@@ -94,7 +95,7 @@ namespace GearPoint
         private void HandleCategorySelection(string newCategory, string lastForm)
         {
             category = newCategory;
-            genderCheckpoint = new GenderCheckpoint(category, lastForm);
+            genderCheckpoint = new GenderCheckpoint(category, lastForm, totalPrice);
             genderCheckpoint.Show();
             this.Close();
         }

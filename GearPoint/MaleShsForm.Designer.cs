@@ -100,7 +100,7 @@
             this.SHSMenTopLbl.AutoSize = true;
             this.SHSMenTopLbl.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenTopLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SHSMenTopLbl.Location = new System.Drawing.Point(25, 577);
+            this.SHSMenTopLbl.Location = new System.Drawing.Point(25, 604);
             this.SHSMenTopLbl.Name = "SHSMenTopLbl";
             this.SHSMenTopLbl.Size = new System.Drawing.Size(131, 23);
             this.SHSMenTopLbl.TabIndex = 19;
@@ -112,7 +112,7 @@
             this.SHSMenPantsLabel.AutoSize = true;
             this.SHSMenPantsLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenPantsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SHSMenPantsLabel.Location = new System.Drawing.Point(309, 577);
+            this.SHSMenPantsLabel.Location = new System.Drawing.Point(309, 604);
             this.SHSMenPantsLabel.Name = "SHSMenPantsLabel";
             this.SHSMenPantsLabel.Size = new System.Drawing.Size(149, 23);
             this.SHSMenPantsLabel.TabIndex = 22;
@@ -124,7 +124,7 @@
             this.SHSNeckTieLbl.AutoSize = true;
             this.SHSNeckTieLbl.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSNeckTieLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SHSNeckTieLbl.Location = new System.Drawing.Point(17, 854);
+            this.SHSNeckTieLbl.Location = new System.Drawing.Point(17, 881);
             this.SHSNeckTieLbl.Name = "SHSNeckTieLbl";
             this.SHSNeckTieLbl.Size = new System.Drawing.Size(131, 23);
             this.SHSNeckTieLbl.TabIndex = 28;
@@ -136,7 +136,7 @@
             this.SHSMenUniformSetLbl.AutoSize = true;
             this.SHSMenUniformSetLbl.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenUniformSetLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SHSMenUniformSetLbl.Location = new System.Drawing.Point(304, 854);
+            this.SHSMenUniformSetLbl.Location = new System.Drawing.Point(304, 881);
             this.SHSMenUniformSetLbl.Name = "SHSMenUniformSetLbl";
             this.SHSMenUniformSetLbl.Size = new System.Drawing.Size(210, 23);
             this.SHSMenUniformSetLbl.TabIndex = 31;
@@ -148,7 +148,7 @@
             this.SHSMenUniformSetImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SHSMenUniformSetImage.BackgroundImage")));
             this.SHSMenUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SHSMenUniformSetImage.CornerRadius = 20;
-            this.SHSMenUniformSetImage.Location = new System.Drawing.Point(297, 631);
+            this.SHSMenUniformSetImage.Location = new System.Drawing.Point(297, 658);
             this.SHSMenUniformSetImage.Margin = new System.Windows.Forms.Padding(4);
             this.SHSMenUniformSetImage.Name = "SHSMenUniformSetImage";
             this.SHSMenUniformSetImage.Size = new System.Drawing.Size(264, 214);
@@ -161,7 +161,7 @@
             this.SHSMenNeckTieImage.BackgroundImage = global::GearPoint.Properties.Resources.STI_Neck_Tie_1;
             this.SHSMenNeckTieImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SHSMenNeckTieImage.CornerRadius = 20;
-            this.SHSMenNeckTieImage.Location = new System.Drawing.Point(13, 631);
+            this.SHSMenNeckTieImage.Location = new System.Drawing.Point(13, 658);
             this.SHSMenNeckTieImage.Margin = new System.Windows.Forms.Padding(4);
             this.SHSMenNeckTieImage.Name = "SHSMenNeckTieImage";
             this.SHSMenNeckTieImage.Size = new System.Drawing.Size(264, 214);
@@ -173,7 +173,7 @@
             // 
             this.SHSNeckTieBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSNeckTieBackCard.CornerRadius = 40;
-            this.SHSNeckTieBackCard.Location = new System.Drawing.Point(13, 631);
+            this.SHSNeckTieBackCard.Location = new System.Drawing.Point(13, 658);
             this.SHSNeckTieBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSNeckTieBackCard.Name = "SHSNeckTieBackCard";
             this.SHSNeckTieBackCard.Size = new System.Drawing.Size(264, 258);
@@ -186,7 +186,7 @@
             this.SHSMenPantsImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SHSMenPantsImage.BackgroundImage")));
             this.SHSMenPantsImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SHSMenPantsImage.CornerRadius = 20;
-            this.SHSMenPantsImage.Location = new System.Drawing.Point(300, 354);
+            this.SHSMenPantsImage.Location = new System.Drawing.Point(300, 381);
             this.SHSMenPantsImage.Margin = new System.Windows.Forms.Padding(4);
             this.SHSMenPantsImage.Name = "SHSMenPantsImage";
             this.SHSMenPantsImage.Size = new System.Drawing.Size(264, 214);
@@ -198,7 +198,7 @@
             // 
             this.SHSMenPantsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenPantsBackCard.CornerRadius = 40;
-            this.SHSMenPantsBackCard.Location = new System.Drawing.Point(300, 354);
+            this.SHSMenPantsBackCard.Location = new System.Drawing.Point(300, 381);
             this.SHSMenPantsBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSMenPantsBackCard.Name = "SHSMenPantsBackCard";
             this.SHSMenPantsBackCard.Size = new System.Drawing.Size(264, 258);
@@ -211,7 +211,7 @@
             this.SHSMenTopImage.BackgroundImage = global::GearPoint.Properties.Resources.SHS_M_Top;
             this.SHSMenTopImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SHSMenTopImage.CornerRadius = 20;
-            this.SHSMenTopImage.Location = new System.Drawing.Point(17, 354);
+            this.SHSMenTopImage.Location = new System.Drawing.Point(17, 381);
             this.SHSMenTopImage.Margin = new System.Windows.Forms.Padding(4);
             this.SHSMenTopImage.Name = "SHSMenTopImage";
             this.SHSMenTopImage.Size = new System.Drawing.Size(264, 214);
@@ -399,7 +399,7 @@
             // 
             this.SHSMentopCard.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMentopCard.CornerRadius = 40;
-            this.SHSMentopCard.Location = new System.Drawing.Point(17, 354);
+            this.SHSMentopCard.Location = new System.Drawing.Point(17, 381);
             this.SHSMentopCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSMentopCard.Name = "SHSMentopCard";
             this.SHSMentopCard.Size = new System.Drawing.Size(264, 258);
@@ -411,7 +411,7 @@
             // 
             this.SHSMenUniformSetBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.SHSMenUniformSetBackCard.CornerRadius = 40;
-            this.SHSMenUniformSetBackCard.Location = new System.Drawing.Point(297, 631);
+            this.SHSMenUniformSetBackCard.Location = new System.Drawing.Point(297, 658);
             this.SHSMenUniformSetBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSMenUniformSetBackCard.Name = "SHSMenUniformSetBackCard";
             this.SHSMenUniformSetBackCard.Size = new System.Drawing.Size(264, 258);
@@ -502,7 +502,7 @@
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.RoundedFooter.Location = new System.Drawing.Point(18, 959);
+            this.RoundedFooter.Location = new System.Drawing.Point(18, 986);
             this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);

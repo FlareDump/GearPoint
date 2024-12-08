@@ -92,7 +92,7 @@
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(550, 80);
+            this.dataGridView1.Size = new System.Drawing.Size(548, 80);
             this.dataGridView1.TabIndex = 0;
             // 
             // ICTLabelCard
@@ -386,7 +386,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(571, 878);
+            this.ClientSize = new System.Drawing.Size(563, 878);
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.roundedPictureBox2);
             this.Controls.Add(this.ProwareLabelCard);

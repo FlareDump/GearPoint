@@ -521,7 +521,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(592, 903);
+            this.ClientSize = new System.Drawing.Size(613, 924);
             this.Controls.Add(this.TMBlazerLabelCard);
             this.Controls.Add(this.TMPoloLabelCard);
             this.Controls.Add(this.TMNeckTieLabelCard);
@@ -546,6 +546,7 @@
             this.Name = "MaleTMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
+            this.Load += new System.EventHandler(this.MaleTMForm_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.ITPictureCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ShsPictureCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProwareImageCard)).EndInit();

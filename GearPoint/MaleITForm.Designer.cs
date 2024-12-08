@@ -347,7 +347,7 @@
             this.ITMenUniformSetLabel.AutoSize = true;
             this.ITMenUniformSetLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.ITMenUniformSetLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITMenUniformSetLabel.Location = new System.Drawing.Point(31, 845);
+            this.ITMenUniformSetLabel.Location = new System.Drawing.Point(31, 860);
             this.ITMenUniformSetLabel.Name = "ITMenUniformSetLabel";
             this.ITMenUniformSetLabel.Size = new System.Drawing.Size(189, 23);
             this.ITMenUniformSetLabel.TabIndex = 51;
@@ -359,7 +359,7 @@
             this.ITMenTopLbl.AutoSize = true;
             this.ITMenTopLbl.BackColor = System.Drawing.Color.Gainsboro;
             this.ITMenTopLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITMenTopLbl.Location = new System.Drawing.Point(28, 570);
+            this.ITMenTopLbl.Location = new System.Drawing.Point(28, 585);
             this.ITMenTopLbl.Name = "ITMenTopLbl";
             this.ITMenTopLbl.Size = new System.Drawing.Size(110, 23);
             this.ITMenTopLbl.TabIndex = 42;
@@ -371,7 +371,7 @@
             this.ITMenPantsLabel.AutoSize = true;
             this.ITMenPantsLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.ITMenPantsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITMenPantsLabel.Location = new System.Drawing.Point(312, 570);
+            this.ITMenPantsLabel.Location = new System.Drawing.Point(312, 585);
             this.ITMenPantsLabel.Name = "ITMenPantsLabel";
             this.ITMenPantsLabel.Size = new System.Drawing.Size(128, 23);
             this.ITMenPantsLabel.TabIndex = 45;
@@ -383,7 +383,7 @@
             this.ITmenUniformSetImage.BackgroundImage = global::GearPoint.Properties.Resources.ICT_Full_Set;
             this.ITmenUniformSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITmenUniformSetImage.CornerRadius = 20;
-            this.ITmenUniformSetImage.Location = new System.Drawing.Point(21, 623);
+            this.ITmenUniformSetImage.Location = new System.Drawing.Point(21, 638);
             this.ITmenUniformSetImage.Margin = new System.Windows.Forms.Padding(4);
             this.ITmenUniformSetImage.Name = "ITmenUniformSetImage";
             this.ITmenUniformSetImage.Size = new System.Drawing.Size(264, 214);
@@ -395,7 +395,7 @@
             // 
             this.ITmenUniformSetBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ITmenUniformSetBackCard.CornerRadius = 40;
-            this.ITmenUniformSetBackCard.Location = new System.Drawing.Point(22, 624);
+            this.ITmenUniformSetBackCard.Location = new System.Drawing.Point(22, 639);
             this.ITmenUniformSetBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ITmenUniformSetBackCard.Name = "ITmenUniformSetBackCard";
             this.ITmenUniformSetBackCard.Size = new System.Drawing.Size(264, 258);
@@ -408,7 +408,7 @@
             this.ITMenPantsImage.BackgroundImage = global::GearPoint.Properties.Resources.ICT_PANTS_Zoomed;
             this.ITMenPantsImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITMenPantsImage.CornerRadius = 20;
-            this.ITMenPantsImage.Location = new System.Drawing.Point(302, 347);
+            this.ITMenPantsImage.Location = new System.Drawing.Point(302, 362);
             this.ITMenPantsImage.Margin = new System.Windows.Forms.Padding(4);
             this.ITMenPantsImage.Name = "ITMenPantsImage";
             this.ITMenPantsImage.Size = new System.Drawing.Size(264, 214);
@@ -420,7 +420,7 @@
             // 
             this.ITMenPantsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ITMenPantsBackCard.CornerRadius = 40;
-            this.ITMenPantsBackCard.Location = new System.Drawing.Point(302, 347);
+            this.ITMenPantsBackCard.Location = new System.Drawing.Point(302, 362);
             this.ITMenPantsBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ITMenPantsBackCard.Name = "ITMenPantsBackCard";
             this.ITMenPantsBackCard.Size = new System.Drawing.Size(264, 258);
@@ -433,7 +433,7 @@
             this.ITMenTopImage.BackgroundImage = global::GearPoint.Properties.Resources.ICT_TOP_Zoomed;
             this.ITMenTopImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITMenTopImage.CornerRadius = 20;
-            this.ITMenTopImage.Location = new System.Drawing.Point(20, 347);
+            this.ITMenTopImage.Location = new System.Drawing.Point(20, 362);
             this.ITMenTopImage.Margin = new System.Windows.Forms.Padding(4);
             this.ITMenTopImage.Name = "ITMenTopImage";
             this.ITMenTopImage.Size = new System.Drawing.Size(264, 214);
@@ -445,7 +445,7 @@
             // 
             this.ICTMentopCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ICTMentopCard.CornerRadius = 40;
-            this.ICTMentopCard.Location = new System.Drawing.Point(20, 347);
+            this.ICTMentopCard.Location = new System.Drawing.Point(20, 362);
             this.ICTMentopCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ICTMentopCard.Name = "ICTMentopCard";
             this.ICTMentopCard.Size = new System.Drawing.Size(264, 258);
@@ -491,6 +491,7 @@
             this.Name = "MaleITForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ITuniformFORM";
+            this.Load += new System.EventHandler(this.MaleITForm_Load);
             this.HMBackCard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.HMImageCard)).EndInit();
             this.TMBackCard.ResumeLayout(false);

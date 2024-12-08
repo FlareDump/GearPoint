@@ -18,15 +18,18 @@ namespace GearPoint
         ProwareForm prowareForm;
 
         public string lastForm;
+        private string total;
+        public string totalPrice;
 
         public string Category { get; }
         public char Gender { get; private set; }
 
-        public GenderCheckpoint(string category, string lastForm)
+        public GenderCheckpoint(string category, string lastForm, string totalPrice)
         {
             this.lastForm = lastForm;
             Category = category;
             InitializeComponent();
+            this.totalPrice = totalPrice;
         }
 
         private void BACKButton4_Click(object sender, EventArgs e)
@@ -34,39 +37,39 @@ namespace GearPoint
             switch (lastForm)
             {
                 case "MaleSHS":
-                    maleShsForm = new MaleShsForm(Gender, lastForm);
+                    maleShsForm = new MaleShsForm(Gender, lastForm, totalPrice);
                     maleShsForm.Show();
                     break;
                 case "FemaleSHS":
-                    femaleShsForm = new FemaleShsForm(Gender, lastForm);
+                    femaleShsForm = new FemaleShsForm(Gender, lastForm, totalPrice);
                     femaleShsForm.Show();
                     break;
                 case "MaleIT":
-                    maleITForm = new MaleITForm(Gender, lastForm);
+                    maleITForm = new MaleITForm(Gender, lastForm, totalPrice);
                     maleITForm.Show();
                     break;
                 case "FemaleIT":
-                    femaleITForm = new FemaleITForm(Gender, lastForm);
+                    femaleITForm = new FemaleITForm(Gender, lastForm, totalPrice);
                     femaleITForm.Show();
                     break;
                 case "MaleTM":
-                    maleTMForm = new MaleTMForm(Gender, lastForm);
+                    maleTMForm = new MaleTMForm(Gender, lastForm, totalPrice);
                     maleTMForm.Show();
                     break;
                 case "FemaleTM":
-                    femaleTMForm = new FemaleTMForm(Gender, lastForm);
+                    femaleTMForm = new FemaleTMForm(Gender, lastForm, totalPrice);
                     femaleTMForm.Show();
                     break;
                 case "MaleHM":
-                    maleHMForm = new MaleHMForm(Gender, lastForm);
+                    maleHMForm = new MaleHMForm(Gender, lastForm, totalPrice);
                     maleHMForm.Show();
                     break;
                 case "FemaleHM":
-                    femaleHMForm = new FemaleHMForm(Gender, lastForm);
+                    femaleHMForm = new FemaleHMForm(Gender, lastForm, totalPrice);
                     femaleHMForm.Show();
                     break;
                 case "Proware":
-                    prowareForm = new ProwareForm(Category, lastForm);
+                    prowareForm = new ProwareForm(Category, lastForm, totalPrice);
                     prowareForm.Show();
                     break;
                 case "MainMenu":
@@ -111,13 +114,13 @@ namespace GearPoint
                     switch (category)
                     {
                         case "SHS":
-                            return new FemaleShsForm(gender, lastForm);
+                            return new FemaleShsForm(gender, lastForm, totalPrice);
                         case "IT":
-                            return new FemaleITForm(gender, lastForm);
+                            return new FemaleITForm(gender, lastForm, totalPrice);
                         case "TM":
-                            return new FemaleTMForm(gender, lastForm);
+                            return new FemaleTMForm(gender, lastForm, totalPrice);
                         case "HM":
-                            return new FemaleHMForm(gender, lastForm);
+                            return new FemaleHMForm(gender, lastForm, totalPrice);
                         default:
                             return null;
                     }
@@ -126,13 +129,13 @@ namespace GearPoint
                     switch (category)
                     {
                         case "SHS":
-                            return new MaleShsForm(gender, lastForm);
+                            return new MaleShsForm(gender, lastForm, totalPrice);
                         case "IT":
-                            return new MaleITForm(gender, lastForm);
+                            return new MaleITForm(gender, lastForm, totalPrice);
                         case "TM":
-                            return new MaleTMForm(gender, lastForm);
+                            return new MaleTMForm(gender, lastForm, totalPrice);
                         case "HM":
-                            return new MaleHMForm(gender, lastForm);
+                            return new MaleHMForm(gender, lastForm, totalPrice);
                         default:
                             return null;
                     }

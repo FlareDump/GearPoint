@@ -553,7 +553,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(575, 882);
+            this.ClientSize = new System.Drawing.Size(596, 903);
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.TMUniformSetLabel);
             this.Controls.Add(this.TMUniformSetImage);
@@ -580,6 +580,7 @@
             this.Name = "FemaleTMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FemaleTMForm";
+            this.Load += new System.EventHandler(this.FemaleTMForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TMUniformSetImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TMUniformSetBackCard)).EndInit();

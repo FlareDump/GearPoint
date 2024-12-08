@@ -8,17 +8,19 @@ namespace GearPoint
         private string category;
         private char gender;
         private string lastForm;
+        public string totalPrice;
 
         private Cart cart;
         private AddOrder addOrder;
         private ProwareForm prowareForm;
         private GenderCheckpoint genderCheckpoint;
 
-        public FemaleHMForm(char gender, string lastForm)
+        public FemaleHMForm(char gender, string lastForm, string totalPrice)
         {
             this.gender = gender;
             InitializeComponent();
             this.lastForm = lastForm;
+            this.totalPrice = totalPrice;
         }
 
         private void OpenAddOrder(Label label, double price)
@@ -28,16 +30,21 @@ namespace GearPoint
             this.Close();
         }
 
+        private void FemaleHMForm_Load(object sender, EventArgs e)
+        {
+            TotalOutputLbl.Text = totalPrice;
+        }
+
         private void OpenGenderCheckpoint(string category)
         {
-            genderCheckpoint = new GenderCheckpoint(category, "FemaleHM");
+            genderCheckpoint = new GenderCheckpoint(category, "FemaleHM", totalPrice);
             genderCheckpoint.Show();
             this.Close();
         }
 
         private void OpenProwareForm()
         {
-            prowareForm = new ProwareForm(category, "FemaleHM");
+            prowareForm = new ProwareForm(category, "FemaleHM", totalPrice);
             prowareForm.Show();
             this.Close();
         }
@@ -90,7 +97,7 @@ namespace GearPoint
         // Cart
         private void CartIcon_Click(object sender, EventArgs e)
         {
-            cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A");
+            cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A", "N/A");
             cart.Show();
             this.Close();
         }
@@ -104,5 +111,6 @@ namespace GearPoint
         private void TMImageCard_Click(object sender, EventArgs e) => OpenGenderCheckpoint("TM");
         private void ProwareLabelCard_Click(object sender, EventArgs e) => OpenProwareForm();
         private void ProwareImageCard_Click(object sender, EventArgs e) => OpenProwareForm();
+
     }
 }

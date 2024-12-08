@@ -6,24 +6,24 @@ namespace GearPoint
     public partial class Main_Menu : Form
     {
         private string lastForm;
-        private string total;
+        public string totalPrice;
 
         public Main_Menu()
         {
-            total = "₱0.00";
+            totalPrice = "₱0.00";
             InitializeComponent();
         }
 
-        public Main_Menu(string lastForm, string total)
+        public Main_Menu(string lastForm, string total, string totalPrice)
         {
             this.lastForm = lastForm;
-            this.total = total;
+            this.totalPrice = totalPrice;
             InitializeComponent();
         }
 
         private void Main_Menu_Load(object sender, EventArgs e) 
         {
-            TotalOutputLbl.Text = total;
+            TotalOutputLbl.Text = totalPrice;
         }
 
         // Reusable method for category navigation
@@ -31,12 +31,12 @@ namespace GearPoint
         {
             if (isProware)
             {
-                var prowareForm = new ProwareForm(selectedCategory, lastForm);
+                var prowareForm = new ProwareForm(selectedCategory, lastForm, totalPrice);
                 prowareForm.Show();
             }
             else
             {
-                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "MainMenu");
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "MainMenu", totalPrice);
                 genderCheckpoint.Show();
             }
             this.Close();

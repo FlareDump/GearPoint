@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProwareForm));
             this.ShsPEShirtImageCard = new GearPoint.RoundedPictureBox();
             this.RoundedFooter = new GearPoint.RoundedPanel();
-            this.CartItemNumLbl = new System.Windows.Forms.Label();
             this.TotalLbl = new System.Windows.Forms.Label();
             this.TotalOutputLbl = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -120,9 +119,10 @@
             this.ShsPEShirtImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.ShsPEShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsPEShirtImageCard.CornerRadius = 20;
-            this.ShsPEShirtImageCard.Location = new System.Drawing.Point(232, 507);
+            this.ShsPEShirtImageCard.Location = new System.Drawing.Point(309, 624);
+            this.ShsPEShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ShsPEShirtImageCard.Name = "ShsPEShirtImageCard";
-            this.ShsPEShirtImageCard.Size = new System.Drawing.Size(198, 163);
+            this.ShsPEShirtImageCard.Size = new System.Drawing.Size(264, 201);
             this.ShsPEShirtImageCard.TabIndex = 108;
             this.ShsPEShirtImageCard.TabStop = false;
             this.ShsPEShirtImageCard.Click += new System.EventHandler(this.ShsPEShirtImageCard_Click);
@@ -131,7 +131,6 @@
             // 
             this.RoundedFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.RoundedFooter.BorderRadius = 20;
-            this.RoundedFooter.Controls.Add(this.CartItemNumLbl);
             this.RoundedFooter.Controls.Add(this.TotalLbl);
             this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
             this.RoundedFooter.Controls.Add(this.label8);
@@ -140,30 +139,20 @@
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.RoundedFooter.Location = new System.Drawing.Point(20, 1411);
+            this.RoundedFooter.Location = new System.Drawing.Point(27, 1737);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RoundedFooter.Name = "RoundedFooter";
-            this.RoundedFooter.Size = new System.Drawing.Size(400, 82);
+            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 107;
-            // 
-            // CartItemNumLbl
-            // 
-            this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartItemNumLbl.Location = new System.Drawing.Point(45, 14);
-            this.CartItemNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CartItemNumLbl.Name = "CartItemNumLbl";
-            this.CartItemNumLbl.Size = new System.Drawing.Size(33, 16);
-            this.CartItemNumLbl.TabIndex = 0;
-            this.CartItemNumLbl.Text = "0";
             // 
             // TotalLbl
             // 
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(294, 11);
-            this.TotalLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalLbl.Location = new System.Drawing.Point(392, 14);
             this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(52, 19);
+            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
             this.TotalLbl.TabIndex = 5;
             this.TotalLbl.Text = "Total:";
             // 
@@ -172,10 +161,9 @@
             this.TotalOutputLbl.AutoSize = true;
             this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(305, 35);
-            this.TotalOutputLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TotalOutputLbl.Location = new System.Drawing.Point(407, 43);
             this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(82, 32);
+            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
             this.TotalOutputLbl.TabIndex = 4;
             this.TotalOutputLbl.Text = "$0.00";
             // 
@@ -184,10 +172,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(295, -17);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(393, -21);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 19);
+            this.label8.Size = new System.Drawing.Size(64, 24);
             this.label8.TabIndex = 3;
             this.label8.Text = "Total:";
             // 
@@ -197,10 +184,10 @@
             this.PaymentButton.BorderRadius = 30;
             this.PaymentButton.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PaymentButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.PaymentButton.Location = new System.Drawing.Point(81, 11);
-            this.PaymentButton.Margin = new System.Windows.Forms.Padding(2);
+            this.PaymentButton.Location = new System.Drawing.Point(108, 14);
+            this.PaymentButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PaymentButton.Name = "PaymentButton";
-            this.PaymentButton.Size = new System.Drawing.Size(200, 64);
+            this.PaymentButton.Size = new System.Drawing.Size(267, 79);
             this.PaymentButton.TabIndex = 2;
             this.PaymentButton.Text = "Proceed to Payment";
             this.PaymentButton.UseVisualStyleBackColor = false;
@@ -209,10 +196,9 @@
             // 
             this.CartItemLbl.AutoSize = true;
             this.CartItemLbl.CornerRadius = 50;
-            this.CartItemLbl.Location = new System.Drawing.Point(47, -14);
-            this.CartItemLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CartItemLbl.Location = new System.Drawing.Point(63, -17);
             this.CartItemLbl.Name = "CartItemLbl";
-            this.CartItemLbl.Size = new System.Drawing.Size(15, 16);
+            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
             this.CartItemLbl.TabIndex = 1;
             this.CartItemLbl.Text = "0";
             this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -222,10 +208,10 @@
             // 
             this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
             this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CartIcon.Location = new System.Drawing.Point(23, 23);
-            this.CartIcon.Margin = new System.Windows.Forms.Padding(2);
+            this.CartIcon.Location = new System.Drawing.Point(31, 28);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CartIcon.Name = "CartIcon";
-            this.CartIcon.Size = new System.Drawing.Size(35, 40);
+            this.CartIcon.Size = new System.Drawing.Size(47, 49);
             this.CartIcon.TabIndex = 0;
             this.CartIcon.TabStop = false;
             // 
@@ -234,10 +220,9 @@
             this.ShsPEShirtLabelCard.AutoSize = true;
             this.ShsPEShirtLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsPEShirtLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShsPEShirtLabelCard.Location = new System.Drawing.Point(246, 687);
-            this.ShsPEShirtLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShsPEShirtLabelCard.Location = new System.Drawing.Point(328, 846);
             this.ShsPEShirtLabelCard.Name = "ShsPEShirtLabelCard";
-            this.ShsPEShirtLabelCard.Size = new System.Drawing.Size(105, 18);
+            this.ShsPEShirtLabelCard.Size = new System.Drawing.Size(130, 23);
             this.ShsPEShirtLabelCard.TabIndex = 106;
             this.ShsPEShirtLabelCard.Text = "SHS P.E Shirt";
             this.ShsPEShirtLabelCard.Click += new System.EventHandler(this.ShsPEShirtLabelCard_Click);
@@ -247,10 +232,9 @@
             this.FourthyOneAnniversaryShirtLabelCard.AutoSize = true;
             this.FourthyOneAnniversaryShirtLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.FourthyOneAnniversaryShirtLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FourthyOneAnniversaryShirtLabelCard.Location = new System.Drawing.Point(17, 687);
-            this.FourthyOneAnniversaryShirtLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.FourthyOneAnniversaryShirtLabelCard.Location = new System.Drawing.Point(23, 846);
             this.FourthyOneAnniversaryShirtLabelCard.Name = "FourthyOneAnniversaryShirtLabelCard";
-            this.FourthyOneAnniversaryShirtLabelCard.Size = new System.Drawing.Size(38, 18);
+            this.FourthyOneAnniversaryShirtLabelCard.Size = new System.Drawing.Size(48, 23);
             this.FourthyOneAnniversaryShirtLabelCard.TabIndex = 104;
             this.FourthyOneAnniversaryShirtLabelCard.Text = "41st";
             this.FourthyOneAnniversaryShirtLabelCard.Click += new System.EventHandler(this.FourthyOneAnniversaryShirtLabelCard_Click);
@@ -260,10 +244,9 @@
             this.FourthyAnniversaryShirtLabelCard.AutoSize = true;
             this.FourthyAnniversaryShirtLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.FourthyAnniversaryShirtLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FourthyAnniversaryShirtLabelCard.Location = new System.Drawing.Point(236, 468);
-            this.FourthyAnniversaryShirtLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.FourthyAnniversaryShirtLabelCard.Location = new System.Drawing.Point(315, 576);
             this.FourthyAnniversaryShirtLabelCard.Name = "FourthyAnniversaryShirtLabelCard";
-            this.FourthyAnniversaryShirtLabelCard.Size = new System.Drawing.Size(42, 18);
+            this.FourthyAnniversaryShirtLabelCard.Size = new System.Drawing.Size(55, 23);
             this.FourthyAnniversaryShirtLabelCard.TabIndex = 101;
             this.FourthyAnniversaryShirtLabelCard.Text = "40rty";
             this.FourthyAnniversaryShirtLabelCard.Click += new System.EventHandler(this.FourthyAnniversaryShirtLabelCard_Click);
@@ -273,10 +256,9 @@
             this.ThirtyNineAnniversaryShirtLabelCard.AutoSize = true;
             this.ThirtyNineAnniversaryShirtLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ThirtyNineAnniversaryShirtLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThirtyNineAnniversaryShirtLabelCard.Location = new System.Drawing.Point(19, 469);
-            this.ThirtyNineAnniversaryShirtLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ThirtyNineAnniversaryShirtLabelCard.Location = new System.Drawing.Point(25, 577);
             this.ThirtyNineAnniversaryShirtLabelCard.Name = "ThirtyNineAnniversaryShirtLabelCard";
-            this.ThirtyNineAnniversaryShirtLabelCard.Size = new System.Drawing.Size(158, 18);
+            this.ThirtyNineAnniversaryShirtLabelCard.Size = new System.Drawing.Size(201, 23);
             this.ThirtyNineAnniversaryShirtLabelCard.TabIndex = 98;
             this.ThirtyNineAnniversaryShirtLabelCard.Text = "39th Anniversary Shirt";
             this.ThirtyNineAnniversaryShirtLabelCard.Click += new System.EventHandler(this.ThirtyNineAnniversaryShirtLabelCard_Click);
@@ -289,10 +271,10 @@
             this.ICTBackCard.GradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ICTBackCard.GradientRatio = 0.4F;
             this.ICTBackCard.GradientStartColor = System.Drawing.Color.Silver;
-            this.ICTBackCard.Location = new System.Drawing.Point(226, 72);
-            this.ICTBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ICTBackCard.Location = new System.Drawing.Point(301, 89);
+            this.ICTBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ICTBackCard.Name = "ICTBackCard";
-            this.ICTBackCard.Size = new System.Drawing.Size(198, 100);
+            this.ICTBackCard.Size = new System.Drawing.Size(264, 123);
             this.ICTBackCard.TabIndex = 109;
             // 
             // ITimageCard
@@ -301,10 +283,10 @@
             this.ITimageCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_IT1;
             this.ITimageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ITimageCard.CornerRadius = 30;
-            this.ITimageCard.Location = new System.Drawing.Point(112, 0);
-            this.ITimageCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ITimageCard.Location = new System.Drawing.Point(149, 0);
+            this.ITimageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ITimageCard.Name = "ITimageCard";
-            this.ITimageCard.Size = new System.Drawing.Size(100, 101);
+            this.ITimageCard.Size = new System.Drawing.Size(133, 124);
             this.ITimageCard.TabIndex = 37;
             this.ITimageCard.TabStop = false;
             this.ITimageCard.Click += new System.EventHandler(this.ITimageCard_Click);
@@ -315,10 +297,9 @@
             this.ITLabelCard.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ITLabelCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ITLabelCard.Location = new System.Drawing.Point(0, -2);
-            this.ITLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ITLabelCard.Name = "ITLabelCard";
-            this.ITLabelCard.Padding = new System.Windows.Forms.Padding(5, 30, 0, 0);
-            this.ITLabelCard.Size = new System.Drawing.Size(173, 99);
+            this.ITLabelCard.Padding = new System.Windows.Forms.Padding(7, 37, 0, 0);
+            this.ITLabelCard.Size = new System.Drawing.Size(231, 122);
             this.ITLabelCard.TabIndex = 12;
             this.ITLabelCard.Text = "Information and Communications\r\nTechnology";
             this.ITLabelCard.Click += new System.EventHandler(this.ITLabelCard_Click);
@@ -327,10 +308,10 @@
             // 
             this.ShsPEShirtPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsPEShirtPictureCard.CornerRadius = 40;
-            this.ShsPEShirtPictureCard.Location = new System.Drawing.Point(232, 507);
-            this.ShsPEShirtPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ShsPEShirtPictureCard.Location = new System.Drawing.Point(309, 624);
+            this.ShsPEShirtPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShsPEShirtPictureCard.Name = "ShsPEShirtPictureCard";
-            this.ShsPEShirtPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.ShsPEShirtPictureCard.Size = new System.Drawing.Size(264, 258);
             this.ShsPEShirtPictureCard.TabIndex = 105;
             this.ShsPEShirtPictureCard.TabStop = false;
             this.ShsPEShirtPictureCard.Click += new System.EventHandler(this.ShsPEShirtPictureCard_Click);
@@ -340,9 +321,10 @@
             this.FourthyOneAnniversaryShirtImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.FourthyOneAnniversaryShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FourthyOneAnniversaryShirtImageCard.CornerRadius = 20;
-            this.FourthyOneAnniversaryShirtImageCard.Location = new System.Drawing.Point(14, 505);
+            this.FourthyOneAnniversaryShirtImageCard.Location = new System.Drawing.Point(19, 622);
+            this.FourthyOneAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FourthyOneAnniversaryShirtImageCard.Name = "FourthyOneAnniversaryShirtImageCard";
-            this.FourthyOneAnniversaryShirtImageCard.Size = new System.Drawing.Size(198, 162);
+            this.FourthyOneAnniversaryShirtImageCard.Size = new System.Drawing.Size(264, 199);
             this.FourthyOneAnniversaryShirtImageCard.TabIndex = 102;
             this.FourthyOneAnniversaryShirtImageCard.TabStop = false;
             this.FourthyOneAnniversaryShirtImageCard.Click += new System.EventHandler(this.FourthyOneAnniversaryShirtImageCard_Click);
@@ -351,10 +333,10 @@
             // 
             this.FourthyOneAnniversaryShirtPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.FourthyOneAnniversaryShirtPictureCard.CornerRadius = 40;
-            this.FourthyOneAnniversaryShirtPictureCard.Location = new System.Drawing.Point(14, 505);
-            this.FourthyOneAnniversaryShirtPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.FourthyOneAnniversaryShirtPictureCard.Location = new System.Drawing.Point(19, 622);
+            this.FourthyOneAnniversaryShirtPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FourthyOneAnniversaryShirtPictureCard.Name = "FourthyOneAnniversaryShirtPictureCard";
-            this.FourthyOneAnniversaryShirtPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.FourthyOneAnniversaryShirtPictureCard.Size = new System.Drawing.Size(264, 258);
             this.FourthyOneAnniversaryShirtPictureCard.TabIndex = 103;
             this.FourthyOneAnniversaryShirtPictureCard.TabStop = false;
             this.FourthyOneAnniversaryShirtPictureCard.Click += new System.EventHandler(this.FourthyOneAnniversaryShirtPictureCard_Click);
@@ -364,9 +346,10 @@
             this.FourthyAnniversaryShirtImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.FourthyAnniversaryShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FourthyAnniversaryShirtImageCard.CornerRadius = 20;
-            this.FourthyAnniversaryShirtImageCard.Location = new System.Drawing.Point(229, 287);
+            this.FourthyAnniversaryShirtImageCard.Location = new System.Drawing.Point(305, 353);
+            this.FourthyAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FourthyAnniversaryShirtImageCard.Name = "FourthyAnniversaryShirtImageCard";
-            this.FourthyAnniversaryShirtImageCard.Size = new System.Drawing.Size(198, 174);
+            this.FourthyAnniversaryShirtImageCard.Size = new System.Drawing.Size(264, 214);
             this.FourthyAnniversaryShirtImageCard.TabIndex = 99;
             this.FourthyAnniversaryShirtImageCard.TabStop = false;
             this.FourthyAnniversaryShirtImageCard.Click += new System.EventHandler(this.FourthyAnniversaryShirtImageCard_Click);
@@ -375,10 +358,10 @@
             // 
             this.FourthyAnniversaryShirtPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.FourthyAnniversaryShirtPictureCard.CornerRadius = 40;
-            this.FourthyAnniversaryShirtPictureCard.Location = new System.Drawing.Point(229, 287);
-            this.FourthyAnniversaryShirtPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.FourthyAnniversaryShirtPictureCard.Location = new System.Drawing.Point(305, 353);
+            this.FourthyAnniversaryShirtPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FourthyAnniversaryShirtPictureCard.Name = "FourthyAnniversaryShirtPictureCard";
-            this.FourthyAnniversaryShirtPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.FourthyAnniversaryShirtPictureCard.Size = new System.Drawing.Size(264, 258);
             this.FourthyAnniversaryShirtPictureCard.TabIndex = 100;
             this.FourthyAnniversaryShirtPictureCard.TabStop = false;
             this.FourthyAnniversaryShirtPictureCard.Click += new System.EventHandler(this.FourthyAnniversaryShirtPictureCard_Click);
@@ -388,9 +371,10 @@
             this.ThirtyNineAnniversaryShirtImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.ThirtyNineAnniversaryShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ThirtyNineAnniversaryShirtImageCard.CornerRadius = 20;
-            this.ThirtyNineAnniversaryShirtImageCard.Location = new System.Drawing.Point(13, 288);
+            this.ThirtyNineAnniversaryShirtImageCard.Location = new System.Drawing.Point(17, 354);
+            this.ThirtyNineAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ThirtyNineAnniversaryShirtImageCard.Name = "ThirtyNineAnniversaryShirtImageCard";
-            this.ThirtyNineAnniversaryShirtImageCard.Size = new System.Drawing.Size(198, 174);
+            this.ThirtyNineAnniversaryShirtImageCard.Size = new System.Drawing.Size(264, 214);
             this.ThirtyNineAnniversaryShirtImageCard.TabIndex = 96;
             this.ThirtyNineAnniversaryShirtImageCard.TabStop = false;
             this.ThirtyNineAnniversaryShirtImageCard.Click += new System.EventHandler(this.ThirtyNineAnniversaryShirtImageCard_Click);
@@ -399,10 +383,10 @@
             // 
             this.ThirtyNineAnniversaryShirtPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ThirtyNineAnniversaryShirtPictureCard.CornerRadius = 40;
-            this.ThirtyNineAnniversaryShirtPictureCard.Location = new System.Drawing.Point(13, 288);
-            this.ThirtyNineAnniversaryShirtPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ThirtyNineAnniversaryShirtPictureCard.Location = new System.Drawing.Point(17, 354);
+            this.ThirtyNineAnniversaryShirtPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ThirtyNineAnniversaryShirtPictureCard.Name = "ThirtyNineAnniversaryShirtPictureCard";
-            this.ThirtyNineAnniversaryShirtPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.ThirtyNineAnniversaryShirtPictureCard.Size = new System.Drawing.Size(264, 258);
             this.ThirtyNineAnniversaryShirtPictureCard.TabIndex = 97;
             this.ThirtyNineAnniversaryShirtPictureCard.TabStop = false;
             this.ThirtyNineAnniversaryShirtPictureCard.Click += new System.EventHandler(this.ThirtyNineAnniversaryShirtPictureCard_Click);
@@ -412,10 +396,10 @@
             this.roundedPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.BackgroundImage")));
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(13, 9);
-            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.roundedPictureBox1.Location = new System.Drawing.Point(17, 11);
+            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(83, 43);
+            this.roundedPictureBox1.Size = new System.Drawing.Size(111, 53);
             this.roundedPictureBox1.TabIndex = 92;
             this.roundedPictureBox1.TabStop = false;
             // 
@@ -423,10 +407,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, -2);
+            this.dataGridView1.Location = new System.Drawing.Point(3, -2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(439, 65);
+            this.dataGridView1.Size = new System.Drawing.Size(585, 80);
             this.dataGridView1.TabIndex = 91;
             // 
             // ShsPEPantsImageCard
@@ -434,9 +419,10 @@
             this.ShsPEPantsImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.ShsPEPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsPEPantsImageCard.CornerRadius = 20;
-            this.ShsPEPantsImageCard.Location = new System.Drawing.Point(14, 724);
+            this.ShsPEPantsImageCard.Location = new System.Drawing.Point(19, 891);
+            this.ShsPEPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ShsPEPantsImageCard.Name = "ShsPEPantsImageCard";
-            this.ShsPEPantsImageCard.Size = new System.Drawing.Size(198, 163);
+            this.ShsPEPantsImageCard.Size = new System.Drawing.Size(264, 201);
             this.ShsPEPantsImageCard.TabIndex = 112;
             this.ShsPEPantsImageCard.TabStop = false;
             this.ShsPEPantsImageCard.Click += new System.EventHandler(this.ShsPEPantsImageCard_Click);
@@ -446,10 +432,9 @@
             this.ShsPEPantsLabelCard.AutoSize = true;
             this.ShsPEPantsLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsPEPantsLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShsPEPantsLabelCard.Location = new System.Drawing.Point(19, 905);
-            this.ShsPEPantsLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShsPEPantsLabelCard.Location = new System.Drawing.Point(25, 1114);
             this.ShsPEPantsLabelCard.Name = "ShsPEPantsLabelCard";
-            this.ShsPEPantsLabelCard.Size = new System.Drawing.Size(113, 18);
+            this.ShsPEPantsLabelCard.Size = new System.Drawing.Size(140, 23);
             this.ShsPEPantsLabelCard.TabIndex = 111;
             this.ShsPEPantsLabelCard.Text = "SHS P.E Pants";
             this.ShsPEPantsLabelCard.Click += new System.EventHandler(this.ShsPEPantsLabelCard_Click);
@@ -458,10 +443,10 @@
             // 
             this.ShsPEPantsPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsPEPantsPictureCard.CornerRadius = 40;
-            this.ShsPEPantsPictureCard.Location = new System.Drawing.Point(14, 724);
-            this.ShsPEPantsPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ShsPEPantsPictureCard.Location = new System.Drawing.Point(19, 891);
+            this.ShsPEPantsPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShsPEPantsPictureCard.Name = "ShsPEPantsPictureCard";
-            this.ShsPEPantsPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.ShsPEPantsPictureCard.Size = new System.Drawing.Size(264, 258);
             this.ShsPEPantsPictureCard.TabIndex = 110;
             this.ShsPEPantsPictureCard.TabStop = false;
             this.ShsPEPantsPictureCard.Click += new System.EventHandler(this.ShsPEPantsPictureCard_Click);
@@ -471,9 +456,10 @@
             this.ShsPESetImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.ShsPESetImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsPESetImageCard.CornerRadius = 20;
-            this.ShsPESetImageCard.Location = new System.Drawing.Point(232, 724);
+            this.ShsPESetImageCard.Location = new System.Drawing.Point(309, 891);
+            this.ShsPESetImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ShsPESetImageCard.Name = "ShsPESetImageCard";
-            this.ShsPESetImageCard.Size = new System.Drawing.Size(198, 163);
+            this.ShsPESetImageCard.Size = new System.Drawing.Size(264, 201);
             this.ShsPESetImageCard.TabIndex = 115;
             this.ShsPESetImageCard.TabStop = false;
             this.ShsPESetImageCard.Click += new System.EventHandler(this.ShsPESetImageCard_Click);
@@ -483,10 +469,9 @@
             this.ShsPESetLabelCard.AutoSize = true;
             this.ShsPESetLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsPESetLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShsPESetLabelCard.Location = new System.Drawing.Point(236, 905);
-            this.ShsPESetLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ShsPESetLabelCard.Location = new System.Drawing.Point(315, 1114);
             this.ShsPESetLabelCard.Name = "ShsPESetLabelCard";
-            this.ShsPESetLabelCard.Size = new System.Drawing.Size(97, 18);
+            this.ShsPESetLabelCard.Size = new System.Drawing.Size(120, 23);
             this.ShsPESetLabelCard.TabIndex = 114;
             this.ShsPESetLabelCard.Text = "SHS P.E Set";
             this.ShsPESetLabelCard.Click += new System.EventHandler(this.ShsPESetLabelCard_Click);
@@ -495,10 +480,10 @@
             // 
             this.ShsPESetPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ShsPESetPictureCard.CornerRadius = 40;
-            this.ShsPESetPictureCard.Location = new System.Drawing.Point(232, 724);
-            this.ShsPESetPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.ShsPESetPictureCard.Location = new System.Drawing.Point(309, 891);
+            this.ShsPESetPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShsPESetPictureCard.Name = "ShsPESetPictureCard";
-            this.ShsPESetPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.ShsPESetPictureCard.Size = new System.Drawing.Size(264, 258);
             this.ShsPESetPictureCard.TabIndex = 113;
             this.ShsPESetPictureCard.TabStop = false;
             this.ShsPESetPictureCard.Click += new System.EventHandler(this.ShsPESetPictureCard_Click);
@@ -508,9 +493,10 @@
             this.TertiaryPEShirtImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.TertiaryPEShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TertiaryPEShirtImageCard.CornerRadius = 20;
-            this.TertiaryPEShirtImageCard.Location = new System.Drawing.Point(14, 942);
+            this.TertiaryPEShirtImageCard.Location = new System.Drawing.Point(19, 1159);
+            this.TertiaryPEShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TertiaryPEShirtImageCard.Name = "TertiaryPEShirtImageCard";
-            this.TertiaryPEShirtImageCard.Size = new System.Drawing.Size(198, 163);
+            this.TertiaryPEShirtImageCard.Size = new System.Drawing.Size(264, 201);
             this.TertiaryPEShirtImageCard.TabIndex = 118;
             this.TertiaryPEShirtImageCard.TabStop = false;
             this.TertiaryPEShirtImageCard.Click += new System.EventHandler(this.TertiaryPEShirtImageCard_Click);
@@ -520,10 +506,9 @@
             this.TertiaryPEShirtLabelCard.AutoSize = true;
             this.TertiaryPEShirtLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TertiaryPEShirtLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TertiaryPEShirtLabelCard.Location = new System.Drawing.Point(19, 1124);
-            this.TertiaryPEShirtLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TertiaryPEShirtLabelCard.Location = new System.Drawing.Point(25, 1383);
             this.TertiaryPEShirtLabelCard.Name = "TertiaryPEShirtLabelCard";
-            this.TertiaryPEShirtLabelCard.Size = new System.Drawing.Size(122, 18);
+            this.TertiaryPEShirtLabelCard.Size = new System.Drawing.Size(157, 23);
             this.TertiaryPEShirtLabelCard.TabIndex = 117;
             this.TertiaryPEShirtLabelCard.Text = "Tertiary P.E Shirt";
             this.TertiaryPEShirtLabelCard.Click += new System.EventHandler(this.TertiaryPEShirtLabelCard_Click);
@@ -532,10 +517,10 @@
             // 
             this.TertiaryPEShirtPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TertiaryPEShirtPictureCard.CornerRadius = 40;
-            this.TertiaryPEShirtPictureCard.Location = new System.Drawing.Point(14, 942);
-            this.TertiaryPEShirtPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TertiaryPEShirtPictureCard.Location = new System.Drawing.Point(19, 1159);
+            this.TertiaryPEShirtPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TertiaryPEShirtPictureCard.Name = "TertiaryPEShirtPictureCard";
-            this.TertiaryPEShirtPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.TertiaryPEShirtPictureCard.Size = new System.Drawing.Size(264, 258);
             this.TertiaryPEShirtPictureCard.TabIndex = 116;
             this.TertiaryPEShirtPictureCard.TabStop = false;
             this.TertiaryPEShirtPictureCard.Click += new System.EventHandler(this.TertiaryPEShirtPictureCard_Click);
@@ -545,9 +530,10 @@
             this.TertiaryPEPantsImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.TertiaryPEPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TertiaryPEPantsImageCard.CornerRadius = 20;
-            this.TertiaryPEPantsImageCard.Location = new System.Drawing.Point(231, 942);
+            this.TertiaryPEPantsImageCard.Location = new System.Drawing.Point(308, 1159);
+            this.TertiaryPEPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TertiaryPEPantsImageCard.Name = "TertiaryPEPantsImageCard";
-            this.TertiaryPEPantsImageCard.Size = new System.Drawing.Size(198, 163);
+            this.TertiaryPEPantsImageCard.Size = new System.Drawing.Size(264, 201);
             this.TertiaryPEPantsImageCard.TabIndex = 121;
             this.TertiaryPEPantsImageCard.TabStop = false;
             this.TertiaryPEPantsImageCard.Click += new System.EventHandler(this.TertiaryPEPantsImageCard_Click);
@@ -557,10 +543,9 @@
             this.TertiaryPEPantsLabelCard.AutoSize = true;
             this.TertiaryPEPantsLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TertiaryPEPantsLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TertiaryPEPantsLabelCard.Location = new System.Drawing.Point(236, 1123);
-            this.TertiaryPEPantsLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TertiaryPEPantsLabelCard.Location = new System.Drawing.Point(315, 1382);
             this.TertiaryPEPantsLabelCard.Name = "TertiaryPEPantsLabelCard";
-            this.TertiaryPEPantsLabelCard.Size = new System.Drawing.Size(130, 18);
+            this.TertiaryPEPantsLabelCard.Size = new System.Drawing.Size(167, 23);
             this.TertiaryPEPantsLabelCard.TabIndex = 120;
             this.TertiaryPEPantsLabelCard.Text = "Tertiary P.E Pants";
             this.TertiaryPEPantsLabelCard.Click += new System.EventHandler(this.TertiaryPEPantsLabelCard_Click);
@@ -569,10 +554,10 @@
             // 
             this.TertiaryPEPantsPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TertiaryPEPantsPictureCard.CornerRadius = 40;
-            this.TertiaryPEPantsPictureCard.Location = new System.Drawing.Point(231, 942);
-            this.TertiaryPEPantsPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TertiaryPEPantsPictureCard.Location = new System.Drawing.Point(308, 1159);
+            this.TertiaryPEPantsPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TertiaryPEPantsPictureCard.Name = "TertiaryPEPantsPictureCard";
-            this.TertiaryPEPantsPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.TertiaryPEPantsPictureCard.Size = new System.Drawing.Size(264, 258);
             this.TertiaryPEPantsPictureCard.TabIndex = 119;
             this.TertiaryPEPantsPictureCard.TabStop = false;
             this.TertiaryPEPantsPictureCard.Click += new System.EventHandler(this.TertiaryPEPantsPictureCard_Click);
@@ -582,9 +567,10 @@
             this.TertiaryPESetImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.TertiaryPESetImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TertiaryPESetImageCard.CornerRadius = 20;
-            this.TertiaryPESetImageCard.Location = new System.Drawing.Point(14, 1169);
+            this.TertiaryPESetImageCard.Location = new System.Drawing.Point(19, 1439);
+            this.TertiaryPESetImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TertiaryPESetImageCard.Name = "TertiaryPESetImageCard";
-            this.TertiaryPESetImageCard.Size = new System.Drawing.Size(198, 163);
+            this.TertiaryPESetImageCard.Size = new System.Drawing.Size(264, 201);
             this.TertiaryPESetImageCard.TabIndex = 124;
             this.TertiaryPESetImageCard.TabStop = false;
             this.TertiaryPESetImageCard.Click += new System.EventHandler(this.TertiaryPESetImageCard_Click);
@@ -594,10 +580,9 @@
             this.TertiaryPESetLabelCard.AutoSize = true;
             this.TertiaryPESetLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TertiaryPESetLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TertiaryPESetLabelCard.Location = new System.Drawing.Point(19, 1350);
-            this.TertiaryPESetLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TertiaryPESetLabelCard.Location = new System.Drawing.Point(25, 1662);
             this.TertiaryPESetLabelCard.Name = "TertiaryPESetLabelCard";
-            this.TertiaryPESetLabelCard.Size = new System.Drawing.Size(114, 18);
+            this.TertiaryPESetLabelCard.Size = new System.Drawing.Size(147, 23);
             this.TertiaryPESetLabelCard.TabIndex = 123;
             this.TertiaryPESetLabelCard.Text = "Tertiary P.E Set";
             this.TertiaryPESetLabelCard.Click += new System.EventHandler(this.TertiaryPESetLabelCard_Click);
@@ -606,10 +591,10 @@
             // 
             this.TertiaryPESetPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.TertiaryPESetPictureCard.CornerRadius = 40;
-            this.TertiaryPESetPictureCard.Location = new System.Drawing.Point(14, 1169);
-            this.TertiaryPESetPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TertiaryPESetPictureCard.Location = new System.Drawing.Point(19, 1439);
+            this.TertiaryPESetPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TertiaryPESetPictureCard.Name = "TertiaryPESetPictureCard";
-            this.TertiaryPESetPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.TertiaryPESetPictureCard.Size = new System.Drawing.Size(264, 258);
             this.TertiaryPESetPictureCard.TabIndex = 122;
             this.TertiaryPESetPictureCard.TabStop = false;
             this.TertiaryPESetPictureCard.Click += new System.EventHandler(this.TertiaryPESetPictureCard_Click);
@@ -619,9 +604,10 @@
             this.NstpShirtImageCard.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.NstpShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.NstpShirtImageCard.CornerRadius = 20;
-            this.NstpShirtImageCard.Location = new System.Drawing.Point(226, 1169);
+            this.NstpShirtImageCard.Location = new System.Drawing.Point(301, 1439);
+            this.NstpShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NstpShirtImageCard.Name = "NstpShirtImageCard";
-            this.NstpShirtImageCard.Size = new System.Drawing.Size(198, 163);
+            this.NstpShirtImageCard.Size = new System.Drawing.Size(264, 201);
             this.NstpShirtImageCard.TabIndex = 127;
             this.NstpShirtImageCard.TabStop = false;
             this.NstpShirtImageCard.Click += new System.EventHandler(this.NstpShirtImageCard_Click);
@@ -631,10 +617,9 @@
             this.NstpShirtLabelCard.AutoSize = true;
             this.NstpShirtLabelCard.BackColor = System.Drawing.Color.Gainsboro;
             this.NstpShirtLabelCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NstpShirtLabelCard.Location = new System.Drawing.Point(230, 1350);
-            this.NstpShirtLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.NstpShirtLabelCard.Location = new System.Drawing.Point(307, 1662);
             this.NstpShirtLabelCard.Name = "NstpShirtLabelCard";
-            this.NstpShirtLabelCard.Size = new System.Drawing.Size(86, 18);
+            this.NstpShirtLabelCard.Size = new System.Drawing.Size(107, 23);
             this.NstpShirtLabelCard.TabIndex = 126;
             this.NstpShirtLabelCard.Text = "NSTP Shirt";
             this.NstpShirtLabelCard.Click += new System.EventHandler(this.NstpShirtLabelCard_Click);
@@ -643,10 +628,10 @@
             // 
             this.NstpShirtPictureCard.BackColor = System.Drawing.Color.Gainsboro;
             this.NstpShirtPictureCard.CornerRadius = 40;
-            this.NstpShirtPictureCard.Location = new System.Drawing.Point(226, 1169);
-            this.NstpShirtPictureCard.Margin = new System.Windows.Forms.Padding(2);
+            this.NstpShirtPictureCard.Location = new System.Drawing.Point(301, 1439);
+            this.NstpShirtPictureCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NstpShirtPictureCard.Name = "NstpShirtPictureCard";
-            this.NstpShirtPictureCard.Size = new System.Drawing.Size(198, 210);
+            this.NstpShirtPictureCard.Size = new System.Drawing.Size(264, 258);
             this.NstpShirtPictureCard.TabIndex = 125;
             this.NstpShirtPictureCard.TabStop = false;
             this.NstpShirtPictureCard.Click += new System.EventHandler(this.NstpShirtPictureCard_Click);
@@ -659,10 +644,10 @@
             this.gradientRoundPanel1.GradientEndColor = System.Drawing.Color.Gold;
             this.gradientRoundPanel1.GradientRatio = 0.4F;
             this.gradientRoundPanel1.GradientStartColor = System.Drawing.Color.White;
-            this.gradientRoundPanel1.Location = new System.Drawing.Point(12, 68);
-            this.gradientRoundPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.gradientRoundPanel1.Location = new System.Drawing.Point(16, 84);
+            this.gradientRoundPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gradientRoundPanel1.Name = "gradientRoundPanel1";
-            this.gradientRoundPanel1.Size = new System.Drawing.Size(200, 102);
+            this.gradientRoundPanel1.Size = new System.Drawing.Size(267, 126);
             this.gradientRoundPanel1.TabIndex = 128;
             // 
             // SHSimageCard
@@ -671,10 +656,10 @@
             this.SHSimageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SHSimageCard.BackgroundImage")));
             this.SHSimageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SHSimageCard.CornerRadius = 30;
-            this.SHSimageCard.Location = new System.Drawing.Point(111, 1);
-            this.SHSimageCard.Margin = new System.Windows.Forms.Padding(2);
+            this.SHSimageCard.Location = new System.Drawing.Point(148, 1);
+            this.SHSimageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SHSimageCard.Name = "SHSimageCard";
-            this.SHSimageCard.Size = new System.Drawing.Size(113, 101);
+            this.SHSimageCard.Size = new System.Drawing.Size(151, 124);
             this.SHSimageCard.TabIndex = 37;
             this.SHSimageCard.TabStop = false;
             this.SHSimageCard.Click += new System.EventHandler(this.SHSimageCard_Click);
@@ -685,10 +670,9 @@
             this.SHSLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SHSLabelCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SHSLabelCard.Location = new System.Drawing.Point(0, 1);
-            this.SHSLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SHSLabelCard.Name = "SHSLabelCard";
-            this.SHSLabelCard.Padding = new System.Windows.Forms.Padding(20, 30, 100, 0);
-            this.SHSLabelCard.Size = new System.Drawing.Size(202, 99);
+            this.SHSLabelCard.Padding = new System.Windows.Forms.Padding(27, 37, 133, 0);
+            this.SHSLabelCard.Size = new System.Drawing.Size(269, 122);
             this.SHSLabelCard.TabIndex = 12;
             this.SHSLabelCard.Text = "Senior High School";
             this.SHSLabelCard.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -702,10 +686,10 @@
             this.HMBackCard.GradientEndColor = System.Drawing.Color.DarkRed;
             this.HMBackCard.GradientRatio = 0.4F;
             this.HMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.HMBackCard.Location = new System.Drawing.Point(226, 176);
-            this.HMBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.HMBackCard.Location = new System.Drawing.Point(301, 217);
+            this.HMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMBackCard.Name = "HMBackCard";
-            this.HMBackCard.Size = new System.Drawing.Size(200, 101);
+            this.HMBackCard.Size = new System.Drawing.Size(267, 124);
             this.HMBackCard.TabIndex = 105;
             // 
             // HMimageCard
@@ -714,10 +698,10 @@
             this.HMimageCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_HRM;
             this.HMimageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HMimageCard.CornerRadius = 30;
-            this.HMimageCard.Location = new System.Drawing.Point(103, 2);
-            this.HMimageCard.Margin = new System.Windows.Forms.Padding(2);
+            this.HMimageCard.Location = new System.Drawing.Point(137, 2);
+            this.HMimageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HMimageCard.Name = "HMimageCard";
-            this.HMimageCard.Size = new System.Drawing.Size(113, 101);
+            this.HMimageCard.Size = new System.Drawing.Size(151, 124);
             this.HMimageCard.TabIndex = 37;
             this.HMimageCard.TabStop = false;
             this.HMimageCard.Click += new System.EventHandler(this.HMimageCard_Click);
@@ -726,11 +710,10 @@
             // 
             this.HMLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.HMLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMLabelCard.Location = new System.Drawing.Point(7, 2);
-            this.HMLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.HMLabelCard.Location = new System.Drawing.Point(9, 2);
             this.HMLabelCard.Name = "HMLabelCard";
-            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 75, 0);
-            this.HMLabelCard.Size = new System.Drawing.Size(191, 99);
+            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.HMLabelCard.Size = new System.Drawing.Size(255, 122);
             this.HMLabelCard.TabIndex = 12;
             this.HMLabelCard.Text = "Hospitality Management";
             this.HMLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -744,10 +727,10 @@
             this.TMBackCard.GradientEndColor = System.Drawing.Color.MediumVioletRed;
             this.TMBackCard.GradientRatio = 0.4F;
             this.TMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.TMBackCard.Location = new System.Drawing.Point(15, 176);
-            this.TMBackCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMBackCard.Location = new System.Drawing.Point(20, 217);
+            this.TMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMBackCard.Name = "TMBackCard";
-            this.TMBackCard.Size = new System.Drawing.Size(200, 102);
+            this.TMBackCard.Size = new System.Drawing.Size(267, 126);
             this.TMBackCard.TabIndex = 57;
             // 
             // TMimageCard
@@ -756,10 +739,10 @@
             this.TMimageCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_TOURISM1;
             this.TMimageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.TMimageCard.CornerRadius = 30;
-            this.TMimageCard.Location = new System.Drawing.Point(101, 1);
-            this.TMimageCard.Margin = new System.Windows.Forms.Padding(2);
+            this.TMimageCard.Location = new System.Drawing.Point(135, 1);
+            this.TMimageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TMimageCard.Name = "TMimageCard";
-            this.TMimageCard.Size = new System.Drawing.Size(119, 101);
+            this.TMimageCard.Size = new System.Drawing.Size(159, 124);
             this.TMimageCard.TabIndex = 37;
             this.TMimageCard.TabStop = false;
             this.TMimageCard.Click += new System.EventHandler(this.TMimageCard_Click);
@@ -768,11 +751,10 @@
             // 
             this.TMLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.TMLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMLabelCard.Location = new System.Drawing.Point(2, 2);
-            this.TMLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TMLabelCard.Location = new System.Drawing.Point(3, 2);
             this.TMLabelCard.Name = "TMLabelCard";
-            this.TMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 75, 0);
-            this.TMLabelCard.Size = new System.Drawing.Size(196, 101);
+            this.TMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
+            this.TMLabelCard.Size = new System.Drawing.Size(261, 124);
             this.TMLabelCard.TabIndex = 12;
             this.TMLabelCard.Text = "    Tourism Management";
             this.TMLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -780,10 +762,10 @@
             // 
             // ProwareForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(447, 716);
+            this.ClientSize = new System.Drawing.Size(596, 881);
             this.Controls.Add(this.TMBackCard);
             this.Controls.Add(this.HMBackCard);
             this.Controls.Add(this.gradientRoundPanel1);
@@ -821,7 +803,7 @@
             this.Controls.Add(this.ThirtyNineAnniversaryShirtPictureCard);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ProwareForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProwareForm";
@@ -868,7 +850,6 @@
 
         private RoundedPictureBox ShsPEShirtImageCard;
         private RoundedPanel RoundedFooter;
-        private System.Windows.Forms.Label CartItemNumLbl;
         private System.Windows.Forms.Label TotalLbl;
         private System.Windows.Forms.Label TotalOutputLbl;
         private System.Windows.Forms.Label label8;

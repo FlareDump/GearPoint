@@ -37,7 +37,6 @@
             this.TotalLbl = new System.Windows.Forms.Label();
             this.TotalOutputLbl = new System.Windows.Forms.Label();
             this.RoundedFooter = new GearPoint.RoundedPanel();
-            this.CartItemNumLbl = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.PaymentButton = new RoundButton();
             this.CartItemLbl = new GearPoint.RoundedBackLabel();
@@ -196,7 +195,6 @@
             // 
             this.RoundedFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.RoundedFooter.BorderRadius = 20;
-            this.RoundedFooter.Controls.Add(this.CartItemNumLbl);
             this.RoundedFooter.Controls.Add(this.TotalLbl);
             this.RoundedFooter.Controls.Add(this.TotalOutputLbl);
             this.RoundedFooter.Controls.Add(this.label8);
@@ -210,15 +208,6 @@
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 82;
-            // 
-            // CartItemNumLbl
-            // 
-            this.CartItemNumLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartItemNumLbl.Location = new System.Drawing.Point(44, 17);
-            this.CartItemNumLbl.Name = "CartItemNumLbl";
-            this.CartItemNumLbl.Size = new System.Drawing.Size(44, 20);
-            this.CartItemNumLbl.TabIndex = 0;
-            this.CartItemNumLbl.Text = "0";
             // 
             // label8
             // 
@@ -820,7 +809,6 @@
         private System.Windows.Forms.Label TotalLbl;
         private System.Windows.Forms.Label TotalOutputLbl;
         private RoundedPanel RoundedFooter;
-        private System.Windows.Forms.Label CartItemNumLbl;
         private System.Windows.Forms.Label label8;
         private RoundButton PaymentButton;
         private RoundedBackLabel CartItemLbl;

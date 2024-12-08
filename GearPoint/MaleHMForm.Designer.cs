@@ -116,7 +116,7 @@
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(381, 14);
+            this.TotalLbl.Location = new System.Drawing.Point(362, 14);
             this.TotalLbl.Name = "TotalLbl";
             this.TotalLbl.Size = new System.Drawing.Size(64, 24);
             this.TotalLbl.TabIndex = 5;
@@ -125,11 +125,11 @@
             // TotalOutputLbl
             // 
             this.TotalOutputLbl.AutoSize = true;
-            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
             this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(396, 43);
+            this.TotalOutputLbl.Location = new System.Drawing.Point(370, 43);
             this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
+            this.TotalOutputLbl.Size = new System.Drawing.Size(87, 33);
             this.TotalOutputLbl.TabIndex = 4;
             this.TotalOutputLbl.Text = "$0.00";
             // 
@@ -146,7 +146,7 @@
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.RoundedFooter.Location = new System.Drawing.Point(20, 1494);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 54;
@@ -228,7 +228,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(-91, -1);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(769, 80);
@@ -287,7 +287,7 @@
             this.HMKitchenUniformSetImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMKitchenUniformSetImageCard.CornerRadius = 20;
             this.HMKitchenUniformSetImageCard.Location = new System.Drawing.Point(12, 1169);
-            this.HMKitchenUniformSetImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMKitchenUniformSetImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMKitchenUniformSetImageCard.Name = "HMKitchenUniformSetImageCard";
             this.HMKitchenUniformSetImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMKitchenUniformSetImageCard.TabIndex = 61;
@@ -311,7 +311,7 @@
             this.HMmenChefsPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenChefsPantsImageCard.CornerRadius = 20;
             this.HMmenChefsPantsImageCard.Location = new System.Drawing.Point(303, 889);
-            this.HMmenChefsPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMmenChefsPantsImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMmenChefsPantsImageCard.Name = "HMmenChefsPantsImageCard";
             this.HMmenChefsPantsImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMmenChefsPantsImageCard.TabIndex = 58;
@@ -335,7 +335,7 @@
             this.HMGraymenChefsPoloImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMGraymenChefsPoloImageCard.CornerRadius = 20;
             this.HMGraymenChefsPoloImageCard.Location = new System.Drawing.Point(11, 889);
-            this.HMGraymenChefsPoloImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMGraymenChefsPoloImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMGraymenChefsPoloImageCard.Name = "HMGraymenChefsPoloImageCard";
             this.HMGraymenChefsPoloImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMGraymenChefsPoloImageCard.TabIndex = 55;
@@ -359,7 +359,7 @@
             this.HMmenUniformSetImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenUniformSetImageCard.CornerRadius = 20;
             this.HMmenUniformSetImageCard.Location = new System.Drawing.Point(303, 610);
-            this.HMmenUniformSetImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMmenUniformSetImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMmenUniformSetImageCard.Name = "HMmenUniformSetImageCard";
             this.HMmenUniformSetImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMmenUniformSetImageCard.TabIndex = 51;
@@ -383,7 +383,7 @@
             this.HMmenBlazerImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenBlazerImageCard.CornerRadius = 20;
             this.HMmenBlazerImageCard.Location = new System.Drawing.Point(299, 347);
-            this.HMmenBlazerImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMmenBlazerImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMmenBlazerImageCard.Name = "HMmenBlazerImageCard";
             this.HMmenBlazerImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMmenBlazerImageCard.TabIndex = 45;
@@ -395,7 +395,7 @@
             this.HMmenPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMmenPantsImageCard.CornerRadius = 20;
             this.HMmenPantsImageCard.Location = new System.Drawing.Point(12, 610);
-            this.HMmenPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMmenPantsImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMmenPantsImageCard.Name = "HMmenPantsImageCard";
             this.HMmenPantsImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMmenPantsImageCard.TabIndex = 48;
@@ -431,7 +431,7 @@
             this.HMMenLongSleevePoloImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.HMMenLongSleevePoloImageCard.CornerRadius = 20;
             this.HMMenLongSleevePoloImageCard.Location = new System.Drawing.Point(11, 347);
-            this.HMMenLongSleevePoloImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HMMenLongSleevePoloImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.HMMenLongSleevePoloImageCard.Name = "HMMenLongSleevePoloImageCard";
             this.HMMenLongSleevePoloImageCard.Size = new System.Drawing.Size(264, 214);
             this.HMMenLongSleevePoloImageCard.TabIndex = 42;
@@ -661,7 +661,7 @@
             this.Controls.Add(this.HMLongSleevePoloBackCard);
             this.Controls.Add(this.roundedPictureBox1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MaleHMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STI Gearpoint";

@@ -120,7 +120,7 @@
             this.ShsPEShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsPEShirtImageCard.CornerRadius = 20;
             this.ShsPEShirtImageCard.Location = new System.Drawing.Point(309, 624);
-            this.ShsPEShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShsPEShirtImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.ShsPEShirtImageCard.Name = "ShsPEShirtImageCard";
             this.ShsPEShirtImageCard.Size = new System.Drawing.Size(264, 201);
             this.ShsPEShirtImageCard.TabIndex = 108;
@@ -140,7 +140,7 @@
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
             this.RoundedFooter.Location = new System.Drawing.Point(27, 1737);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
             this.RoundedFooter.Name = "RoundedFooter";
             this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
             this.RoundedFooter.TabIndex = 107;
@@ -150,7 +150,7 @@
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(392, 14);
+            this.TotalLbl.Location = new System.Drawing.Point(373, 14);
             this.TotalLbl.Name = "TotalLbl";
             this.TotalLbl.Size = new System.Drawing.Size(64, 24);
             this.TotalLbl.TabIndex = 5;
@@ -159,11 +159,11 @@
             // TotalOutputLbl
             // 
             this.TotalOutputLbl.AutoSize = true;
-            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
             this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(407, 43);
+            this.TotalOutputLbl.Location = new System.Drawing.Point(386, 43);
             this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(98, 38);
+            this.TotalOutputLbl.Size = new System.Drawing.Size(87, 33);
             this.TotalOutputLbl.TabIndex = 4;
             this.TotalOutputLbl.Text = "$0.00";
             // 
@@ -322,7 +322,7 @@
             this.FourthyOneAnniversaryShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FourthyOneAnniversaryShirtImageCard.CornerRadius = 20;
             this.FourthyOneAnniversaryShirtImageCard.Location = new System.Drawing.Point(19, 622);
-            this.FourthyOneAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FourthyOneAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.FourthyOneAnniversaryShirtImageCard.Name = "FourthyOneAnniversaryShirtImageCard";
             this.FourthyOneAnniversaryShirtImageCard.Size = new System.Drawing.Size(264, 199);
             this.FourthyOneAnniversaryShirtImageCard.TabIndex = 102;
@@ -347,7 +347,7 @@
             this.FourthyAnniversaryShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.FourthyAnniversaryShirtImageCard.CornerRadius = 20;
             this.FourthyAnniversaryShirtImageCard.Location = new System.Drawing.Point(305, 353);
-            this.FourthyAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FourthyAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.FourthyAnniversaryShirtImageCard.Name = "FourthyAnniversaryShirtImageCard";
             this.FourthyAnniversaryShirtImageCard.Size = new System.Drawing.Size(264, 214);
             this.FourthyAnniversaryShirtImageCard.TabIndex = 99;
@@ -372,7 +372,7 @@
             this.ThirtyNineAnniversaryShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ThirtyNineAnniversaryShirtImageCard.CornerRadius = 20;
             this.ThirtyNineAnniversaryShirtImageCard.Location = new System.Drawing.Point(17, 354);
-            this.ThirtyNineAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ThirtyNineAnniversaryShirtImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.ThirtyNineAnniversaryShirtImageCard.Name = "ThirtyNineAnniversaryShirtImageCard";
             this.ThirtyNineAnniversaryShirtImageCard.Size = new System.Drawing.Size(264, 214);
             this.ThirtyNineAnniversaryShirtImageCard.TabIndex = 96;
@@ -408,7 +408,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, -2);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(585, 80);
@@ -420,7 +420,7 @@
             this.ShsPEPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsPEPantsImageCard.CornerRadius = 20;
             this.ShsPEPantsImageCard.Location = new System.Drawing.Point(19, 891);
-            this.ShsPEPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShsPEPantsImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.ShsPEPantsImageCard.Name = "ShsPEPantsImageCard";
             this.ShsPEPantsImageCard.Size = new System.Drawing.Size(264, 201);
             this.ShsPEPantsImageCard.TabIndex = 112;
@@ -457,7 +457,7 @@
             this.ShsPESetImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ShsPESetImageCard.CornerRadius = 20;
             this.ShsPESetImageCard.Location = new System.Drawing.Point(309, 891);
-            this.ShsPESetImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ShsPESetImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.ShsPESetImageCard.Name = "ShsPESetImageCard";
             this.ShsPESetImageCard.Size = new System.Drawing.Size(264, 201);
             this.ShsPESetImageCard.TabIndex = 115;
@@ -494,7 +494,7 @@
             this.TertiaryPEShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TertiaryPEShirtImageCard.CornerRadius = 20;
             this.TertiaryPEShirtImageCard.Location = new System.Drawing.Point(19, 1159);
-            this.TertiaryPEShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TertiaryPEShirtImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TertiaryPEShirtImageCard.Name = "TertiaryPEShirtImageCard";
             this.TertiaryPEShirtImageCard.Size = new System.Drawing.Size(264, 201);
             this.TertiaryPEShirtImageCard.TabIndex = 118;
@@ -531,7 +531,7 @@
             this.TertiaryPEPantsImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TertiaryPEPantsImageCard.CornerRadius = 20;
             this.TertiaryPEPantsImageCard.Location = new System.Drawing.Point(308, 1159);
-            this.TertiaryPEPantsImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TertiaryPEPantsImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TertiaryPEPantsImageCard.Name = "TertiaryPEPantsImageCard";
             this.TertiaryPEPantsImageCard.Size = new System.Drawing.Size(264, 201);
             this.TertiaryPEPantsImageCard.TabIndex = 121;
@@ -568,7 +568,7 @@
             this.TertiaryPESetImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.TertiaryPESetImageCard.CornerRadius = 20;
             this.TertiaryPESetImageCard.Location = new System.Drawing.Point(19, 1439);
-            this.TertiaryPESetImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TertiaryPESetImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.TertiaryPESetImageCard.Name = "TertiaryPESetImageCard";
             this.TertiaryPESetImageCard.Size = new System.Drawing.Size(264, 201);
             this.TertiaryPESetImageCard.TabIndex = 124;
@@ -605,7 +605,7 @@
             this.NstpShirtImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.NstpShirtImageCard.CornerRadius = 20;
             this.NstpShirtImageCard.Location = new System.Drawing.Point(301, 1439);
-            this.NstpShirtImageCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NstpShirtImageCard.Margin = new System.Windows.Forms.Padding(4);
             this.NstpShirtImageCard.Name = "NstpShirtImageCard";
             this.NstpShirtImageCard.Size = new System.Drawing.Size(264, 201);
             this.NstpShirtImageCard.TabIndex = 127;

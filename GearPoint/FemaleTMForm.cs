@@ -77,5 +77,10 @@ namespace GearPoint
 
         private void HMLabel_Click(object sender, EventArgs e) => NavigateToForm("HM");
         private void HMImage_Click(object sender, EventArgs e) => NavigateToForm("HM");
+
+        private void TotalOutputLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

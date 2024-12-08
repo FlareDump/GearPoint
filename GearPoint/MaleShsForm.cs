@@ -85,5 +85,9 @@ namespace GearPoint
             this.Close();
         }
 
+        private void RoundedFooter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -6,19 +6,25 @@ namespace GearPoint
     public partial class Main_Menu : Form
     {
         private string lastForm;
+        private string total;
 
         public Main_Menu()
         {
+            total = "₱0.00";
             InitializeComponent();
         }
 
-        public Main_Menu(string lastForm)
+        public Main_Menu(string lastForm, string total)
         {
-            InitializeComponent();
             this.lastForm = lastForm;
+            this.total = total;
+            InitializeComponent();
         }
 
-        private void Main_Menu_Load(object sender, EventArgs e) { }
+        private void Main_Menu_Load(object sender, EventArgs e) 
+        {
+            TotalOutputLbl.Text = total;
+        }
 
         // Reusable method for category navigation
         private void NavigateToCategory(string selectedCategory, bool isProware = false)
@@ -60,5 +66,10 @@ namespace GearPoint
         private void ProwareImageCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
         private void ProwareLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
         private void ProwareBackCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
+
+        private void RoundedFooter_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

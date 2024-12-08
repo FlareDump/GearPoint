@@ -79,12 +79,13 @@ namespace GearPoint
             string Gender = gender.ToString();
             string Size = size;
             string Quantity = quantity.ToString();
-            string Total = total.ToString();
+            string Total = total.ToString("F2");
 
             cart = new Cart(Item, Gender, Size, Quantity, Total);
             MessageBox.Show("Item Added to cart");
             cart.Show();
             this.Close();
+            menu = new Main_Menu(lastForm, "₱" + Total);
             menu.Show();
    
         }

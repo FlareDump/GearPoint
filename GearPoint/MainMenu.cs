@@ -1,12 +1,22 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
+
 
 namespace GearPoint
 {
     public partial class Main_Menu : Form
     {
+        private System.Windows.Forms.Label totalOutputLbl;
+
+        public Label TotalOutputLabel => totalOutputLbl;
+
         private string lastForm;
         public string totalPrice;
+        public string updatePrice;
+        public string category = "Proware";
 
         public Main_Menu()
         {
@@ -14,29 +24,72 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        public Main_Menu(string lastForm, string total, string totalPrice)
+        public Main_Menu(string lastForm, string updatePrice)
         {
             this.lastForm = lastForm;
-            this.totalPrice = totalPrice;
+            this.updatePrice = updatePrice;
             InitializeComponent();
         }
 
-        private void Main_Menu_Load(object sender, EventArgs e) 
+        public Main_Menu(string lastForm)
         {
-            TotalOutputLbl.Text = totalPrice;
+            this.lastForm = lastForm;
+            InitializeComponent();
         }
+
+        public void UpdateTotalOutputLabel(string text)
+        {
+            TotalOutputLabel.Text = text; // Helper method to update the label
+        }
+
+        private void Main_Menu_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine("Main_Menu_Load triggered");
+
+            if (!string.IsNullOrEmpty(updatePrice))
+            {
+                Console.WriteLine("Using passed updatePrice: " + updatePrice);
+                TotalOutputLbl.Text = updatePrice;
+            }
+            else
+            {
+                try
+                {
+                    string connstring = "server=localhost;uid=root;pwd=sti-gearpoint;database=Gearpoint";
+                    using (MySqlConnection connection = new MySqlConnection(connstring))
+                    {
+                        connection.Open();
+                        string query = "SELECT SUM(price) AS total_sum FROM orders";
+                        MySqlCommand cmd = new MySqlCommand(query, connection);
+                        object result = cmd.ExecuteScalar();
+
+                        decimal totalSum = result != DBNull.Value && result != null ? Convert.ToDecimal(result) : 0.00m;
+                        TotalOutputLbl.Text = "₱" + totalSum.ToString("F2");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                    MessageBox.Show("An error occurred while updating the total.");
+                    TotalOutputLbl.Text = "₱0.00";
+                }
+            }
+        }
+
 
         // Reusable method for category navigation
         private void NavigateToCategory(string selectedCategory, bool isProware = false)
         {
             if (isProware)
             {
-                var prowareForm = new ProwareForm(selectedCategory, lastForm, totalPrice);
+                Console.WriteLine("User choosen Proware...");
+                var prowareForm = new ProwareForm(category, lastForm);
                 prowareForm.Show();
             }
             else
             {
-                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "MainMenu", totalPrice);
+                Console.WriteLine("User choosen a Category and will proceed to Gender Checkpoint...");
+                var genderCheckpoint = new GenderCheckpoint(selectedCategory, "MainMenu");
                 genderCheckpoint.Show();
             }
             this.Close();
@@ -67,9 +120,18 @@ namespace GearPoint
         private void ProwareLabelCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
         private void ProwareBackCard_Click(object sender, EventArgs e) => NavigateToCategory("Proware", true);
 
-        private void RoundedFooter_Paint(object sender, PaintEventArgs e)
+        private void CartIcon_Click(object sender, EventArgs e)
         {
+            var cart = new Cart("MainMenu");
+            cart.Show();
+            this.Close();
+        }
 
+        private void PaymentButton_Click(object sender, EventArgs e)
+        {
+            Payment payment = new Payment("MainMenu");
+            payment.Show();
+            this.Close();
         }
     }
 }

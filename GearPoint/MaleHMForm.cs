@@ -13,71 +13,87 @@ namespace GearPoint
     public partial class MaleHMForm : Form
     {
         string category;
-        char gender;
+        string gender;
         double price;
         string lastForm;
-        public string totalPrice;
         Cart cart;
 
-        public MaleHMForm(char gender, string lastForm, string totalPrice)
+        public MaleHMForm(string gender, string lastForm)
         {
-
             this.gender = gender;
-            InitializeComponent();
             this.lastForm = lastForm;
-            this.totalPrice = totalPrice;
+            InitializeComponent();
+            
         }
+
+        public MaleHMForm(string lastForm)
+        {
+            this.lastForm = lastForm;
+            InitializeComponent();
+
+        }
+
         private void MaleHMForm_Load(object sender, EventArgs e)
         {
-            TotalOutputLbl.Text = totalPrice;
+            DatabaseHandler dbHandler = new DatabaseHandler();
+            DataTable cartData = dbHandler.GetCartData(); // This updates TotalPrice
+            decimal TotalPrice = dbHandler.TotalPrice;
+
+            TotalOutputLbl.Text = "₱" + TotalPrice.ToString("F2");
         }
-        private void HandleItemSelection(string ItemName, double Itemprice)
+        private void HandleItemSelection(string ItemName, double Itemprice, Image ItemImage)
         {
             price = Itemprice;
-            var addOrder = new AddOrder(ItemName, gender, price, "MaleHM");
+            var addOrder = new AddOrder(ItemName, gender, price, "MaleHM", ItemImage);
             addOrder.Show();
             this.Close();
         }
 
         //HM LongSleevePolo Handler
-        private void HMMenLongSleevePoloImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenLongSleevePoloImageCard.Text, 250);
-        private void HMLongSleevePoloLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMLongSleevePoloLabelCard.Text, 250);
-        private void HMLongSleevePoloBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMLongSleevePoloBackCard.Text, 250);
+        private void HMMenLongSleevePoloImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMLongSleevePoloLabelCard.Text, 700, HMMenLongSleevePoloImageCard.BackgroundImage);
+        private void HMLongSleevePoloLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMLongSleevePoloLabelCard.Text, 700, HMMenLongSleevePoloImageCard.BackgroundImage);
+        private void HMLongSleevePoloBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMLongSleevePoloLabelCard.Text, 700, HMMenLongSleevePoloImageCard.BackgroundImage);
 
         //HM Blazer Handler
-        private void HMmenBlazerImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMmenBlazerImageCard.Text, 250);
-        private void HMMenBlazerLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenBlazerLabelCard.Text, 250);
-        private void HMMenBlazerBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenBlazerBackCard.Text, 250);
+        private void HMmenBlazerImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenBlazerLabelCard.Text, 800, HMmenBlazerImageCard.BackgroundImage);
+        private void HMMenBlazerLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenBlazerLabelCard.Text, 800, HMmenBlazerImageCard.BackgroundImage);
+        private void HMMenBlazerBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenBlazerLabelCard.Text, 800, HMmenBlazerImageCard.BackgroundImage);
 
         //HM Pants Handler
-        private void HMmenPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMmenPantsImageCard.Text, 250);
-        private void HMPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMPantsLabelCard.Text, 250);
-        private void HMPantBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMPantBackCard.Text, 250);
+        private void HMmenPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMPantsLabelCard.Text, 700, HMmenPantsImageCard.BackgroundImage);
+        private void HMPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMPantsLabelCard.Text, 700, HMmenPantsImageCard.BackgroundImage);
+        private void HMPantBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMPantsLabelCard.Text, 700, HMmenPantsImageCard.BackgroundImage);
 
         //HM UniformSet Handler
-        private void HMmenUniformSetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMmenUniformSetImageCard.Text, 250);
-        private void HMMenUniformSetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenUniformSetLabelCard.Text, 250);
-        private void HMMenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenUniformSetBackCard.Text, 250);
+        private void HMmenUniformSetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenUniformSetLabelCard.Text, 2200, HMmenUniformSetImageCard.BackgroundImage);
+        private void HMMenUniformSetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenUniformSetLabelCard.Text, 2200, HMmenUniformSetImageCard.BackgroundImage);
+        private void HMMenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMMenUniformSetLabelCard.Text, 2200, HMmenUniformSetImageCard.BackgroundImage);
+
+        private void HMGraySkullCapLabel_Click(object sender, EventArgs e) => HandleItemSelection(HMGraySkullCapLabel.Text, 120, HMGraySkullCapImage.BackgroundImage);
+        private void HMGraySkullCapImage_Click(object sender, EventArgs e) => HandleItemSelection(HMGraySkullCapLabel.Text, 120, HMGraySkullCapImage.BackgroundImage);
+        private void HMGraySkullCapBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGraySkullCapLabel.Text, 120, HMGraySkullCapImage.BackgroundImage);
+
 
         //HM ChefsPolo
-        private void HMmenChefsPoloImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGraymenChefsPoloImageCard.Text, 250);
-        private void HMGrayChefsPoloLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGrayChefsPoloLabelCard.Text, 250);
-        private void HMGrayChefsPoloBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGrayChefsPoloBackCard.Text, 250);
+        private void HMmenChefsPoloImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGrayChefsPoloLabelCard.Text, 650, HMGraymenChefsPoloImageCard.BackgroundImage);
+        private void HMGrayChefsPoloLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGrayChefsPoloLabelCard.Text, 650, HMGraymenChefsPoloImageCard.BackgroundImage);
+        private void HMGrayChefsPoloBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMGrayChefsPoloLabelCard.Text, 650, HMGraymenChefsPoloImageCard.BackgroundImage);
 
         //HM ChefsPants Handler
-        private void HMmenChefsPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMmenChefsPantsImageCard.Text, 250);
-        private void HMChefsPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMChefsPantsLabelCard.Text, 250);
-        private void HMChefsPantBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMChefsPantBackCard.Text, 250);
+        private void HMmenChefsPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMChefsPantsLabelCard.Text, 700, HMmenChefsPantsImageCard.BackgroundImage);
+        private void HMChefsPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMChefsPantsLabelCard.Text, 700, HMmenChefsPantsImageCard.BackgroundImage);
+        private void HMChefsPantBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMChefsPantsLabelCard.Text, 700, HMmenChefsPantsImageCard.BackgroundImage);
 
         //HM KitchenUniformSet Handler
-        private void HMKitchenUniformSetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMKitchenUniformSetImageCard.Text, 2500);
-        private void HMKitchenUniformSetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMKitchenUniformSetLabelCard.Text, 250);
-        private void HMKitchenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMKitchenUniformSetBackCard.Text, 250);
+        private void HMKitchenUniformSetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(HMKitchenUniformSetLabelCard.Text, 1470, HMKitchenUniformSetImageCard.BackgroundImage);
+        private void HMKitchenUniformSetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(HMKitchenUniformSetLabelCard.Text, 1470, HMKitchenUniformSetImageCard.BackgroundImage);
+        private void HMKitchenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(HMKitchenUniformSetLabelCard.Text, 1470, HMKitchenUniformSetImageCard.BackgroundImage);
 
         //PROWARE Handler
         private void HandleProwareNavigation()
         {
-            var Prowareform = new ProwareForm(category, "MaleHM", totalPrice);
+            Console.WriteLine("User choosen Proware...");
+            var Prowareform = new ProwareForm(category, "MaleHM");
             Prowareform.Show();
             this.Close();
 
@@ -90,8 +106,9 @@ namespace GearPoint
         //Category Handler
         private void HandleCategorySelection(string newCategory)
         {
+            Console.WriteLine("User choosen a Category and will proceed to Gender Checkpoint...");
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(newCategory, "MaleHM", totalPrice);
+            var genderCheckpoint = new GenderCheckpoint(newCategory, "MaleHM");
             genderCheckpoint.Show();
             this.Close();
         }
@@ -111,6 +128,20 @@ namespace GearPoint
         private void TMlabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
 
         private void TMImageCard_Click(object sender, EventArgs e) => HandleCategorySelection("TM");
+
+        private void CartIcon_Click(object sender, EventArgs e)
+        {
+            var cart = new Cart("FemaleHM");
+            cart.Show();
+            this.Close();
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            Payment payment = new Payment("FemaleHM");
+            payment.Show();
+            this.Close();
+        }
 
     }
 }

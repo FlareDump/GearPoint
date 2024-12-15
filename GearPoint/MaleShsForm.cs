@@ -1,39 +1,48 @@
 ﻿using System;
 using System.CodeDom;
+using System.Data;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace GearPoint
 {
     public partial class MaleShsForm : Form
     {
-        private readonly char gender;
+        private string gender;
         private string category;
         private double price;
         string lastForm;
-        public string totalPrice;
 
         AddOrder addOrder;
         Cart cart;
 
-        public MaleShsForm(char gender, string lastForm, string totalPrice)
+        public MaleShsForm(string gender, string lastForm)
         {
             this.gender = gender;
             this.lastForm = lastForm;
-
             InitializeComponent();
-            this.totalPrice = totalPrice;
+        }
+
+        public MaleShsForm(string lastForm)
+        {
+            this.lastForm = lastForm;
+            InitializeComponent();
         }
 
         private void MaleShsForm_Load(object sender, EventArgs e)
         {
-            TotalOutputLbl.Text = totalPrice;
+            DatabaseHandler dbHandler = new DatabaseHandler();
+            DataTable cartData = dbHandler.GetCartData(); // This updates TotalPrice
+            decimal TotalPrice = dbHandler.TotalPrice;
+
+            TotalOutputLbl.Text = "₱" + TotalPrice.ToString("F2");
         }
 
         // Unified method for handling item selection
-        private void HandleItemSelection(string itemName, double itemPrice)
+        private void HandleItemSelection(string itemName, double itemPrice, Image itemImage)
         {
             price = itemPrice;
-            addOrder = new AddOrder(itemName, gender, price, "MaleSHS");
+            addOrder = new AddOrder(itemName, gender, price, "MaleSHS", itemImage);
             addOrder.Show();
             this.Close();
         }
@@ -41,8 +50,9 @@ namespace GearPoint
         // Gender Checkpoint Handlers
         private void HandleCategorySelection(string newCategory, string lastForm)
         {
+            Console.WriteLine("User choosen a Category and will proceed to Gender Checkpoint...");
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(category, lastForm, totalPrice);
+            var genderCheckpoint = new GenderCheckpoint(category, lastForm);
             genderCheckpoint.Show();
             this.Close();
         }
@@ -56,29 +66,30 @@ namespace GearPoint
 
 
         // Top Item Handlers
-        private void SHSMenTopImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
-        private void SHSMenTopLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
-        private void SHSMentopCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250);
+        private void SHSMenTopImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250, SHSMenTopImage.BackgroundImage);
+        private void SHSMenTopLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250, SHSMenTopImage.BackgroundImage);
+        private void SHSMentopCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenTopLbl.Text, 250, SHSMenTopImage.BackgroundImage);
 
         // Pants Handlers
-        private void SHSMenPantsImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300);
-        private void SHSMenPantsLabel_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300);
-        private void SHSMenPantsBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300);
+        private void SHSMenPantsImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300, SHSMenPantsImage.BackgroundImage);
+        private void SHSMenPantsLabel_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300, SHSMenPantsImage.BackgroundImage);
+        private void SHSMenPantsBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenPantsLabel.Text, 300, SHSMenPantsImage.BackgroundImage);
 
         // Neck Tie Handlers
-        private void SHSMenNeckTieImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85);
-        private void SHSNeckTieLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85);
-        private void SHSNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85);
+        private void SHSMenNeckTieImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85, SHSMenNeckTieImage.BackgroundImage);
+        private void SHSNeckTieLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85, SHSMenNeckTieImage.BackgroundImage);
+        private void SHSNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSNeckTieLbl.Text, 85, SHSMenNeckTieImage.BackgroundImage);
 
         // Uniform Set Handlers
-        private void SHSMenUniformSetImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635);
-        private void SHSMenUniformSetLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635);
-        private void SHSMenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635);
+        private void SHSMenUniformSetImage_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635, SHSMenUniformSetImage.BackgroundImage);
+        private void SHSMenUniformSetLbl_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635, SHSMenUniformSetImage.BackgroundImage);
+        private void SHSMenUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(SHSMenUniformSetLbl.Text, 635, SHSMenUniformSetImage.BackgroundImage);
 
         // Proware Handlers
         private void HandleProwareNavigation()
         {
-            var prowareForm = new ProwareForm(category, lastForm, totalPrice);
+            Console.WriteLine("User choosen Proware...");
+            var prowareForm = new ProwareForm(category, lastForm);
             prowareForm.Show();
             this.Close();
         }
@@ -89,14 +100,16 @@ namespace GearPoint
         // Cart Handler
         private void CartIcon_Click(object sender, EventArgs e)
         {
-            var cart = new Cart("N/A", "N/A", "N/A", "N/A", "N/A", "N/A");
+            var cart = new Cart("MaleSHS");
             cart.Show();
             this.Close();
         }
 
-        private void RoundedFooter_Paint(object sender, PaintEventArgs e)
+        private void roundButton1_Click(object sender, EventArgs e)
         {
-
+            Payment payment = new Payment("FemaleHM");
+            payment.Show();
+            this.Close();
         }
     }
 }

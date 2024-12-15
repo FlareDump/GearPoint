@@ -1,27 +1,24 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace GearPoint
 {
 
     public partial class ProwareForm : Form
     {
-
-        string category;
-        double price;
-        string lastForm;
-        public string totalPrice;
+        string lastForm, category = "Proware";
 
         Cart cart;
         AddOrder addOrder;
         GenderCheckpoint genderCheckpoint;
 
-        public ProwareForm(string category, string lastForm, string totalPrice)
+        public ProwareForm(string category, string lastForm)
         {
             this.category = category;
-            InitializeComponent();
             this.lastForm = lastForm;
-            this.totalPrice = totalPrice;
+            InitializeComponent();
         }
 
         public ProwareForm()
@@ -29,73 +26,76 @@ namespace GearPoint
             InitializeComponent();
         }
 
-        private void HandleItemSelection(string itemName, double itemPrice)
+        private void HandleItemSelection(string itemName, string category, double itemPrice, Image ItemImage)
         {
-            price = itemPrice;
-            var addOrder = new AddOrder(itemName, price, "Proware");
+            var addOrder = new AddOrder(itemName, category, "Proware", itemPrice, ItemImage);
             addOrder.Show();
             this.Close();
 
         }
         private void ProwareForm_Load(object sender, EventArgs e)
         {
-            TotalOutputLbl.Text = totalPrice;
+            DatabaseHandler dbHandler = new DatabaseHandler();
+            DataTable cartData = dbHandler.GetCartData(); // This updates TotalPrice
+            decimal TotalPrice = dbHandler.TotalPrice;
+
+            TotalOutputLbl.Text = "₱" + TotalPrice.ToString("F2");
         }
 
         //39th Anniversary Shirt Handler
-        private void ThirtyNineAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtImageCard.Text, 250);
-        private void ThirtyNineAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtPictureCard.Text, 250);
-        private void ThirtyNineAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtLabelCard.Text, 250);
+        private void ThirtyNineAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtLabelCard.Text, category, 250, ThirtyNineAnniversaryShirtImageCard.BackgroundImage);
+        private void ThirtyNineAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtLabelCard.Text, category, 250, ThirtyNineAnniversaryShirtImageCard.BackgroundImage);
+        private void ThirtyNineAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ThirtyNineAnniversaryShirtLabelCard.Text, category, 250, ThirtyNineAnniversaryShirtImageCard.BackgroundImage);
 
         //40th Anniversary Shirt Handler
-        private void FourthyAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtImageCard.Text, 250);
-        private void FourthyAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtLabelCard.Text, 250);
-        private void FourthyAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtPictureCard.Text, 250);
+        private void FourthyAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtLabelCard.Text, category, 250, FourthyAnniversaryShirtImageCard.BackgroundImage);
+        private void FourthyAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtLabelCard.Text, category, 250, FourthyAnniversaryShirtImageCard.BackgroundImage);
+        private void FourthyAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyAnniversaryShirtLabelCard.Text, category, 250, FourthyAnniversaryShirtImageCard.BackgroundImage);
 
         //41th Anniversary Shirt Handler
-        private void FourthyOneAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtImageCard.Text, 250);
-        private void FourthyOneAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtLabelCard.Text, 250);
-        private void FourthyOneAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtPictureCard.Text, 250);
+        private void FourthyOneAnniversaryShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtLabelCard.Text, category, 250, FourthyOneAnniversaryShirtImageCard.BackgroundImage);
+        private void FourthyOneAnniversaryShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtLabelCard.Text, category, 250, FourthyOneAnniversaryShirtImageCard.BackgroundImage);
+        private void FourthyOneAnniversaryShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(FourthyOneAnniversaryShirtLabelCard.Text, category, 250, FourthyOneAnniversaryShirtImageCard.BackgroundImage);
 
         //Shs PE Shirt Handler
-        private void ShsPEShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtImageCard.Text, 250);
-        private void ShsPEShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtLabelCard.Text, 250);
-        private void ShsPEShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtPictureCard.Text, 250);
+        private void ShsPEShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtLabelCard.Text, category, 250, ShsPEShirtImageCard.BackgroundImage);
+        private void ShsPEShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtLabelCard.Text, category, 250, ShsPEShirtImageCard.BackgroundImage);
+        private void ShsPEShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEShirtLabelCard.Text, category, 250, ShsPEShirtImageCard.BackgroundImage);
 
         //Shs PE Pants Handler
-        private void ShsPEPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsImageCard.Text, 250);
-        private void ShsPEPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsLabelCard.Text, 250);
-        private void ShsPEPantsPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsPictureCard.Text, 250);
+        private void ShsPEPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsLabelCard.Text, category, 250, ShsPEPantsImageCard.BackgroundImage);
+        private void ShsPEPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsLabelCard.Text, category, 250, ShsPEPantsImageCard.BackgroundImage);
+        private void ShsPEPantsPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPEPantsLabelCard.Text, category, 250, ShsPEPantsImageCard.BackgroundImage);
 
         //Shs PE Set Handler
-        private void ShsPESetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetImageCard.Text, 250);
-        private void ShsPESetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetLabelCard.Text, 250);
-        private void ShsPESetPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetPictureCard.Text, 250);
+        private void ShsPESetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetLabelCard.Text, category, 250, ShsPESetImageCard.BackgroundImage);
+        private void ShsPESetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetLabelCard.Text, category, 250, ShsPESetImageCard.BackgroundImage);
+        private void ShsPESetPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(ShsPESetLabelCard.Text, category, 250, ShsPESetImageCard.BackgroundImage);
 
         //Tertiary PE Shirt Handler
-        private void TertiaryPEShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsImageCard.Text, 250);
-        private void TertiaryPEShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, 250);
-        private void TertiaryPEShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsPictureCard.Text, 250);
+        private void TertiaryPEShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, category, 250, TertiaryPEShirtImageCard.BackgroundImage);
+        private void TertiaryPEShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, category, 250, TertiaryPEShirtImageCard.BackgroundImage);
+        private void TertiaryPEShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, category, 250, TertiaryPEShirtImageCard.BackgroundImage);
 
         //Tertiary PE Pants Handler
-        private void TertiaryPEPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsImageCard.Text, 250);
-        private void TertiaryPEPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, 250);
-        private void TertiaryPEPantsPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsPictureCard.Text, 250);
+        private void TertiaryPEPantsImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, category, 250, TertiaryPEPantsImageCard.BackgroundImage);
+        private void TertiaryPEPantsLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, category, 250, TertiaryPEPantsImageCard.BackgroundImage);
+        private void TertiaryPEPantsPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPEPantsLabelCard.Text, category, 250, TertiaryPEPantsImageCard.BackgroundImage);
 
         //Tertiary PE Set Handler
-        private void TertiaryPESetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetImageCard.Text, 250);
-        private void TertiaryPESetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetLabelCard.Text, 250);
-        private void TertiaryPESetPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetPictureCard.Text, 250);
+        private void TertiaryPESetImageCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetLabelCard.Text, category, 250, TertiaryPESetImageCard.BackgroundImage);
+        private void TertiaryPESetLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetLabelCard.Text, category, 250, TertiaryPESetImageCard.BackgroundImage);
+        private void TertiaryPESetPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(TertiaryPESetLabelCard.Text, category, 250, TertiaryPESetImageCard.BackgroundImage);
 
         //NSTP Shirt Handler
-        private void NstpShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtImageCard.Text, 250);
-        private void NstpShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtLabelCard.Text, 250);
-        private void NstpShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtPictureCard.Text, 250);
+        private void NstpShirtImageCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtLabelCard.Text, category, 250, NstpShirtImageCard.BackgroundImage);
+        private void NstpShirtLabelCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtLabelCard.Text, category, 250, NstpShirtImageCard.BackgroundImage);
+        private void NstpShirtPictureCard_Click(object sender, EventArgs e) => HandleItemSelection(NstpShirtLabelCard.Text, category, 250, NstpShirtImageCard.BackgroundImage);
 
         private void HandleCategorySelection(string newCategory, string lastForm)
         {
-            category = newCategory;
-            genderCheckpoint = new GenderCheckpoint(category, lastForm, totalPrice);
+            Console.WriteLine("User choosen a Category and will proceed to Gender Checkpoint...");
+            genderCheckpoint = new GenderCheckpoint(newCategory, lastForm);
             genderCheckpoint.Show();
             this.Close();
         }
@@ -112,7 +112,18 @@ namespace GearPoint
         private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM", "Proware");
         private void HMimageCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM", "Proware");
 
+        private void CartIcon_Click(object sender, EventArgs e)
+        {
+            var cart = new Cart("Proware");
+            cart.Show();
+            this.Close();
+        }
 
-
+        private void PaymentButton_Click(object sender, EventArgs e)
+        {
+            Payment payment = new Payment("FemaleHM");
+            payment.Show();
+            this.Close();
+        }
     }
 }

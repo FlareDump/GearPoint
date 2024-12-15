@@ -92,11 +92,10 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-6, -1);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Location = new System.Drawing.Point(-4, -1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(585, 80);
+            this.dataGridView1.Size = new System.Drawing.Size(439, 65);
             this.dataGridView1.TabIndex = 58;
             // 
             // ITBlouseLabel
@@ -104,9 +103,10 @@
             this.ITBlouseLabel.AutoSize = true;
             this.ITBlouseLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.ITBlouseLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITBlouseLabel.Location = new System.Drawing.Point(23, 584);
+            this.ITBlouseLabel.Location = new System.Drawing.Point(17, 474);
+            this.ITBlouseLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ITBlouseLabel.Name = "ITBlouseLabel";
-            this.ITBlouseLabel.Size = new System.Drawing.Size(93, 23);
+            this.ITBlouseLabel.Size = new System.Drawing.Size(72, 18);
             this.ITBlouseLabel.TabIndex = 69;
             this.ITBlouseLabel.Text = "IT Blouse";
             this.ITBlouseLabel.Click += new System.EventHandler(this.ITBlouseLabel_Click);
@@ -116,9 +116,10 @@
             this.ITSkirtLabel.AutoSize = true;
             this.ITSkirtLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.ITSkirtLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITSkirtLabel.Location = new System.Drawing.Point(312, 581);
+            this.ITSkirtLabel.Location = new System.Drawing.Point(234, 472);
+            this.ITSkirtLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ITSkirtLabel.Name = "ITSkirtLabel";
-            this.ITSkirtLabel.Size = new System.Drawing.Size(74, 23);
+            this.ITSkirtLabel.Size = new System.Drawing.Size(56, 18);
             this.ITSkirtLabel.TabIndex = 70;
             this.ITSkirtLabel.Text = "IT Skirt";
             this.ITSkirtLabel.Click += new System.EventHandler(this.ITSkirtLabel_Click);
@@ -128,9 +129,10 @@
             this.ITPantsLabel.AutoSize = true;
             this.ITPantsLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.ITPantsLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITPantsLabel.Location = new System.Drawing.Point(24, 863);
+            this.ITPantsLabel.Location = new System.Drawing.Point(18, 701);
+            this.ITPantsLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ITPantsLabel.Name = "ITPantsLabel";
-            this.ITPantsLabel.Size = new System.Drawing.Size(84, 23);
+            this.ITPantsLabel.Size = new System.Drawing.Size(64, 18);
             this.ITPantsLabel.TabIndex = 71;
             this.ITPantsLabel.Text = "IT Pants";
             this.ITPantsLabel.Click += new System.EventHandler(this.ITPantsLabel_Click);
@@ -140,9 +142,10 @@
             this.ITSetLabel.AutoSize = true;
             this.ITSetLabel.BackColor = System.Drawing.Color.Gainsboro;
             this.ITSetLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ITSetLabel.Location = new System.Drawing.Point(305, 863);
+            this.ITSetLabel.Location = new System.Drawing.Point(229, 701);
+            this.ITSetLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ITSetLabel.Name = "ITSetLabel";
-            this.ITSetLabel.Size = new System.Drawing.Size(137, 23);
+            this.ITSetLabel.Size = new System.Drawing.Size(106, 18);
             this.ITSetLabel.TabIndex = 75;
             this.ITSetLabel.Text = "IT Uniform Set";
             this.ITSetLabel.Click += new System.EventHandler(this.ITSetLabel_Click);
@@ -152,10 +155,9 @@
             this.ITSetImage.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.ITSetImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITSetImage.CornerRadius = 20;
-            this.ITSetImage.Location = new System.Drawing.Point(298, 639);
-            this.ITSetImage.Margin = new System.Windows.Forms.Padding(4);
+            this.ITSetImage.Location = new System.Drawing.Point(224, 519);
             this.ITSetImage.Name = "ITSetImage";
-            this.ITSetImage.Size = new System.Drawing.Size(264, 214);
+            this.ITSetImage.Size = new System.Drawing.Size(198, 174);
             this.ITSetImage.TabIndex = 72;
             this.ITSetImage.TabStop = false;
             this.ITSetImage.Click += new System.EventHandler(this.ITSetImage_Click);
@@ -164,10 +166,10 @@
             // 
             this.ITSetBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ITSetBackCard.CornerRadius = 40;
-            this.ITSetBackCard.Location = new System.Drawing.Point(298, 639);
-            this.ITSetBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ITSetBackCard.Location = new System.Drawing.Point(224, 519);
+            this.ITSetBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ITSetBackCard.Name = "ITSetBackCard";
-            this.ITSetBackCard.Size = new System.Drawing.Size(264, 258);
+            this.ITSetBackCard.Size = new System.Drawing.Size(198, 210);
             this.ITSetBackCard.TabIndex = 73;
             this.ITSetBackCard.TabStop = false;
             this.ITSetBackCard.Click += new System.EventHandler(this.ITSetBackCard_Click);
@@ -176,10 +178,10 @@
             // 
             this.roundedPictureBox7.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox7.CornerRadius = 40;
-            this.roundedPictureBox7.Location = new System.Drawing.Point(298, 639);
-            this.roundedPictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPictureBox7.Location = new System.Drawing.Point(224, 519);
+            this.roundedPictureBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPictureBox7.Name = "roundedPictureBox7";
-            this.roundedPictureBox7.Size = new System.Drawing.Size(264, 258);
+            this.roundedPictureBox7.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox7.TabIndex = 74;
             this.roundedPictureBox7.TabStop = false;
             // 
@@ -188,10 +190,9 @@
             this.ITPantsImage.BackgroundImage = global::GearPoint.Properties.Resources.ICT_PANTS_Zoomed;
             this.ITPantsImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITPantsImage.CornerRadius = 20;
-            this.ITPantsImage.Location = new System.Drawing.Point(17, 639);
-            this.ITPantsImage.Margin = new System.Windows.Forms.Padding(4);
+            this.ITPantsImage.Location = new System.Drawing.Point(13, 519);
             this.ITPantsImage.Name = "ITPantsImage";
-            this.ITPantsImage.Size = new System.Drawing.Size(264, 214);
+            this.ITPantsImage.Size = new System.Drawing.Size(198, 174);
             this.ITPantsImage.TabIndex = 64;
             this.ITPantsImage.TabStop = false;
             this.ITPantsImage.Click += new System.EventHandler(this.ITPantsImage_Click);
@@ -201,10 +202,9 @@
             this.ITSkirtImage.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
             this.ITSkirtImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITSkirtImage.CornerRadius = 20;
-            this.ITSkirtImage.Location = new System.Drawing.Point(300, 363);
-            this.ITSkirtImage.Margin = new System.Windows.Forms.Padding(4);
+            this.ITSkirtImage.Location = new System.Drawing.Point(225, 295);
             this.ITSkirtImage.Name = "ITSkirtImage";
-            this.ITSkirtImage.Size = new System.Drawing.Size(264, 214);
+            this.ITSkirtImage.Size = new System.Drawing.Size(198, 174);
             this.ITSkirtImage.TabIndex = 62;
             this.ITSkirtImage.TabStop = false;
             this.ITSkirtImage.Click += new System.EventHandler(this.ITSkirtImage_Click);
@@ -213,23 +213,22 @@
             // 
             this.ITSkirtBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ITSkirtBackCard.CornerRadius = 40;
-            this.ITSkirtBackCard.Location = new System.Drawing.Point(300, 363);
-            this.ITSkirtBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ITSkirtBackCard.Location = new System.Drawing.Point(225, 295);
+            this.ITSkirtBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ITSkirtBackCard.Name = "ITSkirtBackCard";
-            this.ITSkirtBackCard.Size = new System.Drawing.Size(264, 258);
+            this.ITSkirtBackCard.Size = new System.Drawing.Size(198, 210);
             this.ITSkirtBackCard.TabIndex = 63;
             this.ITSkirtBackCard.TabStop = false;
             this.ITSkirtBackCard.Click += new System.EventHandler(this.ITSkirtBackCard_Click);
             // 
             // ITBlouseImage
             // 
-            this.ITBlouseImage.BackgroundImage = global::GearPoint.Properties.Resources.placeholder;
+            this.ITBlouseImage.BackgroundImage = global::GearPoint.Properties.Resources.ICT_TOP_Zoomed1;
             this.ITBlouseImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ITBlouseImage.CornerRadius = 20;
-            this.ITBlouseImage.Location = new System.Drawing.Point(18, 363);
-            this.ITBlouseImage.Margin = new System.Windows.Forms.Padding(4);
+            this.ITBlouseImage.Location = new System.Drawing.Point(14, 295);
             this.ITBlouseImage.Name = "ITBlouseImage";
-            this.ITBlouseImage.Size = new System.Drawing.Size(264, 214);
+            this.ITBlouseImage.Size = new System.Drawing.Size(198, 174);
             this.ITBlouseImage.TabIndex = 60;
             this.ITBlouseImage.TabStop = false;
             this.ITBlouseImage.Click += new System.EventHandler(this.ITBlouseImage_Click);
@@ -238,10 +237,10 @@
             // 
             this.ITBlouseBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ITBlouseBackCard.CornerRadius = 40;
-            this.ITBlouseBackCard.Location = new System.Drawing.Point(18, 363);
-            this.ITBlouseBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ITBlouseBackCard.Location = new System.Drawing.Point(14, 295);
+            this.ITBlouseBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ITBlouseBackCard.Name = "ITBlouseBackCard";
-            this.ITBlouseBackCard.Size = new System.Drawing.Size(264, 258);
+            this.ITBlouseBackCard.Size = new System.Drawing.Size(198, 210);
             this.ITBlouseBackCard.TabIndex = 61;
             this.ITBlouseBackCard.TabStop = false;
             this.ITBlouseBackCard.Click += new System.EventHandler(this.ITBlouseBackCard_Click);
@@ -251,10 +250,10 @@
             this.roundedPictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("roundedPictureBox1.BackgroundImage")));
             this.roundedPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedPictureBox1.CornerRadius = 40;
-            this.roundedPictureBox1.Location = new System.Drawing.Point(26, 14);
-            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPictureBox1.Location = new System.Drawing.Point(20, 11);
+            this.roundedPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPictureBox1.Name = "roundedPictureBox1";
-            this.roundedPictureBox1.Size = new System.Drawing.Size(111, 53);
+            this.roundedPictureBox1.Size = new System.Drawing.Size(83, 43);
             this.roundedPictureBox1.TabIndex = 59;
             this.roundedPictureBox1.TabStop = false;
             // 
@@ -266,10 +265,10 @@
             this.gradientRoundPanel1.GradientEndColor = System.Drawing.Color.Gold;
             this.gradientRoundPanel1.GradientRatio = 0.4F;
             this.gradientRoundPanel1.GradientStartColor = System.Drawing.Color.White;
-            this.gradientRoundPanel1.Location = new System.Drawing.Point(296, 85);
-            this.gradientRoundPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gradientRoundPanel1.Location = new System.Drawing.Point(222, 69);
+            this.gradientRoundPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gradientRoundPanel1.Name = "gradientRoundPanel1";
-            this.gradientRoundPanel1.Size = new System.Drawing.Size(267, 126);
+            this.gradientRoundPanel1.Size = new System.Drawing.Size(200, 102);
             this.gradientRoundPanel1.TabIndex = 67;
             // 
             // SHSImageCard
@@ -278,10 +277,10 @@
             this.SHSImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SHSImageCard.BackgroundImage")));
             this.SHSImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.SHSImageCard.CornerRadius = 30;
-            this.SHSImageCard.Location = new System.Drawing.Point(148, 1);
-            this.SHSImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SHSImageCard.Location = new System.Drawing.Point(111, 1);
+            this.SHSImageCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SHSImageCard.Name = "SHSImageCard";
-            this.SHSImageCard.Size = new System.Drawing.Size(151, 124);
+            this.SHSImageCard.Size = new System.Drawing.Size(113, 101);
             this.SHSImageCard.TabIndex = 37;
             this.SHSImageCard.TabStop = false;
             this.SHSImageCard.Click += new System.EventHandler(this.SHSImageCard_Click);
@@ -292,9 +291,10 @@
             this.ShsLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShsLabelCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ShsLabelCard.Location = new System.Drawing.Point(0, 1);
+            this.ShsLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ShsLabelCard.Name = "ShsLabelCard";
-            this.ShsLabelCard.Padding = new System.Windows.Forms.Padding(27, 37, 133, 0);
-            this.ShsLabelCard.Size = new System.Drawing.Size(269, 122);
+            this.ShsLabelCard.Padding = new System.Windows.Forms.Padding(20, 30, 100, 0);
+            this.ShsLabelCard.Size = new System.Drawing.Size(202, 99);
             this.ShsLabelCard.TabIndex = 12;
             this.ShsLabelCard.Text = "Senior High School";
             this.ShsLabelCard.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -308,10 +308,10 @@
             this.ProwareCardBack.GradientEndColor = System.Drawing.Color.CornflowerBlue;
             this.ProwareCardBack.GradientRatio = 0.5F;
             this.ProwareCardBack.GradientStartColor = System.Drawing.Color.White;
-            this.ProwareCardBack.Location = new System.Drawing.Point(13, 85);
-            this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProwareCardBack.Location = new System.Drawing.Point(10, 69);
+            this.ProwareCardBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProwareCardBack.Name = "ProwareCardBack";
-            this.ProwareCardBack.Size = new System.Drawing.Size(267, 126);
+            this.ProwareCardBack.Size = new System.Drawing.Size(200, 102);
             this.ProwareCardBack.TabIndex = 55;
             // 
             // ProwareImageCard
@@ -320,10 +320,10 @@
             this.ProwareImageCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProwareImageCard.BackgroundImage")));
             this.ProwareImageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ProwareImageCard.CornerRadius = 30;
-            this.ProwareImageCard.Location = new System.Drawing.Point(144, 0);
-            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProwareImageCard.Location = new System.Drawing.Point(108, 0);
+            this.ProwareImageCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProwareImageCard.Name = "ProwareImageCard";
-            this.ProwareImageCard.Size = new System.Drawing.Size(151, 124);
+            this.ProwareImageCard.Size = new System.Drawing.Size(113, 101);
             this.ProwareImageCard.TabIndex = 37;
             this.ProwareImageCard.TabStop = false;
             this.ProwareImageCard.Click += new System.EventHandler(this.ProwareImageCard_Click);
@@ -332,9 +332,10 @@
             // 
             this.ProwareLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.ProwareLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ProwareLabelCard.Location = new System.Drawing.Point(3, 0);
+            this.ProwareLabelCard.Location = new System.Drawing.Point(2, 0);
+            this.ProwareLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ProwareLabelCard.Name = "ProwareLabelCard";
-            this.ProwareLabelCard.Size = new System.Drawing.Size(265, 123);
+            this.ProwareLabelCard.Size = new System.Drawing.Size(199, 100);
             this.ProwareLabelCard.TabIndex = 12;
             this.ProwareLabelCard.Text = "       Proware";
             this.ProwareLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -348,10 +349,10 @@
             this.TMBackCard.GradientEndColor = System.Drawing.Color.MediumVioletRed;
             this.TMBackCard.GradientRatio = 0.4F;
             this.TMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.TMBackCard.Location = new System.Drawing.Point(14, 219);
-            this.TMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TMBackCard.Location = new System.Drawing.Point(10, 178);
+            this.TMBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TMBackCard.Name = "TMBackCard";
-            this.TMBackCard.Size = new System.Drawing.Size(267, 126);
+            this.TMBackCard.Size = new System.Drawing.Size(200, 102);
             this.TMBackCard.TabIndex = 56;
             // 
             // TMimageCard
@@ -360,10 +361,10 @@
             this.TMimageCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_TOURISM1;
             this.TMimageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.TMimageCard.CornerRadius = 30;
-            this.TMimageCard.Location = new System.Drawing.Point(135, 1);
-            this.TMimageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TMimageCard.Location = new System.Drawing.Point(101, 1);
+            this.TMimageCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TMimageCard.Name = "TMimageCard";
-            this.TMimageCard.Size = new System.Drawing.Size(159, 124);
+            this.TMimageCard.Size = new System.Drawing.Size(119, 101);
             this.TMimageCard.TabIndex = 37;
             this.TMimageCard.TabStop = false;
             this.TMimageCard.Click += new System.EventHandler(this.TMimageCard_Click);
@@ -372,10 +373,11 @@
             // 
             this.TMLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.TMLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMLabelCard.Location = new System.Drawing.Point(3, 2);
+            this.TMLabelCard.Location = new System.Drawing.Point(2, 2);
+            this.TMLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TMLabelCard.Name = "TMLabelCard";
-            this.TMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
-            this.TMLabelCard.Size = new System.Drawing.Size(261, 124);
+            this.TMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 75, 0);
+            this.TMLabelCard.Size = new System.Drawing.Size(196, 101);
             this.TMLabelCard.TabIndex = 12;
             this.TMLabelCard.Text = "    Tourism Management";
             this.TMLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,10 +391,10 @@
             this.HMBackCard.GradientEndColor = System.Drawing.Color.DarkRed;
             this.HMBackCard.GradientRatio = 0.4F;
             this.HMBackCard.GradientStartColor = System.Drawing.Color.White;
-            this.HMBackCard.Location = new System.Drawing.Point(298, 218);
-            this.HMBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HMBackCard.Location = new System.Drawing.Point(224, 177);
+            this.HMBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HMBackCard.Name = "HMBackCard";
-            this.HMBackCard.Size = new System.Drawing.Size(267, 126);
+            this.HMBackCard.Size = new System.Drawing.Size(200, 102);
             this.HMBackCard.TabIndex = 57;
             // 
             // HMimageCard
@@ -401,10 +403,10 @@
             this.HMimageCard.BackgroundImage = global::GearPoint.Properties.Resources.Simulation_HRM;
             this.HMimageCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HMimageCard.CornerRadius = 30;
-            this.HMimageCard.Location = new System.Drawing.Point(137, 2);
-            this.HMimageCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HMimageCard.Location = new System.Drawing.Point(103, 2);
+            this.HMimageCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HMimageCard.Name = "HMimageCard";
-            this.HMimageCard.Size = new System.Drawing.Size(151, 124);
+            this.HMimageCard.Size = new System.Drawing.Size(113, 101);
             this.HMimageCard.TabIndex = 37;
             this.HMimageCard.TabStop = false;
             this.HMimageCard.Click += new System.EventHandler(this.HMimageCard_Click);
@@ -413,10 +415,11 @@
             // 
             this.HMLabelCard.BackColor = System.Drawing.Color.Transparent;
             this.HMLabelCard.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HMLabelCard.Location = new System.Drawing.Point(9, 2);
+            this.HMLabelCard.Location = new System.Drawing.Point(7, 2);
+            this.HMLabelCard.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.HMLabelCard.Name = "HMLabelCard";
-            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 100, 0);
-            this.HMLabelCard.Size = new System.Drawing.Size(255, 122);
+            this.HMLabelCard.Padding = new System.Windows.Forms.Padding(0, 0, 75, 0);
+            this.HMLabelCard.Size = new System.Drawing.Size(191, 99);
             this.HMLabelCard.TabIndex = 12;
             this.HMLabelCard.Text = "Hospitality Management";
             this.HMLabelCard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -434,10 +437,9 @@
             this.RoundedFooter.Controls.Add(this.CartIcon);
             this.RoundedFooter.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoundedFooter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.RoundedFooter.Location = new System.Drawing.Point(16, 930);
-            this.RoundedFooter.Margin = new System.Windows.Forms.Padding(4);
+            this.RoundedFooter.Location = new System.Drawing.Point(12, 756);
             this.RoundedFooter.Name = "RoundedFooter";
-            this.RoundedFooter.Size = new System.Drawing.Size(533, 101);
+            this.RoundedFooter.Size = new System.Drawing.Size(400, 82);
             this.RoundedFooter.TabIndex = 68;
             // 
             // TotalLbl
@@ -445,9 +447,10 @@
             this.TotalLbl.AutoSize = true;
             this.TotalLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalLbl.Location = new System.Drawing.Point(357, 14);
+            this.TotalLbl.Location = new System.Drawing.Point(268, 11);
+            this.TotalLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(64, 24);
+            this.TotalLbl.Size = new System.Drawing.Size(52, 19);
             this.TotalLbl.TabIndex = 5;
             this.TotalLbl.Text = "Total:";
             // 
@@ -456,9 +459,10 @@
             this.TotalOutputLbl.AutoSize = true;
             this.TotalOutputLbl.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold);
             this.TotalOutputLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.TotalOutputLbl.Location = new System.Drawing.Point(364, 43);
+            this.TotalOutputLbl.Location = new System.Drawing.Point(273, 35);
+            this.TotalOutputLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TotalOutputLbl.Name = "TotalOutputLbl";
-            this.TotalOutputLbl.Size = new System.Drawing.Size(87, 33);
+            this.TotalOutputLbl.Size = new System.Drawing.Size(66, 26);
             this.TotalOutputLbl.TabIndex = 4;
             this.TotalOutputLbl.Text = "$0.00";
             // 
@@ -467,9 +471,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(242)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(377, -21);
+            this.label8.Location = new System.Drawing.Point(283, -17);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 24);
+            this.label8.Size = new System.Drawing.Size(52, 19);
             this.label8.TabIndex = 3;
             this.label8.Text = "Total:";
             // 
@@ -479,21 +484,23 @@
             this.roundButton1.BorderRadius = 30;
             this.roundButton1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.roundButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(188)))));
-            this.roundButton1.Location = new System.Drawing.Point(92, 14);
-            this.roundButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundButton1.Location = new System.Drawing.Point(69, 11);
+            this.roundButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundButton1.Name = "roundButton1";
-            this.roundButton1.Size = new System.Drawing.Size(267, 79);
+            this.roundButton1.Size = new System.Drawing.Size(200, 64);
             this.roundButton1.TabIndex = 2;
             this.roundButton1.Text = "Proceed to Payment";
             this.roundButton1.UseVisualStyleBackColor = false;
+            this.roundButton1.Click += new System.EventHandler(this.roundButton1_Click);
             // 
             // CartItemLbl
             // 
             this.CartItemLbl.AutoSize = true;
             this.CartItemLbl.CornerRadius = 50;
-            this.CartItemLbl.Location = new System.Drawing.Point(47, -17);
+            this.CartItemLbl.Location = new System.Drawing.Point(35, -14);
+            this.CartItemLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CartItemLbl.Name = "CartItemLbl";
-            this.CartItemLbl.Size = new System.Drawing.Size(18, 19);
+            this.CartItemLbl.Size = new System.Drawing.Size(15, 16);
             this.CartItemLbl.TabIndex = 1;
             this.CartItemLbl.Text = "0";
             this.CartItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,21 +510,22 @@
             // 
             this.CartIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartIcon.BackgroundImage")));
             this.CartIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CartIcon.Location = new System.Drawing.Point(15, 28);
-            this.CartIcon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CartIcon.Location = new System.Drawing.Point(11, 23);
+            this.CartIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CartIcon.Name = "CartIcon";
-            this.CartIcon.Size = new System.Drawing.Size(47, 49);
+            this.CartIcon.Size = new System.Drawing.Size(35, 40);
             this.CartIcon.TabIndex = 0;
             this.CartIcon.TabStop = false;
+            this.CartIcon.Click += new System.EventHandler(this.CartIcon_Click);
             // 
             // ITPantsBackCard
             // 
             this.ITPantsBackCard.BackColor = System.Drawing.Color.Gainsboro;
             this.ITPantsBackCard.CornerRadius = 40;
-            this.ITPantsBackCard.Location = new System.Drawing.Point(18, 639);
-            this.ITPantsBackCard.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ITPantsBackCard.Location = new System.Drawing.Point(14, 519);
+            this.ITPantsBackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ITPantsBackCard.Name = "ITPantsBackCard";
-            this.ITPantsBackCard.Size = new System.Drawing.Size(264, 258);
+            this.ITPantsBackCard.Size = new System.Drawing.Size(198, 210);
             this.ITPantsBackCard.TabIndex = 76;
             this.ITPantsBackCard.TabStop = false;
             this.ITPantsBackCard.Click += new System.EventHandler(this.ITPantsBackCard_Click);
@@ -526,19 +534,19 @@
             // 
             this.roundedPictureBox9.BackColor = System.Drawing.Color.Gainsboro;
             this.roundedPictureBox9.CornerRadius = 40;
-            this.roundedPictureBox9.Location = new System.Drawing.Point(18, 639);
-            this.roundedPictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.roundedPictureBox9.Location = new System.Drawing.Point(14, 519);
+            this.roundedPictureBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roundedPictureBox9.Name = "roundedPictureBox9";
-            this.roundedPictureBox9.Size = new System.Drawing.Size(264, 258);
+            this.roundedPictureBox9.Size = new System.Drawing.Size(198, 210);
             this.roundedPictureBox9.TabIndex = 77;
             this.roundedPictureBox9.TabStop = false;
             // 
             // FemaleITForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(596, 903);
+            this.ClientSize = new System.Drawing.Size(447, 734);
             this.Controls.Add(this.ITSetLabel);
             this.Controls.Add(this.ITSetImage);
             this.Controls.Add(this.ITSetBackCard);
@@ -560,6 +568,7 @@
             this.Controls.Add(this.RoundedFooter);
             this.Controls.Add(this.ITPantsBackCard);
             this.Controls.Add(this.roundedPictureBox9);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FemaleITForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";

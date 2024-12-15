@@ -12,7 +12,7 @@ namespace GearPoint
 {
     public partial class MaleTMForm : Form
     {
-        char gender;
+        string gender;
         string category;
         double price;
         string lastForm;
@@ -23,41 +23,48 @@ namespace GearPoint
         GenderCheckpoint genderCheckpoint;
         ProwareForm prowareForm;
 
-        public MaleTMForm(char gender, string lastForm, string totalPrice)
+        public MaleTMForm(string gender, string lastForm)
         {
             this.lastForm = lastForm;
             this.gender = gender;
             InitializeComponent();
-            this.totalPrice = totalPrice;
         }
 
-        private void HandleItemSelection(string ItemName, double Itemprice)
+        public MaleTMForm(string lastForm)
+        {
+            this.lastForm = lastForm;
+            InitializeComponent();
+        }
+
+        private void HandleItemSelection(string ItemName, double Itemprice, Image ItemImage)
         {
             price = Itemprice;
-            var addOrder = new AddOrder(ItemName, gender, price, "MaleTM");
+            var addOrder = new AddOrder(ItemName, gender, Itemprice, "MaleTM", ItemImage);
             addOrder.Show();
             this.Close();
         }
 
-        //TM Polo Handler
-        private void TMPoloLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMPoloLabelCard.Text, 250);
-        private void TMPoloImage_Click(object sender, EventArgs e) => HandleItemSelection(TMPoloImageCard.Text, 250);
-        private void TMPoloBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMPoloBackCard.Text, 250);
+        private void TMPoloLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMPoloLabel.Text, 450, TMBPoloImage.BackgroundImage);
+        private void TMBPoloImage_Click(object sender, EventArgs e) => HandleItemSelection(TMPoloLabel.Text, 450, TMBPoloImage.BackgroundImage);
+        private void TMPoloBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMPoloLabel.Text, 450, TMBPoloImage.BackgroundImage);
 
-        //TM Blazer
-        private void TMBlazerLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMBlazerLabelCard.Text, 250);
-        private void TMBlazerImage_Click(object sender, EventArgs e) => HandleItemSelection(TMBlazerImageCard.Text, 250);
-        private void TMBlazerBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMBlazerBackCard.Text, 250);
+        private void TMBlazerLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMBlazerLabel.Text, 700, TMBlazerImage.BackgroundImage);
+        private void TMBlazerImage_Click(object sender, EventArgs e) => HandleItemSelection(TMBlazerLabel.Text, 700, TMBlazerImage.BackgroundImage);
+        private void TMBlazerBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMBlazerLabel.Text, 700, TMBlazerImage.BackgroundImage);
 
-        //TM Pants
-        private void TMPantsLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMPantsLabelCard.Text, 250);
-        private void TMPantsIamge_Click(object sender, EventArgs e) => HandleItemSelection(TMPantsImageCard.Text, 250);
-        private void TMPantsBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMPantsBackCard.Text, 250);
+        private void TMNeckTieLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMNeckTieLabel.Text, 85, TMNeckTieImage.BackgroundImage);
+        private void TMNeckTieImage_Click(object sender, EventArgs e) => HandleItemSelection(TMNeckTieLabel.Text, 85, TMNeckTieImage.BackgroundImage);
+        private void TMNeckTieBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMNeckTieLabel.Text, 85, TMNeckTieImage.BackgroundImage);
+
+        private void TMUniformSetLabel_Click(object sender, EventArgs e) => HandleItemSelection(TMUniformSetLabel.Text, 1235, TMUniformSetImage.BackgroundImage);
+        private void TMUniformSetImage_Click(object sender, EventArgs e) => HandleItemSelection(TMUniformSetLabel.Text, 1235, TMUniformSetImage.BackgroundImage);
+        private void TMUniformSetBackCard_Click(object sender, EventArgs e) => HandleItemSelection(TMUniformSetLabel.Text, 1235, TMUniformSetImage.BackgroundImage);
 
         //PROWARE Handler
         private void HandleProwareNavigation()
         {
-            var prowareForm = new ProwareForm(category, "MaleTM", totalPrice);
+            Console.WriteLine("User choosen Proware...");
+            var prowareForm = new ProwareForm(category, "MaleTM");
             prowareForm.Show();
             this.Close();
         }
@@ -67,8 +74,9 @@ namespace GearPoint
         //Category Handler
         private void HandleCategorySelection(string newCategory)
         {
+            Console.WriteLine("User choosen a Category and will proceed to Gender Checkpoint...");
             category = newCategory;
-            var genderCheckpoint = new GenderCheckpoint(newCategory, "MaleTM", totalPrice);
+            var genderCheckpoint = new GenderCheckpoint(newCategory, "MaleTM");
             genderCheckpoint.Show();
             this.Close();
         }
@@ -85,14 +93,28 @@ namespace GearPoint
         private void HMPictureCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
         private void HMLabelCard_Click(object sender, EventArgs e) => HandleCategorySelection("HM");
 
-        private void MaleTMForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MaleTMForm_Load_1(object sender, EventArgs e)
         {
-            TotalOutputLbl.Text = totalPrice;
+            DatabaseHandler dbHandler = new DatabaseHandler();
+            DataTable cartData = dbHandler.GetCartData(); // This updates TotalPrice
+            decimal TotalPrice = dbHandler.TotalPrice;
+
+            TotalOutputLbl.Text = "₱" + TotalPrice.ToString("F2");
         }
+
+        private void CartIcon_Click(object sender, EventArgs e)
+        {
+            var cart = new Cart("MaleTM");
+            cart.Show();
+            this.Close();
+        }
+
+        private void roundButton1_Click(object sender, EventArgs e)
+        {
+            Payment payment = new Payment("MaleTM");
+            payment.Show();
+            this.Close();
+        }
+
     }
 }

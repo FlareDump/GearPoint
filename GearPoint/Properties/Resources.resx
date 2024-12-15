@@ -118,67 +118,175 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SHS-WOMENPOLOTOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SHS-WOMENPOLOTOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SHS-WOMENUNISET1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SHS-WOMENUNISET1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SHS-WOMENUNISET" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SHS-WOMENUNISET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Simulation_IT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Simulation_IT1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="STI Forty Proware 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\STI Forty Proware 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ICT TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ICT TOP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICT TOP Zoomed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ICT TOP Zoomed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Simulation_TOURISM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Simulation_TOURISM1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICT PANTS Zoomed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ICT PANTS Zoomed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ICT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\placeholder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SHS-NECKTIE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SHS-NECKTIE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SHS-WOMENSKIRT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SHS-WOMENSKIRT1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="College PE top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College PE top.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SHS M-Top" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SHS M-Top.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Simulation_IT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Simulation_IT1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="College PE pants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College PE pants.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Simulation_HRM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Simulation_HRM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STI Forty 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STI Forty 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="placeholder" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\placeholder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SHS-WOMENSKIRT" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SHS-WOMENSKIRT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STI Neck Tie 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STI Neck Tie 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SHS-WOMENPOLOTOP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SHS-WOMENPOLOTOP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ICT Pants " type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ICT Pants .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TMNeckTie1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMNeckTie1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="SHS-NECKTIE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SHS-NECKTIE1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="PoloMenTM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PoloMenTM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TM POLO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TM POLO.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KitchenSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KitchenSet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMKitchenPolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMKitchenPolo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMBlazerMen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMBlazerMen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaleHmPolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MaleHmPolo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STI Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STI Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="309040430_8166516366722742_3887271785962492576_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\309040430_8166516366722742_3887271785962492576_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Admin Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Admin Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICT TOP Zoomed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICT TOP Zoomed1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="proware 41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proware 41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS-WOMENPOLOTOP1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS-WOMENPOLOTOP1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMPants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMPants.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICT Pants " type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICT Pants .jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS-WOMENUNISET1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS-WOMENUNISET1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS PE Set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS PE Set.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMBlazer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMBlazer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS-WOMENSKIRT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS-WOMENSKIRT1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Simulation_HRM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Simulation_HRM.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMFemSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMFemSet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICT TOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICT TOP.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TM SKIRT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TM SKIRT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMSkirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMSkirt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICT PANTS Zoomed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICT PANTS Zoomed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS PE Shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS PE Shirt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS-WOMENUNISET" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS-WOMENUNISET.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HM pants" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HM pants.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICT TOP Zoomed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICT TOP Zoomed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TM BLAZER" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TM BLAZER.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMPants1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMPants1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS-WOMENPOLOTOP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS-WOMENPOLOTOP.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMFemaleBlouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMFemaleBlouse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STI Neck Tie 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STI Neck Tie 1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMFemSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMFemSet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS PE PAnts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS PE PAnts.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMPolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMPolo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="College PE Set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\College PE Set.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICT Full Set" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICT Full Set.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMFemBlazer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMFemBlazer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHS-WOMENSKIRT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHS-WOMENSKIRT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TMNeckTie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TMNeckTie.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ICT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ICT.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Simulation_TOURISM1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Simulation_TOURISM1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HMKitchenSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMKitchenSet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="466630993_1252384542695283_7492801205828925279_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\466630993_1252384542695283_7492801205828925279_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

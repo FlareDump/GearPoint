@@ -22,14 +22,19 @@ namespace GearPoint
         public string totalPrice;
 
         public string Category { get; }
-        public char Gender { get; private set; }
+        public string Gender { get; private set; }
 
-        public GenderCheckpoint(string category, string lastForm, string totalPrice)
+        public GenderCheckpoint(string category, string lastForm)
         {
             this.lastForm = lastForm;
             Category = category;
             InitializeComponent();
-            this.totalPrice = totalPrice;
+        }
+
+        public GenderCheckpoint(string lastForm)
+        {
+            this.lastForm = lastForm;
+            InitializeComponent();
         }
 
         private void BACKButton4_Click(object sender, EventArgs e)
@@ -37,39 +42,39 @@ namespace GearPoint
             switch (lastForm)
             {
                 case "MaleSHS":
-                    maleShsForm = new MaleShsForm(Gender, lastForm, totalPrice);
+                    maleShsForm = new MaleShsForm(Gender, lastForm);
                     maleShsForm.Show();
                     break;
                 case "FemaleSHS":
-                    femaleShsForm = new FemaleShsForm(Gender, lastForm, totalPrice);
+                    femaleShsForm = new FemaleShsForm(Gender, lastForm);
                     femaleShsForm.Show();
                     break;
                 case "MaleIT":
-                    maleITForm = new MaleITForm(Gender, lastForm, totalPrice);
+                    maleITForm = new MaleITForm(Gender, lastForm);
                     maleITForm.Show();
                     break;
                 case "FemaleIT":
-                    femaleITForm = new FemaleITForm(Gender, lastForm, totalPrice);
+                    femaleITForm = new FemaleITForm(Gender, lastForm);
                     femaleITForm.Show();
                     break;
                 case "MaleTM":
-                    maleTMForm = new MaleTMForm(Gender, lastForm, totalPrice);
+                    maleTMForm = new MaleTMForm(Gender, lastForm);
                     maleTMForm.Show();
                     break;
                 case "FemaleTM":
-                    femaleTMForm = new FemaleTMForm(Gender, lastForm, totalPrice);
+                    femaleTMForm = new FemaleTMForm(Gender, lastForm);
                     femaleTMForm.Show();
                     break;
                 case "MaleHM":
-                    maleHMForm = new MaleHMForm(Gender, lastForm, totalPrice);
+                    maleHMForm = new MaleHMForm(Gender, lastForm);
                     maleHMForm.Show();
                     break;
                 case "FemaleHM":
-                    femaleHMForm = new FemaleHMForm(Gender, lastForm, totalPrice);
+                    femaleHMForm = new FemaleHMForm(Gender, lastForm);
                     femaleHMForm.Show();
                     break;
                 case "Proware":
-                    prowareForm = new ProwareForm(Category, lastForm, totalPrice);
+                    prowareForm = new ProwareForm(Category, lastForm);
                     prowareForm.Show();
                     break;
                 case "MainMenu":
@@ -81,13 +86,15 @@ namespace GearPoint
 
         private void FEMALEButton2_Click(object sender, EventArgs e)
         {
-            Gender = 'F';
+            Console.WriteLine("User chooses Female");
+            Gender = "F";
             NavigateToForm();
         }
 
         private void MALEButton1_Click(object sender, EventArgs e)
         {
-            Gender = 'M';
+            Console.WriteLine("User chooses Male");
+            Gender = "M";
             NavigateToForm();
         }
 
@@ -106,48 +113,32 @@ namespace GearPoint
             }
         }
 
-        private Form GetTargetForm(string category, char gender)
+        private Form GetTargetForm(string category, string gender)
         {
-            switch (gender)
+            switch (gender + "_" + category)
             {
-                case 'F':
-                    switch (category)
-                    {
-                        case "SHS":
-                            return new FemaleShsForm(gender, lastForm, totalPrice);
-                        case "IT":
-                            return new FemaleITForm(gender, lastForm, totalPrice);
-                        case "TM":
-                            return new FemaleTMForm(gender, lastForm, totalPrice);
-                        case "HM":
-                            return new FemaleHMForm(gender, lastForm, totalPrice);
-                        default:
-                            return null;
-                    }
+                case "F_SHS":
+                    return new FemaleShsForm(gender, lastForm);
+                case "F_IT":
+                    return new FemaleITForm(gender, lastForm);
+                case "F_TM":
+                    return new FemaleTMForm(gender, lastForm);
+                case "F_HM":
+                    return new FemaleHMForm(gender, lastForm);
 
-                case 'M':
-                    switch (category)
-                    {
-                        case "SHS":
-                            return new MaleShsForm(gender, lastForm, totalPrice);
-                        case "IT":
-                            return new MaleITForm(gender, lastForm, totalPrice);
-                        case "TM":
-                            return new MaleTMForm(gender, lastForm, totalPrice);
-                        case "HM":
-                            return new MaleHMForm(gender, lastForm, totalPrice);
-                        default:
-                            return null;
-                    }
+                case "M_SHS":
+                    return new MaleShsForm(gender, lastForm);
+                case "M_IT":
+                    return new MaleITForm(gender, lastForm);
+                case "M_TM":
+                    return new MaleTMForm(gender, lastForm);
+                case "M_HM":
+                    return new MaleHMForm(gender, lastForm);
 
                 default:
                     return null;
             }
         }
 
-        private void GenderCheckpoint_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
